@@ -1,0 +1,114 @@
+{
+  "raw_counts": {
+    "Pembrolizumab": {
+      "totalCount": 2909,
+      "sampled": 250
+    },
+    "Nivolumab": {
+      "totalCount": 2013,
+      "sampled": 250
+    },
+    "Cemiplimab": {
+      "totalCount": 231,
+      "sampled": 231
+    },
+    "Dostarlimab": {
+      "totalCount": 105,
+      "sampled": 105
+    },
+    "Tislelizumab": {
+      "totalCount": 810,
+      "sampled": 250
+    },
+    "Toripalimab": {
+      "totalCount": 673,
+      "sampled": 250
+    },
+    "Retifanlimab": {
+      "totalCount": 60,
+      "sampled": 60
+    }
+  },
+  "industry_top": [
+    [
+      "Bristol-Myers Squibb",
+      81
+    ],
+    [
+      "Regeneron Pharmaceuticals",
+      55
+    ],
+    [
+      "BeiGene",
+      51
+    ],
+    [
+      "Merck Sharp & Dohme LLC",
+      48
+    ],
+    [
+      "GlaxoSmithKline",
+      29
+    ],
+    [
+      "Incyte Corporation",
+      24
+    ],
+    [
+      "Tesaro, Inc.",
+      12
+    ],
+    [
+      "Sanofi",
+      9
+    ],
+    [
+      "Ono Pharmaceutical Co., Ltd.",
+      8
+    ],
+    [
+      "Novartis Pharmaceuticals",
+      7
+    ],
+    [
+      "Eli Lilly and Company",
+      6
+    ],
+    [
+      "Acerta Pharma BV",
+      6
+    ],
+    [
+      "MacroGenics",
+      5
+    ],
+    [
+      "Celgene",
+      5
+    ],
+    [
+      "Eucure (Beijing) Biopharma Co., Ltd",
+      5
+    ],
+    [
+      "Leap Therapeutics, Inc.",
+      4
+    ],
+    [
+      "NewLink Genetics Corporation",
+      4
+    ],
+    [
+      "Pfizer",
+      4
+    ],
+    [
+      "Oncovir, Inc.",
+      4
+    ],
+    [
+      "Sumitomo Pharma America, Inc.",
+      4
+    ]
+  ]
+}

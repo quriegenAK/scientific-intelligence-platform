@@ -1,0 +1,408 @@
+{
+  "symbol": "CD40",
+  "ensembl": "ENSG00000101017",
+  "uniprot": "P25942",
+  "group": "costim_receptor",
+  "facts": [
+    {
+      "field": "gene",
+      "label": "Gene",
+      "value": "CD40",
+      "confidence": "HIGH",
+      "derivation": "",
+      "notes": "",
+      "is_reasoned": false,
+      "data_prov": {
+        "source": "Open Targets Platform",
+        "endpoint": "https://api.platform.opentargets.org/api/v4/graphql",
+        "data_version": "26.06",
+        "access_utc": "2026-07-23T18:26:37Z",
+        "query": "target(ensemblId:ENSG00000101017){ identity, class, tractability, subcellular, associatedDiseases, drugAndClinicalCandidates }",
+        "record_url": "https://platform.opentargets.org/target/ENSG00000101017",
+        "snapshot": "data/raw/CD40/ot.json",
+        "citation": "Open Targets Platform v26.06 (2026-07-23)"
+      },
+      "reasoning_prov": null
+    },
+    {
+      "field": "protein",
+      "label": "Protein",
+      "value": "CD40 molecule",
+      "confidence": "HIGH",
+      "derivation": "",
+      "notes": "",
+      "is_reasoned": false,
+      "data_prov": {
+        "source": "Open Targets Platform",
+        "endpoint": "https://api.platform.opentargets.org/api/v4/graphql",
+        "data_version": "26.06",
+        "access_utc": "2026-07-23T18:26:37Z",
+        "query": "target(ensemblId:ENSG00000101017){ identity, class, tractability, subcellular, associatedDiseases, drugAndClinicalCandidates }",
+        "record_url": "https://platform.opentargets.org/target/ENSG00000101017",
+        "snapshot": "data/raw/CD40/ot.json",
+        "citation": "Open Targets Platform v26.06 (2026-07-23)"
+      },
+      "reasoning_prov": null
+    },
+    {
+      "field": "uniprot",
+      "label": "UniProt",
+      "value": "P25942",
+      "confidence": "HIGH",
+      "derivation": "",
+      "notes": "",
+      "is_reasoned": false,
+      "data_prov": {
+        "source": "Open Targets Platform",
+        "endpoint": "https://api.platform.opentargets.org/api/v4/graphql",
+        "data_version": "26.06",
+        "access_utc": "2026-07-23T18:26:37Z",
+        "query": "target(ensemblId:ENSG00000101017){ identity, class, tractability, subcellular, associatedDiseases, drugAndClinicalCandidates }",
+        "record_url": "https://platform.opentargets.org/target/ENSG00000101017",
+        "snapshot": "data/raw/CD40/ot.json",
+        "citation": "Open Targets Platform v26.06 (2026-07-23)"
+      },
+      "reasoning_prov": null
+    },
+    {
+      "field": "target_family_class",
+      "label": "Target family / class",
+      "value": "Membrane receptor",
+      "confidence": "HIGH",
+      "derivation": "",
+      "notes": "",
+      "is_reasoned": false,
+      "data_prov": {
+        "source": "Open Targets Platform",
+        "endpoint": "https://api.platform.opentargets.org/api/v4/graphql",
+        "data_version": "26.06",
+        "access_utc": "2026-07-23T18:26:37Z",
+        "query": "target(ensemblId:ENSG00000101017){ identity, class, tractability, subcellular, associatedDiseases, drugAndClinicalCandidates }",
+        "record_url": "https://platform.opentargets.org/target/ENSG00000101017",
+        "snapshot": "data/raw/CD40/ot.json",
+        "citation": "Open Targets Platform v26.06 (2026-07-23)"
+      },
+      "reasoning_prov": null
+    },
+    {
+      "field": "subcellular_location",
+      "label": "Subcellular location",
+      "value": "Cell membrane; Single-pass type I membrane protein",
+      "confidence": "HIGH",
+      "derivation": "",
+      "notes": "Cell-surface.",
+      "is_reasoned": false,
+      "data_prov": {
+        "source": "Open Targets Platform",
+        "endpoint": "https://api.platform.opentargets.org/api/v4/graphql",
+        "data_version": "26.06",
+        "access_utc": "2026-07-23T18:26:37Z",
+        "query": "target(ensemblId:ENSG00000101017){ identity, class, tractability, subcellular, associatedDiseases, drugAndClinicalCandidates }",
+        "record_url": "https://platform.opentargets.org/target/ENSG00000101017",
+        "snapshot": "data/raw/CD40/ot.json",
+        "citation": "Open Targets Platform v26.06 (2026-07-23)"
+      },
+      "reasoning_prov": null
+    },
+    {
+      "field": "development_level",
+      "label": "Development level",
+      "value": "Tchem",
+      "confidence": "DERIVED",
+      "derivation": "ChEMBL max_phase==4 => Tclin; else phase>=2 or tractable => Tchem; else Tbio. Pharos pull deferred.",
+      "notes": "",
+      "is_reasoned": false,
+      "data_prov": {
+        "source": "ChEMBL",
+        "endpoint": "https://www.ebi.ac.uk/chembl/api/data",
+        "data_version": "ChEMBL_37",
+        "access_utc": "2026-07-23T18:26:37Z",
+        "query": "mechanism?target_chembl_id=CHEMBL1250358; molecule?molecule_chembl_id__in=<mechanism molecules>",
+        "record_url": "https://www.ebi.ac.uk/chembl/target_report_card/CHEMBL1250358/",
+        "snapshot": "data/raw/CD40/chembl.json",
+        "citation": "ChEMBL vChEMBL_37 (2026-07-23)"
+      },
+      "reasoning_prov": null
+    },
+    {
+      "field": "approved_drugs",
+      "label": "Approved drug(s)",
+      "value": "None (no approved drug)",
+      "confidence": "HIGH",
+      "derivation": "",
+      "notes": "No approved drug \u2014 part of the white-space signal.",
+      "is_reasoned": false,
+      "data_prov": {
+        "source": "ChEMBL",
+        "endpoint": "https://www.ebi.ac.uk/chembl/api/data",
+        "data_version": "ChEMBL_37",
+        "access_utc": "2026-07-23T18:26:37Z",
+        "query": "mechanism?target_chembl_id=CHEMBL1250358; molecule?molecule_chembl_id__in=<mechanism molecules>",
+        "record_url": "https://www.ebi.ac.uk/chembl/target_report_card/CHEMBL1250358/",
+        "snapshot": "data/raw/CD40/chembl.json",
+        "citation": "ChEMBL vChEMBL_37 (2026-07-23)"
+      },
+      "reasoning_prov": null
+    },
+    {
+      "field": "mechanism_moa",
+      "label": "Mechanism / MoA",
+      "value": "Tumor necrosis factor receptor superfamily member 5 agonist; Tumor necrosis factor receptor superfamily member 5 antagonist; Tumor necrosis factor receptor superfamily member 5 inhibitor; Tumor necrosis factor receptor superfamily member 5 partial agonist",
+      "confidence": "HIGH",
+      "derivation": "",
+      "notes": "",
+      "is_reasoned": false,
+      "data_prov": {
+        "source": "ChEMBL",
+        "endpoint": "https://www.ebi.ac.uk/chembl/api/data",
+        "data_version": "ChEMBL_37",
+        "access_utc": "2026-07-23T18:26:37Z",
+        "query": "mechanism?target_chembl_id=CHEMBL1250358; molecule?molecule_chembl_id__in=<mechanism molecules>",
+        "record_url": "https://www.ebi.ac.uk/chembl/target_report_card/CHEMBL1250358/",
+        "snapshot": "data/raw/CD40/chembl.json",
+        "citation": "ChEMBL vChEMBL_37 (2026-07-23)"
+      },
+      "reasoning_prov": null
+    },
+    {
+      "field": "modality",
+      "label": "Modality",
+      "value": "Antibody",
+      "confidence": "HIGH",
+      "derivation": "",
+      "notes": "",
+      "is_reasoned": false,
+      "data_prov": {
+        "source": "ChEMBL",
+        "endpoint": "https://www.ebi.ac.uk/chembl/api/data",
+        "data_version": "ChEMBL_37",
+        "access_utc": "2026-07-23T18:26:37Z",
+        "query": "mechanism?target_chembl_id=CHEMBL1250358; molecule?molecule_chembl_id__in=<mechanism molecules>",
+        "record_url": "https://www.ebi.ac.uk/chembl/target_report_card/CHEMBL1250358/",
+        "snapshot": "data/raw/CD40/chembl.json",
+        "citation": "ChEMBL vChEMBL_37 (2026-07-23)"
+      },
+      "reasoning_prov": null
+    },
+    {
+      "field": "first_approval_year",
+      "label": "First approval year",
+      "value": null,
+      "confidence": "MEDIUM",
+      "derivation": "",
+      "notes": "No approval yet.",
+      "is_reasoned": false,
+      "data_prov": {
+        "source": "ChEMBL",
+        "endpoint": "https://www.ebi.ac.uk/chembl/api/data",
+        "data_version": "ChEMBL_37",
+        "access_utc": "2026-07-23T18:26:37Z",
+        "query": "mechanism?target_chembl_id=CHEMBL1250358; molecule?molecule_chembl_id__in=<mechanism molecules>",
+        "record_url": "https://www.ebi.ac.uk/chembl/target_report_card/CHEMBL1250358/",
+        "snapshot": "data/raw/CD40/chembl.json",
+        "citation": "ChEMBL vChEMBL_37 (2026-07-23)"
+      },
+      "reasoning_prov": null
+    },
+    {
+      "field": "highest_phase",
+      "label": "Highest phase",
+      "value": "Phase 2",
+      "confidence": "HIGH",
+      "derivation": "",
+      "notes": "From Open Targets max clinical stage across candidates; CT.gov corroborates trial activity.",
+      "is_reasoned": false,
+      "data_prov": {
+        "source": "ClinicalTrials.gov",
+        "endpoint": "https://clinicaltrials.gov/api/v2/studies",
+        "data_version": "API 2.0.5",
+        "access_utc": "2026-07-23T18:26:37Z",
+        "query": "studies?query.intr=<flagship drugs>&fields=Phase,LeadSponsor* (industry sponsors; as-of-cutoff censor)",
+        "record_url": "https://clinicaltrials.gov/search?term=CD40",
+        "snapshot": "data/raw/CD40/ct.json",
+        "citation": "ClinicalTrials.gov vAPI 2.0.5 (2026-07-23)"
+      },
+      "reasoning_prov": null
+    },
+    {
+      "field": "companies_developing",
+      "label": "Companies developing",
+      "value": "Genentech, Inc., Hoffmann-La Roche, Novartis Pharmaceuticals, PanGenetics UK Limited, RANI Therapeutics, Seagen Inc.",
+      "confidence": "MEDIUM",
+      "derivation": "Distinct industry lead sponsors across flagship-drug trials (sampled).",
+      "notes": "",
+      "is_reasoned": false,
+      "data_prov": {
+        "source": "ClinicalTrials.gov",
+        "endpoint": "https://clinicaltrials.gov/api/v2/studies",
+        "data_version": "API 2.0.5",
+        "access_utc": "2026-07-23T18:26:37Z",
+        "query": "studies?query.intr=<flagship drugs>&fields=Phase,LeadSponsor* (industry sponsors; as-of-cutoff censor)",
+        "record_url": "https://clinicaltrials.gov/search?term=CD40",
+        "snapshot": "data/raw/CD40/ct.json",
+        "citation": "ClinicalTrials.gov vAPI 2.0.5 (2026-07-23)"
+      },
+      "reasoning_prov": null
+    },
+    {
+      "field": "disease_indication",
+      "label": "Disease / indication",
+      "value": "hyper-IgM syndrome type 3, rheumatoid arthritis, Graves disease, inflammatory bowel disease, Crohn disease, multiple sclerosis",
+      "confidence": "HIGH",
+      "derivation": "",
+      "notes": "Top OT disease associations by score.",
+      "is_reasoned": false,
+      "data_prov": {
+        "source": "Open Targets Platform",
+        "endpoint": "https://api.platform.opentargets.org/api/v4/graphql",
+        "data_version": "26.06",
+        "access_utc": "2026-07-23T18:26:37Z",
+        "query": "target(ensemblId:ENSG00000101017){ identity, class, tractability, subcellular, associatedDiseases, drugAndClinicalCandidates }",
+        "record_url": "https://platform.opentargets.org/target/ENSG00000101017",
+        "snapshot": "data/raw/CD40/ot.json",
+        "citation": "Open Targets Platform v26.06 (2026-07-23)"
+      },
+      "reasoning_prov": null
+    },
+    {
+      "field": "therapeutic_area",
+      "label": "Therapeutic area",
+      "value": "Immuno-oncology",
+      "confidence": "DERIVED",
+      "derivation": "IO cohort scope.",
+      "notes": "",
+      "is_reasoned": false,
+      "data_prov": {
+        "source": "Open Targets Platform",
+        "endpoint": "https://api.platform.opentargets.org/api/v4/graphql",
+        "data_version": "26.06",
+        "access_utc": "2026-07-23T18:26:37Z",
+        "query": "target(ensemblId:ENSG00000101017){ identity, class, tractability, subcellular, associatedDiseases, drugAndClinicalCandidates }",
+        "record_url": "https://platform.opentargets.org/target/ENSG00000101017",
+        "snapshot": "data/raw/CD40/ot.json",
+        "citation": "Open Targets Platform v26.06 (2026-07-23)"
+      },
+      "reasoning_prov": null
+    },
+    {
+      "field": "white_space_score",
+      "label": "White Space score",
+      "value": 42.47,
+      "confidence": "HIGH",
+      "derivation": "WS = 100\u00b7V\u00b7T\u00b7(1\u2212S); V=0.7996 (OT assoc), T=0.9 (OT tractability), S=0.4099 (cohort-normalized saturation). Rank 4/13.",
+      "notes": "",
+      "is_reasoned": false,
+      "data_prov": {
+        "source": "ClinicalTrials.gov",
+        "endpoint": "https://clinicaltrials.gov/api/v2/studies",
+        "data_version": "API 2.0.5",
+        "access_utc": "2026-07-23T18:26:37Z",
+        "query": "studies?query.intr=<flagship drugs>&fields=Phase,LeadSponsor* (industry sponsors; as-of-cutoff censor)",
+        "record_url": "https://clinicaltrials.gov/search?term=CD40",
+        "snapshot": "data/raw/CD40/ct.json",
+        "citation": "ClinicalTrials.gov vAPI 2.0.5 (2026-07-23)"
+      },
+      "reasoning_prov": null
+    },
+    {
+      "field": "qurie_relevance",
+      "label": "QurieGen relevance",
+      "value": "White-space opportunity (surface) \u2014 track",
+      "confidence": "DERIVED",
+      "derivation": "Composed from localization + white-space rank; QurieGen edge is highest for validated, unsaturated, intracellular targets its causal multi-omics platform can address.",
+      "notes": "",
+      "is_reasoned": true,
+      "data_prov": {
+        "source": "Open Targets Platform",
+        "endpoint": "https://api.platform.opentargets.org/api/v4/graphql",
+        "data_version": "26.06",
+        "access_utc": "2026-07-23T18:26:37Z",
+        "query": "target(ensemblId:ENSG00000101017){ identity, class, tractability, subcellular, associatedDiseases, drugAndClinicalCandidates }",
+        "record_url": "https://platform.opentargets.org/target/ENSG00000101017",
+        "snapshot": "data/raw/CD40/ot.json",
+        "citation": "Open Targets Platform v26.06 (2026-07-23)"
+      },
+      "reasoning_prov": {
+        "model_version": "claude-fable-5",
+        "prompt_version": "brief-2026-07-23.v2",
+        "inputs_hash": "1b63b4d58151940b",
+        "reasoning_kind": "classification"
+      }
+    }
+  ],
+  "white_space": {
+    "score": 42.47,
+    "formula": "WS = 100 \u00b7 Validation \u00b7 Tractability \u00b7 (1 \u2212 Saturation)",
+    "components": [
+      {
+        "name": "Validation (V)",
+        "value": 0.7996,
+        "weight_role": "multiplicative",
+        "inputs": "Open Targets max disease-association score",
+        "data_prov": {
+          "source": "Open Targets Platform",
+          "endpoint": "https://api.platform.opentargets.org/api/v4/graphql",
+          "data_version": "26.06",
+          "access_utc": "2026-07-23T18:26:37Z",
+          "query": "target(ensemblId:ENSG00000101017){ identity, class, tractability, subcellular, associatedDiseases, drugAndClinicalCandidates }",
+          "record_url": "https://platform.opentargets.org/target/ENSG00000101017",
+          "snapshot": "data/raw/CD40/ot.json",
+          "citation": "Open Targets Platform v26.06 (2026-07-23)"
+        }
+      },
+      {
+        "name": "Tractability (T)",
+        "value": 0.9,
+        "weight_role": "multiplicative",
+        "inputs": "Open Targets tractability \u2014 best drugging-path bucket",
+        "data_prov": {
+          "source": "Open Targets Platform",
+          "endpoint": "https://api.platform.opentargets.org/api/v4/graphql",
+          "data_version": "26.06",
+          "access_utc": "2026-07-23T18:26:37Z",
+          "query": "target(ensemblId:ENSG00000101017){ identity, class, tractability, subcellular, associatedDiseases, drugAndClinicalCandidates }",
+          "record_url": "https://platform.opentargets.org/target/ENSG00000101017",
+          "snapshot": "data/raw/CD40/ot.json",
+          "citation": "Open Targets Platform v26.06 (2026-07-23)"
+        }
+      },
+      {
+        "name": "Saturation (S)",
+        "value": 0.4099,
+        "weight_role": "multiplicative",
+        "inputs": "Cohort-normalized: approvals + candidates + trials + industry sponsors",
+        "data_prov": {
+          "source": "ClinicalTrials.gov",
+          "endpoint": "https://clinicaltrials.gov/api/v2/studies",
+          "data_version": "API 2.0.5",
+          "access_utc": "2026-07-23T18:26:37Z",
+          "query": "studies?query.intr=<flagship drugs>&fields=Phase,LeadSponsor* (industry sponsors; as-of-cutoff censor)",
+          "record_url": "https://clinicaltrials.gov/search?term=CD40",
+          "snapshot": "data/raw/CD40/ct.json",
+          "citation": "ClinicalTrials.gov vAPI 2.0.5 (2026-07-23)"
+        }
+      }
+    ],
+    "cohort_rank": 4,
+    "cohort_size": 13,
+    "percentile": 75.0,
+    "confidence": "HIGH",
+    "interpretation": "Top-tier white space \u2014 validated, tractable, and comparatively uncrowded within the IO cohort.",
+    "score_version": "whitespace-0.1.0"
+  },
+  "executive_brief_md": "## CD40 \u2014 CD40 molecule\n\n**White Space score 42.47/100 \u00b7 rank 4/13 \u00b7 HIGH confidence.** Top-tier white space \u2014 validated, tractable, and comparatively uncrowded within the IO cohort.\n\nCD40 is a cell membrane; single-pass type i membrane protein target in the immuno-oncology cohort with no approved drug yet. Development level **Tchem**; mechanism: Tumor necrosis factor receptor superfamily member 5 agonist; Tumor necrosis factor receptor superfamily member 5 antagonist; Tumor necrosis factor receptor superfamily member 5 inhibitor; Tumor necrosis factor receptor superfamily member 5 partial agonist. Competitive footprint: 6 industry sponsor(s) in trials. Leading disease associations: hyper-IgM syndrome type 3, rheumatoid arthritis, Graves disease, inflammatory bowel disease.\n\n**Score decomposition** \u2014 Validation 0.7996, Tractability 0.9, Saturation 0.4099 (cohort-normalized). The score is multiplicative, so crowding drives it down even when biology is validated \u2014 which is why saturated checkpoints sit low and validated-but-uncrowded targets rise.\n\n*Every figure above resolves to a versioned source in the Provenance tab. This brief is model-written (claude-fable-5) over sourced facts only.*",
+  "trust": {
+    "pipeline_version": "tiop-0.2.0",
+    "data_versions": {
+      "open_targets": "26.06",
+      "chembl": "ChEMBL_37",
+      "clinicaltrials": "API 2.0.5"
+    },
+    "reproducible": true,
+    "reproducibility_note": "Profile is a pure function of pinned data/raw snapshots + versioned score code; re-running build_cohort.py yields the same content_hash.",
+    "content_hash": "5de6dc0e8a97eafa",
+    "model_version": "claude-fable-5",
+    "prompt_version": "brief-2026-07-23.v2"
+  },
+  "discrepancies": []
+}

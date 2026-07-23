@@ -1,0 +1,80 @@
+{
+  "totalCount": 2909,
+  "studies": [
+    {
+      "protocolSection": {
+        "identificationModule": {
+          "nctId": "NCT02934503"
+        },
+        "statusModule": {
+          "overallStatus": "TERMINATED"
+        },
+        "designModule": {
+          "phases": [
+            "PHASE2"
+          ]
+        }
+      }
+    },
+    {
+      "protocolSection": {
+        "identificationModule": {
+          "nctId": "NCT07545486"
+        },
+        "statusModule": {
+          "overallStatus": "NOT_YET_RECRUITING"
+        },
+        "designModule": {}
+      }
+    },
+    {
+      "protocolSection": {
+        "identificationModule": {
+          "nctId": "NCT02733250"
+        },
+        "statusModule": {
+          "overallStatus": "COMPLETED"
+        },
+        "designModule": {
+          "phases": [
+            "PHASE1",
+            "PHASE2"
+          ]
+        }
+      }
+    },
+    {
+      "protocolSection": {
+        "identificationModule": {
+          "nctId": "NCT02538510"
+        },
+        "statusModule": {
+          "overallStatus": "COMPLETED"
+        },
+        "designModule": {
+          "phases": [
+            "PHASE1",
+            "PHASE2"
+          ]
+        }
+      }
+    },
+    {
+      "protocolSection": {
+        "identificationModule": {
+          "nctId": "NCT02130466"
+        },
+        "statusModule": {
+          "overallStatus": "COMPLETED"
+        },
+        "designModule": {
+          "phases": [
+            "PHASE1",
+            "PHASE2"
+          ]
+        }
+      }
+    }
+  ],
+  "nextPageToken": "ZVdj7o2Elu8o3lp3Ssy6trbumpOQJJxobfWt0A"
+}

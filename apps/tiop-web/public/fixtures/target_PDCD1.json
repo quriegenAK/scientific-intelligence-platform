@@ -1,0 +1,408 @@
+{
+  "symbol": "PDCD1",
+  "ensembl": "ENSG00000188389",
+  "uniprot": "Q15116",
+  "group": "saturated_checkpoint",
+  "facts": [
+    {
+      "field": "gene",
+      "label": "Gene",
+      "value": "PDCD1",
+      "confidence": "HIGH",
+      "derivation": "",
+      "notes": "",
+      "is_reasoned": false,
+      "data_prov": {
+        "source": "Open Targets Platform",
+        "endpoint": "https://api.platform.opentargets.org/api/v4/graphql",
+        "data_version": "26.06",
+        "access_utc": "2026-07-23T18:26:37Z",
+        "query": "target(ensemblId:ENSG00000188389){ identity, class, tractability, subcellular, associatedDiseases, drugAndClinicalCandidates }",
+        "record_url": "https://platform.opentargets.org/target/ENSG00000188389",
+        "snapshot": "data/raw/PDCD1/ot.json",
+        "citation": "Open Targets Platform v26.06 (2026-07-23)"
+      },
+      "reasoning_prov": null
+    },
+    {
+      "field": "protein",
+      "label": "Protein",
+      "value": "programmed cell death 1",
+      "confidence": "HIGH",
+      "derivation": "",
+      "notes": "",
+      "is_reasoned": false,
+      "data_prov": {
+        "source": "Open Targets Platform",
+        "endpoint": "https://api.platform.opentargets.org/api/v4/graphql",
+        "data_version": "26.06",
+        "access_utc": "2026-07-23T18:26:37Z",
+        "query": "target(ensemblId:ENSG00000188389){ identity, class, tractability, subcellular, associatedDiseases, drugAndClinicalCandidates }",
+        "record_url": "https://platform.opentargets.org/target/ENSG00000188389",
+        "snapshot": "data/raw/PDCD1/ot.json",
+        "citation": "Open Targets Platform v26.06 (2026-07-23)"
+      },
+      "reasoning_prov": null
+    },
+    {
+      "field": "uniprot",
+      "label": "UniProt",
+      "value": "Q15116",
+      "confidence": "HIGH",
+      "derivation": "",
+      "notes": "",
+      "is_reasoned": false,
+      "data_prov": {
+        "source": "Open Targets Platform",
+        "endpoint": "https://api.platform.opentargets.org/api/v4/graphql",
+        "data_version": "26.06",
+        "access_utc": "2026-07-23T18:26:37Z",
+        "query": "target(ensemblId:ENSG00000188389){ identity, class, tractability, subcellular, associatedDiseases, drugAndClinicalCandidates }",
+        "record_url": "https://platform.opentargets.org/target/ENSG00000188389",
+        "snapshot": "data/raw/PDCD1/ot.json",
+        "citation": "Open Targets Platform v26.06 (2026-07-23)"
+      },
+      "reasoning_prov": null
+    },
+    {
+      "field": "target_family_class",
+      "label": "Target family / class",
+      "value": "Surface antigen",
+      "confidence": "HIGH",
+      "derivation": "",
+      "notes": "",
+      "is_reasoned": false,
+      "data_prov": {
+        "source": "Open Targets Platform",
+        "endpoint": "https://api.platform.opentargets.org/api/v4/graphql",
+        "data_version": "26.06",
+        "access_utc": "2026-07-23T18:26:37Z",
+        "query": "target(ensemblId:ENSG00000188389){ identity, class, tractability, subcellular, associatedDiseases, drugAndClinicalCandidates }",
+        "record_url": "https://platform.opentargets.org/target/ENSG00000188389",
+        "snapshot": "data/raw/PDCD1/ot.json",
+        "citation": "Open Targets Platform v26.06 (2026-07-23)"
+      },
+      "reasoning_prov": null
+    },
+    {
+      "field": "subcellular_location",
+      "label": "Subcellular location",
+      "value": "Cell membrane ; Single-pass type I membrane protein",
+      "confidence": "HIGH",
+      "derivation": "",
+      "notes": "Cell-surface.",
+      "is_reasoned": false,
+      "data_prov": {
+        "source": "Open Targets Platform",
+        "endpoint": "https://api.platform.opentargets.org/api/v4/graphql",
+        "data_version": "26.06",
+        "access_utc": "2026-07-23T18:26:37Z",
+        "query": "target(ensemblId:ENSG00000188389){ identity, class, tractability, subcellular, associatedDiseases, drugAndClinicalCandidates }",
+        "record_url": "https://platform.opentargets.org/target/ENSG00000188389",
+        "snapshot": "data/raw/PDCD1/ot.json",
+        "citation": "Open Targets Platform v26.06 (2026-07-23)"
+      },
+      "reasoning_prov": null
+    },
+    {
+      "field": "development_level",
+      "label": "Development level",
+      "value": "Tclin",
+      "confidence": "DERIVED",
+      "derivation": "ChEMBL max_phase==4 => Tclin; else phase>=2 or tractable => Tchem; else Tbio. Pharos pull deferred.",
+      "notes": "",
+      "is_reasoned": false,
+      "data_prov": {
+        "source": "ChEMBL",
+        "endpoint": "https://www.ebi.ac.uk/chembl/api/data",
+        "data_version": "ChEMBL_37",
+        "access_utc": "2026-07-23T18:26:37Z",
+        "query": "mechanism?target_chembl_id=CHEMBL3307223; molecule?molecule_chembl_id__in=<mechanism molecules>",
+        "record_url": "https://www.ebi.ac.uk/chembl/target_report_card/CHEMBL3307223/",
+        "snapshot": "data/raw/PDCD1/chembl.json",
+        "citation": "ChEMBL vChEMBL_37 (2026-07-23)"
+      },
+      "reasoning_prov": null
+    },
+    {
+      "field": "approved_drugs",
+      "label": "Approved drug(s)",
+      "value": "Cemiplimab, Dostarlimab, Nivolumab, Pembrolizumab, Retifanlimab, Tislelizumab, Toripalimab",
+      "confidence": "HIGH",
+      "derivation": "",
+      "notes": "7 approved at ChEMBL max_phase=4.",
+      "is_reasoned": false,
+      "data_prov": {
+        "source": "ChEMBL",
+        "endpoint": "https://www.ebi.ac.uk/chembl/api/data",
+        "data_version": "ChEMBL_37",
+        "access_utc": "2026-07-23T18:26:37Z",
+        "query": "mechanism?target_chembl_id=CHEMBL3307223; molecule?molecule_chembl_id__in=<mechanism molecules>",
+        "record_url": "https://www.ebi.ac.uk/chembl/target_report_card/CHEMBL3307223/",
+        "snapshot": "data/raw/PDCD1/chembl.json",
+        "citation": "ChEMBL vChEMBL_37 (2026-07-23)"
+      },
+      "reasoning_prov": null
+    },
+    {
+      "field": "mechanism_moa",
+      "label": "Mechanism / MoA",
+      "value": "Programmed cell death protein 1 antagonist; Programmed cell death protein 1 inhibitor",
+      "confidence": "HIGH",
+      "derivation": "",
+      "notes": "",
+      "is_reasoned": false,
+      "data_prov": {
+        "source": "ChEMBL",
+        "endpoint": "https://www.ebi.ac.uk/chembl/api/data",
+        "data_version": "ChEMBL_37",
+        "access_utc": "2026-07-23T18:26:37Z",
+        "query": "mechanism?target_chembl_id=CHEMBL3307223; molecule?molecule_chembl_id__in=<mechanism molecules>",
+        "record_url": "https://www.ebi.ac.uk/chembl/target_report_card/CHEMBL3307223/",
+        "snapshot": "data/raw/PDCD1/chembl.json",
+        "citation": "ChEMBL vChEMBL_37 (2026-07-23)"
+      },
+      "reasoning_prov": null
+    },
+    {
+      "field": "modality",
+      "label": "Modality",
+      "value": "Antibody",
+      "confidence": "HIGH",
+      "derivation": "",
+      "notes": "",
+      "is_reasoned": false,
+      "data_prov": {
+        "source": "ChEMBL",
+        "endpoint": "https://www.ebi.ac.uk/chembl/api/data",
+        "data_version": "ChEMBL_37",
+        "access_utc": "2026-07-23T18:26:37Z",
+        "query": "mechanism?target_chembl_id=CHEMBL3307223; molecule?molecule_chembl_id__in=<mechanism molecules>",
+        "record_url": "https://www.ebi.ac.uk/chembl/target_report_card/CHEMBL3307223/",
+        "snapshot": "data/raw/PDCD1/chembl.json",
+        "citation": "ChEMBL vChEMBL_37 (2026-07-23)"
+      },
+      "reasoning_prov": null
+    },
+    {
+      "field": "first_approval_year",
+      "label": "First approval year",
+      "value": 2014,
+      "confidence": "HIGH",
+      "derivation": "",
+      "notes": "",
+      "is_reasoned": false,
+      "data_prov": {
+        "source": "ChEMBL",
+        "endpoint": "https://www.ebi.ac.uk/chembl/api/data",
+        "data_version": "ChEMBL_37",
+        "access_utc": "2026-07-23T18:26:37Z",
+        "query": "mechanism?target_chembl_id=CHEMBL3307223; molecule?molecule_chembl_id__in=<mechanism molecules>",
+        "record_url": "https://www.ebi.ac.uk/chembl/target_report_card/CHEMBL3307223/",
+        "snapshot": "data/raw/PDCD1/chembl.json",
+        "citation": "ChEMBL vChEMBL_37 (2026-07-23)"
+      },
+      "reasoning_prov": null
+    },
+    {
+      "field": "highest_phase",
+      "label": "Highest phase",
+      "value": "Approved (Phase 4)",
+      "confidence": "HIGH",
+      "derivation": "",
+      "notes": "From Open Targets max clinical stage across candidates; CT.gov corroborates trial activity.",
+      "is_reasoned": false,
+      "data_prov": {
+        "source": "ClinicalTrials.gov",
+        "endpoint": "https://clinicaltrials.gov/api/v2/studies",
+        "data_version": "API 2.0.5",
+        "access_utc": "2026-07-23T18:26:37Z",
+        "query": "studies?query.intr=<flagship drugs>&fields=Phase,LeadSponsor* (industry sponsors; as-of-cutoff censor)",
+        "record_url": "https://clinicaltrials.gov/search?term=PDCD1",
+        "snapshot": "data/raw/PDCD1/ct.json",
+        "citation": "ClinicalTrials.gov vAPI 2.0.5 (2026-07-23)"
+      },
+      "reasoning_prov": null
+    },
+    {
+      "field": "companies_developing",
+      "label": "Companies developing",
+      "value": "Acerta Pharma BV, Adagene Inc, Amgen, AnewPharma, Antengene Corporation, Ascentage Pharma Group Inc., BeOne Medicines, BeiGene, Bio-Thera Solutions, BioNTech SE",
+      "confidence": "MEDIUM",
+      "derivation": "Distinct industry lead sponsors across flagship-drug trials (sampled).",
+      "notes": "",
+      "is_reasoned": false,
+      "data_prov": {
+        "source": "ClinicalTrials.gov",
+        "endpoint": "https://clinicaltrials.gov/api/v2/studies",
+        "data_version": "API 2.0.5",
+        "access_utc": "2026-07-23T18:26:37Z",
+        "query": "studies?query.intr=<flagship drugs>&fields=Phase,LeadSponsor* (industry sponsors; as-of-cutoff censor)",
+        "record_url": "https://clinicaltrials.gov/search?term=PDCD1",
+        "snapshot": "data/raw/PDCD1/ct.json",
+        "citation": "ClinicalTrials.gov vAPI 2.0.5 (2026-07-23)"
+      },
+      "reasoning_prov": null
+    },
+    {
+      "field": "disease_indication",
+      "label": "Disease / indication",
+      "value": "melanoma, non-small cell lung carcinoma, renal cell carcinoma, esophageal squamous cell carcinoma, neoplasm, nasopharyngeal carcinoma",
+      "confidence": "HIGH",
+      "derivation": "",
+      "notes": "Top OT disease associations by score.",
+      "is_reasoned": false,
+      "data_prov": {
+        "source": "Open Targets Platform",
+        "endpoint": "https://api.platform.opentargets.org/api/v4/graphql",
+        "data_version": "26.06",
+        "access_utc": "2026-07-23T18:26:37Z",
+        "query": "target(ensemblId:ENSG00000188389){ identity, class, tractability, subcellular, associatedDiseases, drugAndClinicalCandidates }",
+        "record_url": "https://platform.opentargets.org/target/ENSG00000188389",
+        "snapshot": "data/raw/PDCD1/ot.json",
+        "citation": "Open Targets Platform v26.06 (2026-07-23)"
+      },
+      "reasoning_prov": null
+    },
+    {
+      "field": "therapeutic_area",
+      "label": "Therapeutic area",
+      "value": "Immuno-oncology",
+      "confidence": "DERIVED",
+      "derivation": "IO cohort scope.",
+      "notes": "",
+      "is_reasoned": false,
+      "data_prov": {
+        "source": "Open Targets Platform",
+        "endpoint": "https://api.platform.opentargets.org/api/v4/graphql",
+        "data_version": "26.06",
+        "access_utc": "2026-07-23T18:26:37Z",
+        "query": "target(ensemblId:ENSG00000188389){ identity, class, tractability, subcellular, associatedDiseases, drugAndClinicalCandidates }",
+        "record_url": "https://platform.opentargets.org/target/ENSG00000188389",
+        "snapshot": "data/raw/PDCD1/ot.json",
+        "citation": "Open Targets Platform v26.06 (2026-07-23)"
+      },
+      "reasoning_prov": null
+    },
+    {
+      "field": "white_space_score",
+      "label": "White Space score",
+      "value": 0.0,
+      "confidence": "HIGH",
+      "derivation": "WS = 100\u00b7V\u00b7T\u00b7(1\u2212S); V=0.6284 (OT assoc), T=1.0 (OT tractability), S=1.0 (cohort-normalized saturation). Rank 13/13.",
+      "notes": "",
+      "is_reasoned": false,
+      "data_prov": {
+        "source": "ClinicalTrials.gov",
+        "endpoint": "https://clinicaltrials.gov/api/v2/studies",
+        "data_version": "API 2.0.5",
+        "access_utc": "2026-07-23T18:26:37Z",
+        "query": "studies?query.intr=<flagship drugs>&fields=Phase,LeadSponsor* (industry sponsors; as-of-cutoff censor)",
+        "record_url": "https://clinicaltrials.gov/search?term=PDCD1",
+        "snapshot": "data/raw/PDCD1/ct.json",
+        "citation": "ClinicalTrials.gov vAPI 2.0.5 (2026-07-23)"
+      },
+      "reasoning_prov": null
+    },
+    {
+      "field": "qurie_relevance",
+      "label": "QurieGen relevance",
+      "value": "Benchmark / saturated \u2014 calibration only",
+      "confidence": "DERIVED",
+      "derivation": "Composed from localization + white-space rank; QurieGen edge is highest for validated, unsaturated, intracellular targets its causal multi-omics platform can address.",
+      "notes": "",
+      "is_reasoned": true,
+      "data_prov": {
+        "source": "Open Targets Platform",
+        "endpoint": "https://api.platform.opentargets.org/api/v4/graphql",
+        "data_version": "26.06",
+        "access_utc": "2026-07-23T18:26:37Z",
+        "query": "target(ensemblId:ENSG00000188389){ identity, class, tractability, subcellular, associatedDiseases, drugAndClinicalCandidates }",
+        "record_url": "https://platform.opentargets.org/target/ENSG00000188389",
+        "snapshot": "data/raw/PDCD1/ot.json",
+        "citation": "Open Targets Platform v26.06 (2026-07-23)"
+      },
+      "reasoning_prov": {
+        "model_version": "claude-fable-5",
+        "prompt_version": "brief-2026-07-23.v2",
+        "inputs_hash": "d693379bc753eb89",
+        "reasoning_kind": "classification"
+      }
+    }
+  ],
+  "white_space": {
+    "score": 0.0,
+    "formula": "WS = 100 \u00b7 Validation \u00b7 Tractability \u00b7 (1 \u2212 Saturation)",
+    "components": [
+      {
+        "name": "Validation (V)",
+        "value": 0.6284,
+        "weight_role": "multiplicative",
+        "inputs": "Open Targets max disease-association score",
+        "data_prov": {
+          "source": "Open Targets Platform",
+          "endpoint": "https://api.platform.opentargets.org/api/v4/graphql",
+          "data_version": "26.06",
+          "access_utc": "2026-07-23T18:26:37Z",
+          "query": "target(ensemblId:ENSG00000188389){ identity, class, tractability, subcellular, associatedDiseases, drugAndClinicalCandidates }",
+          "record_url": "https://platform.opentargets.org/target/ENSG00000188389",
+          "snapshot": "data/raw/PDCD1/ot.json",
+          "citation": "Open Targets Platform v26.06 (2026-07-23)"
+        }
+      },
+      {
+        "name": "Tractability (T)",
+        "value": 1.0,
+        "weight_role": "multiplicative",
+        "inputs": "Open Targets tractability \u2014 best drugging-path bucket",
+        "data_prov": {
+          "source": "Open Targets Platform",
+          "endpoint": "https://api.platform.opentargets.org/api/v4/graphql",
+          "data_version": "26.06",
+          "access_utc": "2026-07-23T18:26:37Z",
+          "query": "target(ensemblId:ENSG00000188389){ identity, class, tractability, subcellular, associatedDiseases, drugAndClinicalCandidates }",
+          "record_url": "https://platform.opentargets.org/target/ENSG00000188389",
+          "snapshot": "data/raw/PDCD1/ot.json",
+          "citation": "Open Targets Platform v26.06 (2026-07-23)"
+        }
+      },
+      {
+        "name": "Saturation (S)",
+        "value": 1.0,
+        "weight_role": "multiplicative",
+        "inputs": "Cohort-normalized: approvals + candidates + trials + industry sponsors",
+        "data_prov": {
+          "source": "ClinicalTrials.gov",
+          "endpoint": "https://clinicaltrials.gov/api/v2/studies",
+          "data_version": "API 2.0.5",
+          "access_utc": "2026-07-23T18:26:37Z",
+          "query": "studies?query.intr=<flagship drugs>&fields=Phase,LeadSponsor* (industry sponsors; as-of-cutoff censor)",
+          "record_url": "https://clinicaltrials.gov/search?term=PDCD1",
+          "snapshot": "data/raw/PDCD1/ct.json",
+          "citation": "ClinicalTrials.gov vAPI 2.0.5 (2026-07-23)"
+        }
+      }
+    ],
+    "cohort_rank": 13,
+    "cohort_size": 13,
+    "percentile": 0.0,
+    "confidence": "HIGH",
+    "interpretation": "Saturated floor \u2014 validated and tractable but maximally crowded. The calibration anchor.",
+    "score_version": "whitespace-0.1.0"
+  },
+  "executive_brief_md": "## PDCD1 \u2014 programmed cell death 1\n\n**White Space score 0.0/100 \u00b7 rank 13/13 \u00b7 HIGH confidence.** Saturated floor \u2014 validated and tractable but maximally crowded. The calibration anchor.\n\nPDCD1 is a cell membrane ; single-pass type i membrane protein target in the immuno-oncology cohort with 7 approved agent(s) (Cemiplimab, Dostarlimab, Nivolumab, Pembrolizumab\u2026). Development level **Tclin**; mechanism: Programmed cell death protein 1 antagonist; Programmed cell death protein 1 inhibitor. Competitive footprint: 44 industry sponsor(s) in trials. Leading disease associations: melanoma, non-small cell lung carcinoma, renal cell carcinoma, esophageal squamous cell carcinoma.\n\n**Score decomposition** \u2014 Validation 0.6284, Tractability 1.0, Saturation 1.0 (cohort-normalized). The score is multiplicative, so crowding drives it down even when biology is validated \u2014 which is why saturated checkpoints sit low and validated-but-uncrowded targets rise.\n\n*Every figure above resolves to a versioned source in the Provenance tab. This brief is model-written (claude-fable-5) over sourced facts only.*",
+  "trust": {
+    "pipeline_version": "tiop-0.2.0",
+    "data_versions": {
+      "open_targets": "26.06",
+      "chembl": "ChEMBL_37",
+      "clinicaltrials": "API 2.0.5"
+    },
+    "reproducible": true,
+    "reproducibility_note": "Profile is a pure function of pinned data/raw snapshots + versioned score code; re-running build_cohort.py yields the same content_hash.",
+    "content_hash": "b6364dcd89c0c30c",
+    "model_version": "claude-fable-5",
+    "prompt_version": "brief-2026-07-23.v2"
+  },
+  "discrepancies": []
+}

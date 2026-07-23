@@ -1,0 +1,408 @@
+{
+  "symbol": "LAG3",
+  "ensembl": "ENSG00000089692",
+  "uniprot": "P18627",
+  "group": "saturated_checkpoint",
+  "facts": [
+    {
+      "field": "gene",
+      "label": "Gene",
+      "value": "LAG3",
+      "confidence": "HIGH",
+      "derivation": "",
+      "notes": "",
+      "is_reasoned": false,
+      "data_prov": {
+        "source": "Open Targets Platform",
+        "endpoint": "https://api.platform.opentargets.org/api/v4/graphql",
+        "data_version": "26.06",
+        "access_utc": "2026-07-23T18:26:37Z",
+        "query": "target(ensemblId:ENSG00000089692){ identity, class, tractability, subcellular, associatedDiseases, drugAndClinicalCandidates }",
+        "record_url": "https://platform.opentargets.org/target/ENSG00000089692",
+        "snapshot": "data/raw/LAG3/ot.json",
+        "citation": "Open Targets Platform v26.06 (2026-07-23)"
+      },
+      "reasoning_prov": null
+    },
+    {
+      "field": "protein",
+      "label": "Protein",
+      "value": "lymphocyte activating 3",
+      "confidence": "HIGH",
+      "derivation": "",
+      "notes": "",
+      "is_reasoned": false,
+      "data_prov": {
+        "source": "Open Targets Platform",
+        "endpoint": "https://api.platform.opentargets.org/api/v4/graphql",
+        "data_version": "26.06",
+        "access_utc": "2026-07-23T18:26:37Z",
+        "query": "target(ensemblId:ENSG00000089692){ identity, class, tractability, subcellular, associatedDiseases, drugAndClinicalCandidates }",
+        "record_url": "https://platform.opentargets.org/target/ENSG00000089692",
+        "snapshot": "data/raw/LAG3/ot.json",
+        "citation": "Open Targets Platform v26.06 (2026-07-23)"
+      },
+      "reasoning_prov": null
+    },
+    {
+      "field": "uniprot",
+      "label": "UniProt",
+      "value": "P18627",
+      "confidence": "HIGH",
+      "derivation": "",
+      "notes": "",
+      "is_reasoned": false,
+      "data_prov": {
+        "source": "Open Targets Platform",
+        "endpoint": "https://api.platform.opentargets.org/api/v4/graphql",
+        "data_version": "26.06",
+        "access_utc": "2026-07-23T18:26:37Z",
+        "query": "target(ensemblId:ENSG00000089692){ identity, class, tractability, subcellular, associatedDiseases, drugAndClinicalCandidates }",
+        "record_url": "https://platform.opentargets.org/target/ENSG00000089692",
+        "snapshot": "data/raw/LAG3/ot.json",
+        "citation": "Open Targets Platform v26.06 (2026-07-23)"
+      },
+      "reasoning_prov": null
+    },
+    {
+      "field": "target_family_class",
+      "label": "Target family / class",
+      "value": "Unclassified protein",
+      "confidence": "HIGH",
+      "derivation": "",
+      "notes": "",
+      "is_reasoned": false,
+      "data_prov": {
+        "source": "Open Targets Platform",
+        "endpoint": "https://api.platform.opentargets.org/api/v4/graphql",
+        "data_version": "26.06",
+        "access_utc": "2026-07-23T18:26:37Z",
+        "query": "target(ensemblId:ENSG00000089692){ identity, class, tractability, subcellular, associatedDiseases, drugAndClinicalCandidates }",
+        "record_url": "https://platform.opentargets.org/target/ENSG00000089692",
+        "snapshot": "data/raw/LAG3/ot.json",
+        "citation": "Open Targets Platform v26.06 (2026-07-23)"
+      },
+      "reasoning_prov": null
+    },
+    {
+      "field": "subcellular_location",
+      "label": "Subcellular location",
+      "value": "Cell membrane ; Single-pass type I membrane protein",
+      "confidence": "HIGH",
+      "derivation": "",
+      "notes": "Cell-surface.",
+      "is_reasoned": false,
+      "data_prov": {
+        "source": "Open Targets Platform",
+        "endpoint": "https://api.platform.opentargets.org/api/v4/graphql",
+        "data_version": "26.06",
+        "access_utc": "2026-07-23T18:26:37Z",
+        "query": "target(ensemblId:ENSG00000089692){ identity, class, tractability, subcellular, associatedDiseases, drugAndClinicalCandidates }",
+        "record_url": "https://platform.opentargets.org/target/ENSG00000089692",
+        "snapshot": "data/raw/LAG3/ot.json",
+        "citation": "Open Targets Platform v26.06 (2026-07-23)"
+      },
+      "reasoning_prov": null
+    },
+    {
+      "field": "development_level",
+      "label": "Development level",
+      "value": "Tclin",
+      "confidence": "DERIVED",
+      "derivation": "ChEMBL max_phase==4 => Tclin; else phase>=2 or tractable => Tchem; else Tbio. Pharos pull deferred.",
+      "notes": "",
+      "is_reasoned": false,
+      "data_prov": {
+        "source": "ChEMBL",
+        "endpoint": "https://www.ebi.ac.uk/chembl/api/data",
+        "data_version": "ChEMBL_37",
+        "access_utc": "2026-07-23T18:26:37Z",
+        "query": "mechanism?target_chembl_id=CHEMBL4630881; molecule?molecule_chembl_id__in=<mechanism molecules>",
+        "record_url": "https://www.ebi.ac.uk/chembl/target_report_card/CHEMBL4630881/",
+        "snapshot": "data/raw/LAG3/chembl.json",
+        "citation": "ChEMBL vChEMBL_37 (2026-07-23)"
+      },
+      "reasoning_prov": null
+    },
+    {
+      "field": "approved_drugs",
+      "label": "Approved drug(s)",
+      "value": "Relatlimab",
+      "confidence": "HIGH",
+      "derivation": "",
+      "notes": "1 approved at ChEMBL max_phase=4.",
+      "is_reasoned": false,
+      "data_prov": {
+        "source": "ChEMBL",
+        "endpoint": "https://www.ebi.ac.uk/chembl/api/data",
+        "data_version": "ChEMBL_37",
+        "access_utc": "2026-07-23T18:26:37Z",
+        "query": "mechanism?target_chembl_id=CHEMBL4630881; molecule?molecule_chembl_id__in=<mechanism molecules>",
+        "record_url": "https://www.ebi.ac.uk/chembl/target_report_card/CHEMBL4630881/",
+        "snapshot": "data/raw/LAG3/chembl.json",
+        "citation": "ChEMBL vChEMBL_37 (2026-07-23)"
+      },
+      "reasoning_prov": null
+    },
+    {
+      "field": "mechanism_moa",
+      "label": "Mechanism / MoA",
+      "value": "Lymphocyte activation gene 3 protein inhibitor; Lymphocyte activation gene 3 protein vaccine antigen",
+      "confidence": "HIGH",
+      "derivation": "",
+      "notes": "",
+      "is_reasoned": false,
+      "data_prov": {
+        "source": "ChEMBL",
+        "endpoint": "https://www.ebi.ac.uk/chembl/api/data",
+        "data_version": "ChEMBL_37",
+        "access_utc": "2026-07-23T18:26:37Z",
+        "query": "mechanism?target_chembl_id=CHEMBL4630881; molecule?molecule_chembl_id__in=<mechanism molecules>",
+        "record_url": "https://www.ebi.ac.uk/chembl/target_report_card/CHEMBL4630881/",
+        "snapshot": "data/raw/LAG3/chembl.json",
+        "citation": "ChEMBL vChEMBL_37 (2026-07-23)"
+      },
+      "reasoning_prov": null
+    },
+    {
+      "field": "modality",
+      "label": "Modality",
+      "value": "Antibody",
+      "confidence": "HIGH",
+      "derivation": "",
+      "notes": "",
+      "is_reasoned": false,
+      "data_prov": {
+        "source": "ChEMBL",
+        "endpoint": "https://www.ebi.ac.uk/chembl/api/data",
+        "data_version": "ChEMBL_37",
+        "access_utc": "2026-07-23T18:26:37Z",
+        "query": "mechanism?target_chembl_id=CHEMBL4630881; molecule?molecule_chembl_id__in=<mechanism molecules>",
+        "record_url": "https://www.ebi.ac.uk/chembl/target_report_card/CHEMBL4630881/",
+        "snapshot": "data/raw/LAG3/chembl.json",
+        "citation": "ChEMBL vChEMBL_37 (2026-07-23)"
+      },
+      "reasoning_prov": null
+    },
+    {
+      "field": "first_approval_year",
+      "label": "First approval year",
+      "value": 2022,
+      "confidence": "HIGH",
+      "derivation": "",
+      "notes": "",
+      "is_reasoned": false,
+      "data_prov": {
+        "source": "ChEMBL",
+        "endpoint": "https://www.ebi.ac.uk/chembl/api/data",
+        "data_version": "ChEMBL_37",
+        "access_utc": "2026-07-23T18:26:37Z",
+        "query": "mechanism?target_chembl_id=CHEMBL4630881; molecule?molecule_chembl_id__in=<mechanism molecules>",
+        "record_url": "https://www.ebi.ac.uk/chembl/target_report_card/CHEMBL4630881/",
+        "snapshot": "data/raw/LAG3/chembl.json",
+        "citation": "ChEMBL vChEMBL_37 (2026-07-23)"
+      },
+      "reasoning_prov": null
+    },
+    {
+      "field": "highest_phase",
+      "label": "Highest phase",
+      "value": "Approved (Phase 4)",
+      "confidence": "HIGH",
+      "derivation": "",
+      "notes": "From Open Targets max clinical stage across candidates; CT.gov corroborates trial activity.",
+      "is_reasoned": false,
+      "data_prov": {
+        "source": "ClinicalTrials.gov",
+        "endpoint": "https://clinicaltrials.gov/api/v2/studies",
+        "data_version": "API 2.0.5",
+        "access_utc": "2026-07-23T18:26:37Z",
+        "query": "studies?query.intr=<flagship drugs>&fields=Phase,LeadSponsor* (industry sponsors; as-of-cutoff censor)",
+        "record_url": "https://clinicaltrials.gov/search?term=LAG3",
+        "snapshot": "data/raw/LAG3/ct.json",
+        "citation": "ClinicalTrials.gov vAPI 2.0.5 (2026-07-23)"
+      },
+      "reasoning_prov": null
+    },
+    {
+      "field": "companies_developing",
+      "label": "Companies developing",
+      "value": "Bristol-Myers Squibb, Celgene, Exelixis, Immatics US, Inc., Immunocore Ltd, Immutep Australia Pty. Ltd., Immutep S.A.S., Iovance Biotherapeutics, Inc., Linnaeus Therapeutics, Inc., Merck Sharp & Dohme LLC",
+      "confidence": "MEDIUM",
+      "derivation": "Distinct industry lead sponsors across flagship-drug trials (sampled).",
+      "notes": "",
+      "is_reasoned": false,
+      "data_prov": {
+        "source": "ClinicalTrials.gov",
+        "endpoint": "https://clinicaltrials.gov/api/v2/studies",
+        "data_version": "API 2.0.5",
+        "access_utc": "2026-07-23T18:26:37Z",
+        "query": "studies?query.intr=<flagship drugs>&fields=Phase,LeadSponsor* (industry sponsors; as-of-cutoff censor)",
+        "record_url": "https://clinicaltrials.gov/search?term=LAG3",
+        "snapshot": "data/raw/LAG3/ct.json",
+        "citation": "ClinicalTrials.gov vAPI 2.0.5 (2026-07-23)"
+      },
+      "reasoning_prov": null
+    },
+    {
+      "field": "disease_indication",
+      "label": "Disease / indication",
+      "value": "melanoma, non-small cell lung carcinoma, colorectal cancer, metastatic colorectal cancer, gastric cancer, breast cancer",
+      "confidence": "HIGH",
+      "derivation": "",
+      "notes": "Top OT disease associations by score.",
+      "is_reasoned": false,
+      "data_prov": {
+        "source": "Open Targets Platform",
+        "endpoint": "https://api.platform.opentargets.org/api/v4/graphql",
+        "data_version": "26.06",
+        "access_utc": "2026-07-23T18:26:37Z",
+        "query": "target(ensemblId:ENSG00000089692){ identity, class, tractability, subcellular, associatedDiseases, drugAndClinicalCandidates }",
+        "record_url": "https://platform.opentargets.org/target/ENSG00000089692",
+        "snapshot": "data/raw/LAG3/ot.json",
+        "citation": "Open Targets Platform v26.06 (2026-07-23)"
+      },
+      "reasoning_prov": null
+    },
+    {
+      "field": "therapeutic_area",
+      "label": "Therapeutic area",
+      "value": "Immuno-oncology",
+      "confidence": "DERIVED",
+      "derivation": "IO cohort scope.",
+      "notes": "",
+      "is_reasoned": false,
+      "data_prov": {
+        "source": "Open Targets Platform",
+        "endpoint": "https://api.platform.opentargets.org/api/v4/graphql",
+        "data_version": "26.06",
+        "access_utc": "2026-07-23T18:26:37Z",
+        "query": "target(ensemblId:ENSG00000089692){ identity, class, tractability, subcellular, associatedDiseases, drugAndClinicalCandidates }",
+        "record_url": "https://platform.opentargets.org/target/ENSG00000089692",
+        "snapshot": "data/raw/LAG3/ot.json",
+        "citation": "Open Targets Platform v26.06 (2026-07-23)"
+      },
+      "reasoning_prov": null
+    },
+    {
+      "field": "white_space_score",
+      "label": "White Space score",
+      "value": 28.84,
+      "confidence": "HIGH",
+      "derivation": "WS = 100\u00b7V\u00b7T\u00b7(1\u2212S); V=0.5916 (OT assoc), T=1.0 (OT tractability), S=0.5126 (cohort-normalized saturation). Rank 9/13.",
+      "notes": "",
+      "is_reasoned": false,
+      "data_prov": {
+        "source": "ClinicalTrials.gov",
+        "endpoint": "https://clinicaltrials.gov/api/v2/studies",
+        "data_version": "API 2.0.5",
+        "access_utc": "2026-07-23T18:26:37Z",
+        "query": "studies?query.intr=<flagship drugs>&fields=Phase,LeadSponsor* (industry sponsors; as-of-cutoff censor)",
+        "record_url": "https://clinicaltrials.gov/search?term=LAG3",
+        "snapshot": "data/raw/LAG3/ct.json",
+        "citation": "ClinicalTrials.gov vAPI 2.0.5 (2026-07-23)"
+      },
+      "reasoning_prov": null
+    },
+    {
+      "field": "qurie_relevance",
+      "label": "QurieGen relevance",
+      "value": "Benchmark / saturated \u2014 calibration only",
+      "confidence": "DERIVED",
+      "derivation": "Composed from localization + white-space rank; QurieGen edge is highest for validated, unsaturated, intracellular targets its causal multi-omics platform can address.",
+      "notes": "",
+      "is_reasoned": true,
+      "data_prov": {
+        "source": "Open Targets Platform",
+        "endpoint": "https://api.platform.opentargets.org/api/v4/graphql",
+        "data_version": "26.06",
+        "access_utc": "2026-07-23T18:26:37Z",
+        "query": "target(ensemblId:ENSG00000089692){ identity, class, tractability, subcellular, associatedDiseases, drugAndClinicalCandidates }",
+        "record_url": "https://platform.opentargets.org/target/ENSG00000089692",
+        "snapshot": "data/raw/LAG3/ot.json",
+        "citation": "Open Targets Platform v26.06 (2026-07-23)"
+      },
+      "reasoning_prov": {
+        "model_version": "claude-fable-5",
+        "prompt_version": "brief-2026-07-23.v2",
+        "inputs_hash": "5eb20255ed141fb6",
+        "reasoning_kind": "classification"
+      }
+    }
+  ],
+  "white_space": {
+    "score": 28.84,
+    "formula": "WS = 100 \u00b7 Validation \u00b7 Tractability \u00b7 (1 \u2212 Saturation)",
+    "components": [
+      {
+        "name": "Validation (V)",
+        "value": 0.5916,
+        "weight_role": "multiplicative",
+        "inputs": "Open Targets max disease-association score",
+        "data_prov": {
+          "source": "Open Targets Platform",
+          "endpoint": "https://api.platform.opentargets.org/api/v4/graphql",
+          "data_version": "26.06",
+          "access_utc": "2026-07-23T18:26:37Z",
+          "query": "target(ensemblId:ENSG00000089692){ identity, class, tractability, subcellular, associatedDiseases, drugAndClinicalCandidates }",
+          "record_url": "https://platform.opentargets.org/target/ENSG00000089692",
+          "snapshot": "data/raw/LAG3/ot.json",
+          "citation": "Open Targets Platform v26.06 (2026-07-23)"
+        }
+      },
+      {
+        "name": "Tractability (T)",
+        "value": 1.0,
+        "weight_role": "multiplicative",
+        "inputs": "Open Targets tractability \u2014 best drugging-path bucket",
+        "data_prov": {
+          "source": "Open Targets Platform",
+          "endpoint": "https://api.platform.opentargets.org/api/v4/graphql",
+          "data_version": "26.06",
+          "access_utc": "2026-07-23T18:26:37Z",
+          "query": "target(ensemblId:ENSG00000089692){ identity, class, tractability, subcellular, associatedDiseases, drugAndClinicalCandidates }",
+          "record_url": "https://platform.opentargets.org/target/ENSG00000089692",
+          "snapshot": "data/raw/LAG3/ot.json",
+          "citation": "Open Targets Platform v26.06 (2026-07-23)"
+        }
+      },
+      {
+        "name": "Saturation (S)",
+        "value": 0.5126,
+        "weight_role": "multiplicative",
+        "inputs": "Cohort-normalized: approvals + candidates + trials + industry sponsors",
+        "data_prov": {
+          "source": "ClinicalTrials.gov",
+          "endpoint": "https://clinicaltrials.gov/api/v2/studies",
+          "data_version": "API 2.0.5",
+          "access_utc": "2026-07-23T18:26:37Z",
+          "query": "studies?query.intr=<flagship drugs>&fields=Phase,LeadSponsor* (industry sponsors; as-of-cutoff censor)",
+          "record_url": "https://clinicaltrials.gov/search?term=LAG3",
+          "snapshot": "data/raw/LAG3/ct.json",
+          "citation": "ClinicalTrials.gov vAPI 2.0.5 (2026-07-23)"
+        }
+      }
+    ],
+    "cohort_rank": 9,
+    "cohort_size": 13,
+    "percentile": 33.3,
+    "confidence": "HIGH",
+    "interpretation": "Mid-cohort \u2014 real biology with moderate competition; watch the momentum trend.",
+    "score_version": "whitespace-0.1.0"
+  },
+  "executive_brief_md": "## LAG3 \u2014 lymphocyte activating 3\n\n**White Space score 28.84/100 \u00b7 rank 9/13 \u00b7 HIGH confidence.** Mid-cohort \u2014 real biology with moderate competition; watch the momentum trend.\n\nLAG3 is a cell membrane ; single-pass type i membrane protein target in the immuno-oncology cohort with 1 approved agent(s) (Relatlimab). Development level **Tclin**; mechanism: Lymphocyte activation gene 3 protein inhibitor; Lymphocyte activation gene 3 protein vaccine antigen. Competitive footprint: 15 industry sponsor(s) in trials. Leading disease associations: melanoma, non-small cell lung carcinoma, colorectal cancer, metastatic colorectal cancer.\n\n**Score decomposition** \u2014 Validation 0.5916, Tractability 1.0, Saturation 0.5126 (cohort-normalized). The score is multiplicative, so crowding drives it down even when biology is validated \u2014 which is why saturated checkpoints sit low and validated-but-uncrowded targets rise.\n\n*Every figure above resolves to a versioned source in the Provenance tab. This brief is model-written (claude-fable-5) over sourced facts only.*",
+  "trust": {
+    "pipeline_version": "tiop-0.2.0",
+    "data_versions": {
+      "open_targets": "26.06",
+      "chembl": "ChEMBL_37",
+      "clinicaltrials": "API 2.0.5"
+    },
+    "reproducible": true,
+    "reproducibility_note": "Profile is a pure function of pinned data/raw snapshots + versioned score code; re-running build_cohort.py yields the same content_hash.",
+    "content_hash": "e95e9429125516c8",
+    "model_version": "claude-fable-5",
+    "prompt_version": "brief-2026-07-23.v2"
+  },
+  "discrepancies": []
+}

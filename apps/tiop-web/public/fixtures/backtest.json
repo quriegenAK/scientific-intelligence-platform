@@ -1,0 +1,46 @@
+{
+  "score_version": "whitespace-0.1.0",
+  "method": "As-of-cutoff censoring + pre-registered checks, split into hard GATES (must pass) and EXPECTATIONS (priors the data may falsify). WS computed on pinned snapshots.",
+  "cutoff": "2023-07-01",
+  "preregistration": "C1 & C4 are gates; C2 & C3 are expectations. All fixed before ranks were computed.",
+  "checks": [
+    {
+      "id": "C1",
+      "kind": "gate",
+      "claim": "PD-1 (PDCD1) lands at the saturated floor (the calibration gate).",
+      "pass": true,
+      "evidence": "PDCD1 rank 13/13, WS=0.0"
+    },
+    {
+      "id": "C4",
+      "kind": "gate",
+      "claim": "Saturation S measures real crowding: S vs as-of-cutoff trial volume correlates positively.",
+      "pass": true,
+      "evidence": "Pearson r(S, log asof-trials) = 0.98 (n=13)"
+    },
+    {
+      "id": "C3",
+      "kind": "expectation",
+      "claim": "At least one validated-but-unsaturated target (TIM-3 / STING / CD40) ranks top third.",
+      "pass": true,
+      "evidence": "HAVCR2 rank 2, TMEM173 rank 1, CD40 rank 4"
+    },
+    {
+      "id": "C2",
+      "kind": "expectation",
+      "claim": "Mature checkpoints PD-L1 & CTLA4 both rank bottom third.",
+      "pass": false,
+      "evidence": "CD274 rank 12 (approved=5), CTLA4 rank 7 (approved=2)"
+    }
+  ],
+  "gate_passed": true,
+  "passed": true,
+  "findings": [
+    "Expectation C2 falsified \u2014 and the falsification is informative: CTLA4 (rank 7, 2 approved drugs) is genuinely less saturated than PD-1/PD-L1 (7/5 approved). The score corrected an incorrect prior rather than confirming it \u2014 the point of a back-test."
+  ],
+  "caveats": [
+    "N=13 IO targets \u2014 descriptive/directional, not inferential.",
+    "Targets without a ChEMBL-named drug (HPK1/MAP4K1, CBLB) have floor-only CT.gov counts; gene-level trial mapping is Phase-1.5.",
+    "A true longitudinal predictive back-test requires frozen historical OT/ChEMBL data versions over time; today only ClinicalTrials.gov gives a clean as-of date censor."
+  ]
+}

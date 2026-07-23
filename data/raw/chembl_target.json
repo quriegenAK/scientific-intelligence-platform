@@ -1,0 +1,3036 @@
+{
+  "page_meta": {
+    "limit": 20,
+    "next": null,
+    "offset": 0,
+    "previous": null,
+    "total_count": 3
+  },
+  "targets": [
+    {
+      "cross_references": [],
+      "organism": "Homo sapiens",
+      "pref_name": "Programmed cell death protein 1",
+      "species_group_flag": false,
+      "target_chembl_id": "CHEMBL3307223",
+      "target_components": [
+        {
+          "accession": "Q15116",
+          "component_description": "Programmed cell death protein 1",
+          "component_id": 8668,
+          "component_type": "PROTEIN",
+          "relationship": "SINGLE PROTEIN",
+          "target_component_synonyms": [
+            {
+              "component_synonym": "CD_antigen=CD279",
+              "syn_type": "UNIPROT"
+            },
+            {
+              "component_synonym": "hPD-1",
+              "syn_type": "UNIPROT"
+            },
+            {
+              "component_synonym": "PD1",
+              "syn_type": "GENE_SYMBOL_OTHER"
+            },
+            {
+              "component_synonym": "PDCD1",
+              "syn_type": "GENE_SYMBOL"
+            },
+            {
+              "component_synonym": "Programmed cell death protein 1",
+              "syn_type": "UNIPROT"
+            },
+            {
+              "component_synonym": "Protein PD-1",
+              "syn_type": "UNIPROT"
+            },
+            {
+              "component_synonym": "Synonyms=PD1",
+              "syn_type": "GENE_SYMBOL_OTHER"
+            }
+          ],
+          "target_component_xrefs": [
+            {
+              "xref_id": "Q15116",
+              "xref_name": null,
+              "xref_src_db": "AlphaFoldDB"
+            },
+            {
+              "xref_id": "Q15116",
+              "xref_name": null,
+              "xref_src_db": "ExpressionAtlas"
+            },
+            {
+              "xref_id": "GO:0005886",
+              "xref_name": "plasma membrane",
+              "xref_src_db": "GoComponent"
+            },
+            {
+              "xref_id": "GO:0009897",
+              "xref_name": "external side of plasma membrane",
+              "xref_src_db": "GoComponent"
+            },
+            {
+              "xref_id": "GO:0016020",
+              "xref_name": "membrane",
+              "xref_src_db": "GoComponent"
+            },
+            {
+              "xref_id": "GO:0005515",
+              "xref_name": "protein binding",
+              "xref_src_db": "GoFunction"
+            },
+            {
+              "xref_id": "GO:0038023",
+              "xref_name": "signaling receptor activity",
+              "xref_src_db": "GoFunction"
+            },
+            {
+              "xref_id": "GO:0001783",
+              "xref_name": "B cell apoptotic process",
+              "xref_src_db": "GoProcess"
+            },
+            {
+              "xref_id": "GO:0002250",
+              "xref_name": "adaptive immune response",
+              "xref_src_db": "GoProcess"
+            },
+            {
+              "xref_id": "GO:0002644",
+              "xref_name": "negative regulation of tolerance induction",
+              "xref_src_db": "GoProcess"
+            },
+            {
+              "xref_id": "GO:0002841",
+              "xref_name": "negative regulation of T cell mediated immune response to tumor cell",
+              "xref_src_db": "GoProcess"
+            },
+            {
+              "xref_id": "GO:0002903",
+              "xref_name": "negative regulation of B cell apoptotic process",
+              "xref_src_db": "GoProcess"
+            },
+            {
+              "xref_id": "GO:0006915",
+              "xref_name": "apoptotic process",
+              "xref_src_db": "GoProcess"
+            },
+            {
+              "xref_id": "GO:0006959",
+              "xref_name": "humoral immune response",
+              "xref_src_db": "GoProcess"
+            },
+            {
+              "xref_id": "GO:0050776",
+              "xref_name": "regulation of immune response",
+              "xref_src_db": "GoProcess"
+            },
+            {
+              "xref_id": "GO:0050777",
+              "xref_name": "negative regulation of immune response",
+              "xref_src_db": "GoProcess"
+            },
+            {
+              "xref_id": "GO:0050868",
+              "xref_name": "negative regulation of T cell activation",
+              "xref_src_db": "GoProcess"
+            },
+            {
+              "xref_id": "GO:0070234",
+              "xref_name": "positive regulation of T cell apoptotic process",
+              "xref_src_db": "GoProcess"
+            },
+            {
+              "xref_id": "GO:1902482",
+              "xref_name": "regulatory T cell apoptotic process",
+              "xref_src_db": "GoProcess"
+            },
+            {
+              "xref_id": "HGNC:8760",
+              "xref_name": "PDCD1",
+              "xref_src_db": "HGNC"
+            },
+            {
+              "xref_id": "Q15116",
+              "xref_name": null,
+              "xref_src_db": "IntAct"
+            },
+            {
+              "xref_id": "IPR003599",
+              "xref_name": "Ig_sub",
+              "xref_src_db": "InterPro"
+            },
+            {
+              "xref_id": "IPR007110",
+              "xref_name": "Ig-like_dom",
+              "xref_src_db": "InterPro"
+            },
+            {
+              "xref_id": "IPR013106",
+              "xref_name": "Ig_V-set",
+              "xref_src_db": "InterPro"
+            },
+            {
+              "xref_id": "IPR013783",
+              "xref_name": "Ig-like_fold",
+              "xref_src_db": "InterPro"
+            },
+            {
+              "xref_id": "IPR036179",
+              "xref_name": "Ig-like_dom_sf",
+              "xref_src_db": "InterPro"
+            },
+            {
+              "xref_id": "IPR042379",
+              "xref_name": "PDCD1",
+              "xref_src_db": "InterPro"
+            },
+            {
+              "xref_id": "PTHR15264",
+              "xref_name": "PROGRAMMED CELL DEATH PROTEIN 1",
+              "xref_src_db": "PANTHER"
+            },
+            {
+              "xref_id": "PTHR15264:SF2",
+              "xref_name": "PROGRAMMED CELL DEATH PROTEIN 1",
+              "xref_src_db": "PANTHER"
+            },
+            {
+              "xref_id": "2M2D",
+              "xref_name": null,
+              "xref_src_db": "PDB"
+            },
+            {
+              "xref_id": "3RRQ",
+              "xref_name": null,
+              "xref_src_db": "PDB"
+            },
+            {
+              "xref_id": "4ZQK",
+              "xref_name": null,
+              "xref_src_db": "PDB"
+            },
+            {
+              "xref_id": "5B8C",
+              "xref_name": null,
+              "xref_src_db": "PDB"
+            },
+            {
+              "xref_id": "5GGR",
+              "xref_name": null,
+              "xref_src_db": "PDB"
+            },
+            {
+              "xref_id": "5GGS",
+              "xref_name": null,
+              "xref_src_db": "PDB"
+            },
+            {
+              "xref_id": "5IUS",
+              "xref_name": null,
+              "xref_src_db": "PDB"
+            },
+            {
+              "xref_id": "5JXE",
+              "xref_name": null,
+              "xref_src_db": "PDB"
+            },
+            {
+              "xref_id": "5WT9",
+              "xref_name": null,
+              "xref_src_db": "PDB"
+            },
+            {
+              "xref_id": "6HIG",
+              "xref_name": null,
+              "xref_src_db": "PDB"
+            },
+            {
+              "xref_id": "6J14",
+              "xref_name": null,
+              "xref_src_db": "PDB"
+            },
+            {
+              "xref_id": "6J15",
+              "xref_name": null,
+              "xref_src_db": "PDB"
+            },
+            {
+              "xref_id": "6JBT",
+              "xref_name": null,
+              "xref_src_db": "PDB"
+            },
+            {
+              "xref_id": "6JJP",
+              "xref_name": null,
+              "xref_src_db": "PDB"
+            },
+            {
+              "xref_id": "6K0Y",
+              "xref_name": null,
+              "xref_src_db": "PDB"
+            },
+            {
+              "xref_id": "6R5G",
+              "xref_name": null,
+              "xref_src_db": "PDB"
+            },
+            {
+              "xref_id": "6ROY",
+              "xref_name": null,
+              "xref_src_db": "PDB"
+            },
+            {
+              "xref_id": "6ROZ",
+              "xref_name": null,
+              "xref_src_db": "PDB"
+            },
+            {
+              "xref_id": "6UMT",
+              "xref_name": null,
+              "xref_src_db": "PDB"
+            },
+            {
+              "xref_id": "6UMU",
+              "xref_name": null,
+              "xref_src_db": "PDB"
+            },
+            {
+              "xref_id": "6UMV",
+              "xref_name": null,
+              "xref_src_db": "PDB"
+            },
+            {
+              "xref_id": "6XKR",
+              "xref_name": null,
+              "xref_src_db": "PDB"
+            },
+            {
+              "xref_id": "7BXA",
+              "xref_name": null,
+              "xref_src_db": "PDB"
+            },
+            {
+              "xref_id": "7CGW",
+              "xref_name": null,
+              "xref_src_db": "PDB"
+            },
+            {
+              "xref_id": "7CU5",
+              "xref_name": null,
+              "xref_src_db": "PDB"
+            },
+            {
+              "xref_id": "7E9B",
+              "xref_name": null,
+              "xref_src_db": "PDB"
+            },
+            {
+              "xref_id": "7VUX",
+              "xref_name": null,
+              "xref_src_db": "PDB"
+            },
+            {
+              "xref_id": "7WSL",
+              "xref_name": null,
+              "xref_src_db": "PDB"
+            },
+            {
+              "xref_id": "7WVM",
+              "xref_name": null,
+              "xref_src_db": "PDB"
+            },
+            {
+              "xref_id": "8AS0",
+              "xref_name": null,
+              "xref_src_db": "PDB"
+            },
+            {
+              "xref_id": "8EQ6",
+              "xref_name": null,
+              "xref_src_db": "PDB"
+            },
+            {
+              "xref_id": "8GY5",
+              "xref_name": null,
+              "xref_src_db": "PDB"
+            },
+            {
+              "xref_id": "8U31",
+              "xref_name": null,
+              "xref_src_db": "PDB"
+            },
+            {
+              "xref_id": "8U32",
+              "xref_name": null,
+              "xref_src_db": "PDB"
+            },
+            {
+              "xref_id": "9HK1",
+              "xref_name": null,
+              "xref_src_db": "PDB"
+            },
+            {
+              "xref_id": "9Q8L",
+              "xref_name": null,
+              "xref_src_db": "PDB"
+            },
+            {
+              "xref_id": "3RRQ",
+              "xref_name": "A",
+              "xref_src_db": "PDBe"
+            },
+            {
+              "xref_id": "4ZQK",
+              "xref_name": "A",
+              "xref_src_db": "PDBe"
+            },
+            {
+              "xref_id": "5B8C",
+              "xref_name": "A",
+              "xref_src_db": "PDBe"
+            },
+            {
+              "xref_id": "5GGR",
+              "xref_name": "A",
+              "xref_src_db": "PDBe"
+            },
+            {
+              "xref_id": "5GGS",
+              "xref_name": "A",
+              "xref_src_db": "PDBe"
+            },
+            {
+              "xref_id": "5IUS",
+              "xref_name": "A",
+              "xref_src_db": "PDBe"
+            },
+            {
+              "xref_id": "5JXE",
+              "xref_name": "A",
+              "xref_src_db": "PDBe"
+            },
+            {
+              "xref_id": "5WT9",
+              "xref_name": "A",
+              "xref_src_db": "PDBe"
+            },
+            {
+              "xref_id": "6HIG",
+              "xref_name": "A",
+              "xref_src_db": "PDBe"
+            },
+            {
+              "xref_id": "6J14",
+              "xref_name": "A",
+              "xref_src_db": "PDBe"
+            },
+            {
+              "xref_id": "6J15",
+              "xref_name": "A",
+              "xref_src_db": "PDBe"
+            },
+            {
+              "xref_id": "6JBT",
+              "xref_name": "A",
+              "xref_src_db": "PDBe"
+            },
+            {
+              "xref_id": "6JJP",
+              "xref_name": "A",
+              "xref_src_db": "PDBe"
+            },
+            {
+              "xref_id": "6K0Y",
+              "xref_name": "A",
+              "xref_src_db": "PDBe"
+            },
+            {
+              "xref_id": "6ROY",
+              "xref_name": "A",
+              "xref_src_db": "PDBe"
+            },
+            {
+              "xref_id": "6ROZ",
+              "xref_name": "A",
+              "xref_src_db": "PDBe"
+            },
+            {
+              "xref_id": "6UMT",
+              "xref_name": "A",
+              "xref_src_db": "PDBe"
+            },
+            {
+              "xref_id": "6UMU",
+              "xref_name": "A",
+              "xref_src_db": "PDBe"
+            },
+            {
+              "xref_id": "6UMV",
+              "xref_name": "A",
+              "xref_src_db": "PDBe"
+            },
+            {
+              "xref_id": "6XKR",
+              "xref_name": "A",
+              "xref_src_db": "PDBe"
+            },
+            {
+              "xref_id": "7BXA",
+              "xref_name": "A",
+              "xref_src_db": "PDBe"
+            },
+            {
+              "xref_id": "7CGW",
+              "xref_name": "A",
+              "xref_src_db": "PDBe"
+            },
+            {
+              "xref_id": "7CU5",
+              "xref_name": "A",
+              "xref_src_db": "PDBe"
+            },
+            {
+              "xref_id": "7E9B",
+              "xref_name": "A",
+              "xref_src_db": "PDBe"
+            },
+            {
+              "xref_id": "7VUX",
+              "xref_name": "A",
+              "xref_src_db": "PDBe"
+            },
+            {
+              "xref_id": "7WSL",
+              "xref_name": "A",
+              "xref_src_db": "PDBe"
+            },
+            {
+              "xref_id": "7WVM",
+              "xref_name": "A",
+              "xref_src_db": "PDBe"
+            },
+            {
+              "xref_id": "8AS0",
+              "xref_name": "A",
+              "xref_src_db": "PDBe"
+            },
+            {
+              "xref_id": "8EQ6",
+              "xref_name": "A",
+              "xref_src_db": "PDBe"
+            },
+            {
+              "xref_id": "8GY5",
+              "xref_name": "A",
+              "xref_src_db": "PDBe"
+            },
+            {
+              "xref_id": "8U31",
+              "xref_name": "A",
+              "xref_src_db": "PDBe"
+            },
+            {
+              "xref_id": "8U32",
+              "xref_name": "A",
+              "xref_src_db": "PDBe"
+            },
+            {
+              "xref_id": "9HK1",
+              "xref_name": "A",
+              "xref_src_db": "PDBe"
+            },
+            {
+              "xref_id": "9Q8L",
+              "xref_name": "A",
+              "xref_src_db": "PDBe"
+            },
+            {
+              "xref_id": "PF07686",
+              "xref_name": "V-set",
+              "xref_src_db": "Pfam"
+            },
+            {
+              "xref_id": "PA33110",
+              "xref_name": "programmed cell death 1",
+              "xref_src_db": "PharmGKB"
+            },
+            {
+              "xref_id": "Q15116",
+              "xref_name": null,
+              "xref_src_db": "Pharos"
+            },
+            {
+              "xref_id": "R-HSA-389948",
+              "xref_name": "Co-inhibition by PD-1",
+              "xref_src_db": "Reactome"
+            },
+            {
+              "xref_id": "R-HSA-9679191",
+              "xref_name": "Potential therapeutics for SARS",
+              "xref_src_db": "Reactome"
+            },
+            {
+              "xref_id": "O00517",
+              "xref_name": "Programmed cell death protein 1",
+              "xref_src_db": "UniProt"
+            },
+            {
+              "xref_id": "Q15116",
+              "xref_name": "Programmed cell death protein 1",
+              "xref_src_db": "UniProt"
+            },
+            {
+              "xref_id": "Q8IX89",
+              "xref_name": "Programmed cell death protein 1",
+              "xref_src_db": "UniProt"
+            }
+          ]
+        }
+      ],
+      "target_type": "SINGLE PROTEIN",
+      "tax_id": 9606
+    },
+    {
+      "cross_references": [],
+      "organism": "Homo sapiens",
+      "pref_name": "Programmed cell death protein 1/Programmed cell death 1 ligand 1",
+      "species_group_flag": false,
+      "target_chembl_id": "CHEMBL4523993",
+      "target_components": [
+        {
+          "accession": "Q15116",
+          "component_description": "Programmed cell death protein 1",
+          "component_id": 8668,
+          "component_type": "PROTEIN",
+          "relationship": "PROTEIN SUBUNIT",
+          "target_component_synonyms": [
+            {
+              "component_synonym": "CD_antigen=CD279",
+              "syn_type": "UNIPROT"
+            },
+            {
+              "component_synonym": "hPD-1",
+              "syn_type": "UNIPROT"
+            },
+            {
+              "component_synonym": "PD1",
+              "syn_type": "GENE_SYMBOL_OTHER"
+            },
+            {
+              "component_synonym": "PDCD1",
+              "syn_type": "GENE_SYMBOL"
+            },
+            {
+              "component_synonym": "Programmed cell death protein 1",
+              "syn_type": "UNIPROT"
+            },
+            {
+              "component_synonym": "Protein PD-1",
+              "syn_type": "UNIPROT"
+            },
+            {
+              "component_synonym": "Synonyms=PD1",
+              "syn_type": "GENE_SYMBOL_OTHER"
+            }
+          ],
+          "target_component_xrefs": [
+            {
+              "xref_id": "Q15116",
+              "xref_name": null,
+              "xref_src_db": "AlphaFoldDB"
+            },
+            {
+              "xref_id": "Q15116",
+              "xref_name": null,
+              "xref_src_db": "ExpressionAtlas"
+            },
+            {
+              "xref_id": "GO:0005886",
+              "xref_name": "plasma membrane",
+              "xref_src_db": "GoComponent"
+            },
+            {
+              "xref_id": "GO:0009897",
+              "xref_name": "external side of plasma membrane",
+              "xref_src_db": "GoComponent"
+            },
+            {
+              "xref_id": "GO:0016020",
+              "xref_name": "membrane",
+              "xref_src_db": "GoComponent"
+            },
+            {
+              "xref_id": "GO:0005515",
+              "xref_name": "protein binding",
+              "xref_src_db": "GoFunction"
+            },
+            {
+              "xref_id": "GO:0038023",
+              "xref_name": "signaling receptor activity",
+              "xref_src_db": "GoFunction"
+            },
+            {
+              "xref_id": "GO:0001783",
+              "xref_name": "B cell apoptotic process",
+              "xref_src_db": "GoProcess"
+            },
+            {
+              "xref_id": "GO:0002250",
+              "xref_name": "adaptive immune response",
+              "xref_src_db": "GoProcess"
+            },
+            {
+              "xref_id": "GO:0002644",
+              "xref_name": "negative regulation of tolerance induction",
+              "xref_src_db": "GoProcess"
+            },
+            {
+              "xref_id": "GO:0002841",
+              "xref_name": "negative regulation of T cell mediated immune response to tumor cell",
+              "xref_src_db": "GoProcess"
+            },
+            {
+              "xref_id": "GO:0002903",
+              "xref_name": "negative regulation of B cell apoptotic process",
+              "xref_src_db": "GoProcess"
+            },
+            {
+              "xref_id": "GO:0006915",
+              "xref_name": "apoptotic process",
+              "xref_src_db": "GoProcess"
+            },
+            {
+              "xref_id": "GO:0006959",
+              "xref_name": "humoral immune response",
+              "xref_src_db": "GoProcess"
+            },
+            {
+              "xref_id": "GO:0050776",
+              "xref_name": "regulation of immune response",
+              "xref_src_db": "GoProcess"
+            },
+            {
+              "xref_id": "GO:0050777",
+              "xref_name": "negative regulation of immune response",
+              "xref_src_db": "GoProcess"
+            },
+            {
+              "xref_id": "GO:0050868",
+              "xref_name": "negative regulation of T cell activation",
+              "xref_src_db": "GoProcess"
+            },
+            {
+              "xref_id": "GO:0070234",
+              "xref_name": "positive regulation of T cell apoptotic process",
+              "xref_src_db": "GoProcess"
+            },
+            {
+              "xref_id": "GO:1902482",
+              "xref_name": "regulatory T cell apoptotic process",
+              "xref_src_db": "GoProcess"
+            },
+            {
+              "xref_id": "HGNC:8760",
+              "xref_name": "PDCD1",
+              "xref_src_db": "HGNC"
+            },
+            {
+              "xref_id": "Q15116",
+              "xref_name": null,
+              "xref_src_db": "IntAct"
+            },
+            {
+              "xref_id": "IPR003599",
+              "xref_name": "Ig_sub",
+              "xref_src_db": "InterPro"
+            },
+            {
+              "xref_id": "IPR007110",
+              "xref_name": "Ig-like_dom",
+              "xref_src_db": "InterPro"
+            },
+            {
+              "xref_id": "IPR013106",
+              "xref_name": "Ig_V-set",
+              "xref_src_db": "InterPro"
+            },
+            {
+              "xref_id": "IPR013783",
+              "xref_name": "Ig-like_fold",
+              "xref_src_db": "InterPro"
+            },
+            {
+              "xref_id": "IPR036179",
+              "xref_name": "Ig-like_dom_sf",
+              "xref_src_db": "InterPro"
+            },
+            {
+              "xref_id": "IPR042379",
+              "xref_name": "PDCD1",
+              "xref_src_db": "InterPro"
+            },
+            {
+              "xref_id": "PTHR15264",
+              "xref_name": "PROGRAMMED CELL DEATH PROTEIN 1",
+              "xref_src_db": "PANTHER"
+            },
+            {
+              "xref_id": "PTHR15264:SF2",
+              "xref_name": "PROGRAMMED CELL DEATH PROTEIN 1",
+              "xref_src_db": "PANTHER"
+            },
+            {
+              "xref_id": "2M2D",
+              "xref_name": null,
+              "xref_src_db": "PDB"
+            },
+            {
+              "xref_id": "3RRQ",
+              "xref_name": null,
+              "xref_src_db": "PDB"
+            },
+            {
+              "xref_id": "4ZQK",
+              "xref_name": null,
+              "xref_src_db": "PDB"
+            },
+            {
+              "xref_id": "5B8C",
+              "xref_name": null,
+              "xref_src_db": "PDB"
+            },
+            {
+              "xref_id": "5GGR",
+              "xref_name": null,
+              "xref_src_db": "PDB"
+            },
+            {
+              "xref_id": "5GGS",
+              "xref_name": null,
+              "xref_src_db": "PDB"
+            },
+            {
+              "xref_id": "5IUS",
+              "xref_name": null,
+              "xref_src_db": "PDB"
+            },
+            {
+              "xref_id": "5JXE",
+              "xref_name": null,
+              "xref_src_db": "PDB"
+            },
+            {
+              "xref_id": "5WT9",
+              "xref_name": null,
+              "xref_src_db": "PDB"
+            },
+            {
+              "xref_id": "6HIG",
+              "xref_name": null,
+              "xref_src_db": "PDB"
+            },
+            {
+              "xref_id": "6J14",
+              "xref_name": null,
+              "xref_src_db": "PDB"
+            },
+            {
+              "xref_id": "6J15",
+              "xref_name": null,
+              "xref_src_db": "PDB"
+            },
+            {
+              "xref_id": "6JBT",
+              "xref_name": null,
+              "xref_src_db": "PDB"
+            },
+            {
+              "xref_id": "6JJP",
+              "xref_name": null,
+              "xref_src_db": "PDB"
+            },
+            {
+              "xref_id": "6K0Y",
+              "xref_name": null,
+              "xref_src_db": "PDB"
+            },
+            {
+              "xref_id": "6R5G",
+              "xref_name": null,
+              "xref_src_db": "PDB"
+            },
+            {
+              "xref_id": "6ROY",
+              "xref_name": null,
+              "xref_src_db": "PDB"
+            },
+            {
+              "xref_id": "6ROZ",
+              "xref_name": null,
+              "xref_src_db": "PDB"
+            },
+            {
+              "xref_id": "6UMT",
+              "xref_name": null,
+              "xref_src_db": "PDB"
+            },
+            {
+              "xref_id": "6UMU",
+              "xref_name": null,
+              "xref_src_db": "PDB"
+            },
+            {
+              "xref_id": "6UMV",
+              "xref_name": null,
+              "xref_src_db": "PDB"
+            },
+            {
+              "xref_id": "6XKR",
+              "xref_name": null,
+              "xref_src_db": "PDB"
+            },
+            {
+              "xref_id": "7BXA",
+              "xref_name": null,
+              "xref_src_db": "PDB"
+            },
+            {
+              "xref_id": "7CGW",
+              "xref_name": null,
+              "xref_src_db": "PDB"
+            },
+            {
+              "xref_id": "7CU5",
+              "xref_name": null,
+              "xref_src_db": "PDB"
+            },
+            {
+              "xref_id": "7E9B",
+              "xref_name": null,
+              "xref_src_db": "PDB"
+            },
+            {
+              "xref_id": "7VUX",
+              "xref_name": null,
+              "xref_src_db": "PDB"
+            },
+            {
+              "xref_id": "7WSL",
+              "xref_name": null,
+              "xref_src_db": "PDB"
+            },
+            {
+              "xref_id": "7WVM",
+              "xref_name": null,
+              "xref_src_db": "PDB"
+            },
+            {
+              "xref_id": "8AS0",
+              "xref_name": null,
+              "xref_src_db": "PDB"
+            },
+            {
+              "xref_id": "8EQ6",
+              "xref_name": null,
+              "xref_src_db": "PDB"
+            },
+            {
+              "xref_id": "8GY5",
+              "xref_name": null,
+              "xref_src_db": "PDB"
+            },
+            {
+              "xref_id": "8U31",
+              "xref_name": null,
+              "xref_src_db": "PDB"
+            },
+            {
+              "xref_id": "8U32",
+              "xref_name": null,
+              "xref_src_db": "PDB"
+            },
+            {
+              "xref_id": "9HK1",
+              "xref_name": null,
+              "xref_src_db": "PDB"
+            },
+            {
+              "xref_id": "9Q8L",
+              "xref_name": null,
+              "xref_src_db": "PDB"
+            },
+            {
+              "xref_id": "3RRQ",
+              "xref_name": "A",
+              "xref_src_db": "PDBe"
+            },
+            {
+              "xref_id": "4ZQK",
+              "xref_name": "A",
+              "xref_src_db": "PDBe"
+            },
+            {
+              "xref_id": "5B8C",
+              "xref_name": "A",
+              "xref_src_db": "PDBe"
+            },
+            {
+              "xref_id": "5GGR",
+              "xref_name": "A",
+              "xref_src_db": "PDBe"
+            },
+            {
+              "xref_id": "5GGS",
+              "xref_name": "A",
+              "xref_src_db": "PDBe"
+            },
+            {
+              "xref_id": "5IUS",
+              "xref_name": "A",
+              "xref_src_db": "PDBe"
+            },
+            {
+              "xref_id": "5JXE",
+              "xref_name": "A",
+              "xref_src_db": "PDBe"
+            },
+            {
+              "xref_id": "5WT9",
+              "xref_name": "A",
+              "xref_src_db": "PDBe"
+            },
+            {
+              "xref_id": "6HIG",
+              "xref_name": "A",
+              "xref_src_db": "PDBe"
+            },
+            {
+              "xref_id": "6J14",
+              "xref_name": "A",
+              "xref_src_db": "PDBe"
+            },
+            {
+              "xref_id": "6J15",
+              "xref_name": "A",
+              "xref_src_db": "PDBe"
+            },
+            {
+              "xref_id": "6JBT",
+              "xref_name": "A",
+              "xref_src_db": "PDBe"
+            },
+            {
+              "xref_id": "6JJP",
+              "xref_name": "A",
+              "xref_src_db": "PDBe"
+            },
+            {
+              "xref_id": "6K0Y",
+              "xref_name": "A",
+              "xref_src_db": "PDBe"
+            },
+            {
+              "xref_id": "6ROY",
+              "xref_name": "A",
+              "xref_src_db": "PDBe"
+            },
+            {
+              "xref_id": "6ROZ",
+              "xref_name": "A",
+              "xref_src_db": "PDBe"
+            },
+            {
+              "xref_id": "6UMT",
+              "xref_name": "A",
+              "xref_src_db": "PDBe"
+            },
+            {
+              "xref_id": "6UMU",
+              "xref_name": "A",
+              "xref_src_db": "PDBe"
+            },
+            {
+              "xref_id": "6UMV",
+              "xref_name": "A",
+              "xref_src_db": "PDBe"
+            },
+            {
+              "xref_id": "6XKR",
+              "xref_name": "A",
+              "xref_src_db": "PDBe"
+            },
+            {
+              "xref_id": "7BXA",
+              "xref_name": "A",
+              "xref_src_db": "PDBe"
+            },
+            {
+              "xref_id": "7CGW",
+              "xref_name": "A",
+              "xref_src_db": "PDBe"
+            },
+            {
+              "xref_id": "7CU5",
+              "xref_name": "A",
+              "xref_src_db": "PDBe"
+            },
+            {
+              "xref_id": "7E9B",
+              "xref_name": "A",
+              "xref_src_db": "PDBe"
+            },
+            {
+              "xref_id": "7VUX",
+              "xref_name": "A",
+              "xref_src_db": "PDBe"
+            },
+            {
+              "xref_id": "7WSL",
+              "xref_name": "A",
+              "xref_src_db": "PDBe"
+            },
+            {
+              "xref_id": "7WVM",
+              "xref_name": "A",
+              "xref_src_db": "PDBe"
+            },
+            {
+              "xref_id": "8AS0",
+              "xref_name": "A",
+              "xref_src_db": "PDBe"
+            },
+            {
+              "xref_id": "8EQ6",
+              "xref_name": "A",
+              "xref_src_db": "PDBe"
+            },
+            {
+              "xref_id": "8GY5",
+              "xref_name": "A",
+              "xref_src_db": "PDBe"
+            },
+            {
+              "xref_id": "8U31",
+              "xref_name": "A",
+              "xref_src_db": "PDBe"
+            },
+            {
+              "xref_id": "8U32",
+              "xref_name": "A",
+              "xref_src_db": "PDBe"
+            },
+            {
+              "xref_id": "9HK1",
+              "xref_name": "A",
+              "xref_src_db": "PDBe"
+            },
+            {
+              "xref_id": "9Q8L",
+              "xref_name": "A",
+              "xref_src_db": "PDBe"
+            },
+            {
+              "xref_id": "PF07686",
+              "xref_name": "V-set",
+              "xref_src_db": "Pfam"
+            },
+            {
+              "xref_id": "PA33110",
+              "xref_name": "programmed cell death 1",
+              "xref_src_db": "PharmGKB"
+            },
+            {
+              "xref_id": "Q15116",
+              "xref_name": null,
+              "xref_src_db": "Pharos"
+            },
+            {
+              "xref_id": "R-HSA-389948",
+              "xref_name": "Co-inhibition by PD-1",
+              "xref_src_db": "Reactome"
+            },
+            {
+              "xref_id": "R-HSA-9679191",
+              "xref_name": "Potential therapeutics for SARS",
+              "xref_src_db": "Reactome"
+            },
+            {
+              "xref_id": "O00517",
+              "xref_name": "Programmed cell death protein 1",
+              "xref_src_db": "UniProt"
+            },
+            {
+              "xref_id": "Q15116",
+              "xref_name": "Programmed cell death protein 1",
+              "xref_src_db": "UniProt"
+            },
+            {
+              "xref_id": "Q8IX89",
+              "xref_name": "Programmed cell death protein 1",
+              "xref_src_db": "UniProt"
+            }
+          ]
+        },
+        {
+          "accession": "Q9NZQ7",
+          "component_description": "Programmed cell death 1 ligand 1",
+          "component_id": 9976,
+          "component_type": "PROTEIN",
+          "relationship": "PROTEIN SUBUNIT",
+          "target_component_synonyms": [
+            {
+              "component_synonym": "B7-H1",
+              "syn_type": "UNIPROT"
+            },
+            {
+              "component_synonym": "B7H1",
+              "syn_type": "GENE_SYMBOL_OTHER"
+            },
+            {
+              "component_synonym": "B7 homolog 1",
+              "syn_type": "UNIPROT"
+            },
+            {
+              "component_synonym": "CD274",
+              "syn_type": "GENE_SYMBOL"
+            },
+            {
+              "component_synonym": "CD_antigen=CD274",
+              "syn_type": "UNIPROT"
+            },
+            {
+              "component_synonym": "hPD-L1",
+              "syn_type": "UNIPROT"
+            },
+            {
+              "component_synonym": "PDCD1L1",
+              "syn_type": "GENE_SYMBOL_OTHER"
+            },
+            {
+              "component_synonym": "PDCD1LG1",
+              "syn_type": "GENE_SYMBOL_OTHER"
+            },
+            {
+              "component_synonym": "PDCD1 ligand 1",
+              "syn_type": "UNIPROT"
+            },
+            {
+              "component_synonym": "PD-L1",
+              "syn_type": "UNIPROT"
+            },
+            {
+              "component_synonym": "PDL1",
+              "syn_type": "GENE_SYMBOL_OTHER"
+            },
+            {
+              "component_synonym": "Programmed cell death 1 ligand 1",
+              "syn_type": "UNIPROT"
+            },
+            {
+              "component_synonym": "Programmed death ligand 1",
+              "syn_type": "UNIPROT"
+            },
+            {
+              "component_synonym": "Synonyms=B7H1",
+              "syn_type": "GENE_SYMBOL_OTHER"
+            }
+          ],
+          "target_component_xrefs": [
+            {
+              "xref_id": "Q9NZQ7",
+              "xref_name": null,
+              "xref_src_db": "AlphaFoldDB"
+            },
+            {
+              "xref_id": "GO:0005576",
+              "xref_name": "extracellular region",
+              "xref_src_db": "GoComponent"
+            },
+            {
+              "xref_id": "GO:0005634",
+              "xref_name": "nucleus",
+              "xref_src_db": "GoComponent"
+            },
+            {
+              "xref_id": "GO:0005654",
+              "xref_name": "nucleoplasm",
+              "xref_src_db": "GoComponent"
+            },
+            {
+              "xref_id": "GO:0005768",
+              "xref_name": "endosome",
+              "xref_src_db": "GoComponent"
+            },
+            {
+              "xref_id": "GO:0005886",
+              "xref_name": "plasma membrane",
+              "xref_src_db": "GoComponent"
+            },
+            {
+              "xref_id": "GO:0009897",
+              "xref_name": "external side of plasma membrane",
+              "xref_src_db": "GoComponent"
+            },
+            {
+              "xref_id": "GO:0009986",
+              "xref_name": "cell surface",
+              "xref_src_db": "GoComponent"
+            },
+            {
+              "xref_id": "GO:0015629",
+              "xref_name": "actin cytoskeleton",
+              "xref_src_db": "GoComponent"
+            },
+            {
+              "xref_id": "GO:0031901",
+              "xref_name": "early endosome membrane",
+              "xref_src_db": "GoComponent"
+            },
+            {
+              "xref_id": "GO:0055038",
+              "xref_name": "recycling endosome membrane",
+              "xref_src_db": "GoComponent"
+            },
+            {
+              "xref_id": "GO:0070062",
+              "xref_name": "extracellular exosome",
+              "xref_src_db": "GoComponent"
+            },
+            {
+              "xref_id": "GO:0003713",
+              "xref_name": "transcription coactivator activity",
+              "xref_src_db": "GoFunction"
+            },
+            {
+              "xref_id": "GO:0005515",
+              "xref_name": "protein binding",
+              "xref_src_db": "GoFunction"
+            },
+            {
+              "xref_id": "GO:0048018",
+              "xref_name": "receptor ligand activity",
+              "xref_src_db": "GoFunction"
+            },
+            {
+              "xref_id": "GO:0002250",
+              "xref_name": "adaptive immune response",
+              "xref_src_db": "GoProcess"
+            },
+            {
+              "xref_id": "GO:0002841",
+              "xref_name": "negative regulation of T cell mediated immune response to tumor cell",
+              "xref_src_db": "GoProcess"
+            },
+            {
+              "xref_id": "GO:0006955",
+              "xref_name": "immune response",
+              "xref_src_db": "GoProcess"
+            },
+            {
+              "xref_id": "GO:0007165",
+              "xref_name": "signal transduction",
+              "xref_src_db": "GoProcess"
+            },
+            {
+              "xref_id": "GO:0007166",
+              "xref_name": "cell surface receptor signaling pathway",
+              "xref_src_db": "GoProcess"
+            },
+            {
+              "xref_id": "GO:0030335",
+              "xref_name": "positive regulation of cell migration",
+              "xref_src_db": "GoProcess"
+            },
+            {
+              "xref_id": "GO:0031295",
+              "xref_name": "T cell costimulation",
+              "xref_src_db": "GoProcess"
+            },
+            {
+              "xref_id": "GO:0032689",
+              "xref_name": "negative regulation of type II interferon production",
+              "xref_src_db": "GoProcess"
+            },
+            {
+              "xref_id": "GO:0032693",
+              "xref_name": "negative regulation of interleukin-10 production",
+              "xref_src_db": "GoProcess"
+            },
+            {
+              "xref_id": "GO:0032733",
+              "xref_name": "positive regulation of interleukin-10 production",
+              "xref_src_db": "GoProcess"
+            },
+            {
+              "xref_id": "GO:0035666",
+              "xref_name": "TRIF-dependent toll-like receptor signaling pathway",
+              "xref_src_db": "GoProcess"
+            },
+            {
+              "xref_id": "GO:0042102",
+              "xref_name": "positive regulation of T cell proliferation",
+              "xref_src_db": "GoProcess"
+            },
+            {
+              "xref_id": "GO:0042130",
+              "xref_name": "negative regulation of T cell proliferation",
+              "xref_src_db": "GoProcess"
+            },
+            {
+              "xref_id": "GO:0045893",
+              "xref_name": "positive regulation of DNA-templated transcription",
+              "xref_src_db": "GoProcess"
+            },
+            {
+              "xref_id": "GO:0046006",
+              "xref_name": "regulation of activated T cell proliferation",
+              "xref_src_db": "GoProcess"
+            },
+            {
+              "xref_id": "GO:0046007",
+              "xref_name": "negative regulation of activated T cell proliferation",
+              "xref_src_db": "GoProcess"
+            },
+            {
+              "xref_id": "GO:0070232",
+              "xref_name": "regulation of T cell apoptotic process",
+              "xref_src_db": "GoProcess"
+            },
+            {
+              "xref_id": "GO:0071222",
+              "xref_name": "cellular response to lipopolysaccharide",
+              "xref_src_db": "GoProcess"
+            },
+            {
+              "xref_id": "GO:1903556",
+              "xref_name": "negative regulation of tumor necrosis factor superfamily cytokine production",
+              "xref_src_db": "GoProcess"
+            },
+            {
+              "xref_id": "GO:1905399",
+              "xref_name": "regulation of activated CD4-positive, alpha-beta T cell apoptotic process",
+              "xref_src_db": "GoProcess"
+            },
+            {
+              "xref_id": "GO:1905404",
+              "xref_name": "positive regulation of activated CD8-positive, alpha-beta T cell apoptotic process",
+              "xref_src_db": "GoProcess"
+            },
+            {
+              "xref_id": "GO:2000562",
+              "xref_name": "negative regulation of CD4-positive, alpha-beta T cell proliferation",
+              "xref_src_db": "GoProcess"
+            },
+            {
+              "xref_id": "GO:2001186",
+              "xref_name": "negative regulation of CD8-positive, alpha-beta T cell activation",
+              "xref_src_db": "GoProcess"
+            },
+            {
+              "xref_id": "HGNC:17635",
+              "xref_name": "CD274",
+              "xref_src_db": "HGNC"
+            },
+            {
+              "xref_id": "Q9NZQ7",
+              "xref_name": null,
+              "xref_src_db": "IntAct"
+            },
+            {
+              "xref_id": "IPR003599",
+              "xref_name": "Ig_sub",
+              "xref_src_db": "InterPro"
+            },
+            {
+              "xref_id": "IPR007110",
+              "xref_name": "Ig-like_dom",
+              "xref_src_db": "InterPro"
+            },
+            {
+              "xref_id": "IPR013106",
+              "xref_name": "Ig_V-set",
+              "xref_src_db": "InterPro"
+            },
+            {
+              "xref_id": "IPR013162",
+              "xref_name": "CD80_C2-set",
+              "xref_src_db": "InterPro"
+            },
+            {
+              "xref_id": "IPR013783",
+              "xref_name": "Ig-like_fold",
+              "xref_src_db": "InterPro"
+            },
+            {
+              "xref_id": "IPR036179",
+              "xref_name": "Ig-like_dom_sf",
+              "xref_src_db": "InterPro"
+            },
+            {
+              "xref_id": "IPR051713",
+              "xref_name": "T-cell_Activation_Regulation",
+              "xref_src_db": "InterPro"
+            },
+            {
+              "xref_id": "PTHR25466",
+              "xref_name": "T-LYMPHOCYTE ACTIVATION ANTIGEN",
+              "xref_src_db": "PANTHER"
+            },
+            {
+              "xref_id": "PTHR25466:SF3",
+              "xref_name": "PROGRAMMED CELL DEATH 1 LIGAND 1",
+              "xref_src_db": "PANTHER"
+            },
+            {
+              "xref_id": "3BIK",
+              "xref_name": null,
+              "xref_src_db": "PDB"
+            },
+            {
+              "xref_id": "3BIS",
+              "xref_name": null,
+              "xref_src_db": "PDB"
+            },
+            {
+              "xref_id": "3FN3",
+              "xref_name": null,
+              "xref_src_db": "PDB"
+            },
+            {
+              "xref_id": "3SBW",
+              "xref_name": null,
+              "xref_src_db": "PDB"
+            },
+            {
+              "xref_id": "4Z18",
+              "xref_name": null,
+              "xref_src_db": "PDB"
+            },
+            {
+              "xref_id": "4ZQK",
+              "xref_name": null,
+              "xref_src_db": "PDB"
+            },
+            {
+              "xref_id": "5C3T",
+              "xref_name": null,
+              "xref_src_db": "PDB"
+            },
+            {
+              "xref_id": "5GGT",
+              "xref_name": null,
+              "xref_src_db": "PDB"
+            },
+            {
+              "xref_id": "5GRJ",
+              "xref_name": null,
+              "xref_src_db": "PDB"
+            },
+            {
+              "xref_id": "5IUS",
+              "xref_name": null,
+              "xref_src_db": "PDB"
+            },
+            {
+              "xref_id": "5J89",
+              "xref_name": null,
+              "xref_src_db": "PDB"
+            },
+            {
+              "xref_id": "5J8O",
+              "xref_name": null,
+              "xref_src_db": "PDB"
+            },
+            {
+              "xref_id": "5JDR",
+              "xref_name": null,
+              "xref_src_db": "PDB"
+            },
+            {
+              "xref_id": "5JDS",
+              "xref_name": null,
+              "xref_src_db": "PDB"
+            },
+            {
+              "xref_id": "5N2D",
+              "xref_name": null,
+              "xref_src_db": "PDB"
+            },
+            {
+              "xref_id": "5N2F",
+              "xref_name": null,
+              "xref_src_db": "PDB"
+            },
+            {
+              "xref_id": "5NIU",
+              "xref_name": null,
+              "xref_src_db": "PDB"
+            },
+            {
+              "xref_id": "5O45",
+              "xref_name": null,
+              "xref_src_db": "PDB"
+            },
+            {
+              "xref_id": "5O4Y",
+              "xref_name": null,
+              "xref_src_db": "PDB"
+            },
+            {
+              "xref_id": "5X8L",
+              "xref_name": null,
+              "xref_src_db": "PDB"
+            },
+            {
+              "xref_id": "5X8M",
+              "xref_name": null,
+              "xref_src_db": "PDB"
+            },
+            {
+              "xref_id": "5XJ4",
+              "xref_name": null,
+              "xref_src_db": "PDB"
+            },
+            {
+              "xref_id": "5XXY",
+              "xref_name": null,
+              "xref_src_db": "PDB"
+            },
+            {
+              "xref_id": "6L8R",
+              "xref_name": null,
+              "xref_src_db": "PDB"
+            },
+            {
+              "xref_id": "6NM7",
+              "xref_name": null,
+              "xref_src_db": "PDB"
+            },
+            {
+              "xref_id": "6NM8",
+              "xref_name": null,
+              "xref_src_db": "PDB"
+            },
+            {
+              "xref_id": "6NNV",
+              "xref_name": null,
+              "xref_src_db": "PDB"
+            },
+            {
+              "xref_id": "6NOJ",
+              "xref_name": null,
+              "xref_src_db": "PDB"
+            },
+            {
+              "xref_id": "6NOS",
+              "xref_name": null,
+              "xref_src_db": "PDB"
+            },
+            {
+              "xref_id": "6NP9",
+              "xref_name": null,
+              "xref_src_db": "PDB"
+            },
+            {
+              "xref_id": "6PV9",
+              "xref_name": null,
+              "xref_src_db": "PDB"
+            },
+            {
+              "xref_id": "6R3K",
+              "xref_name": null,
+              "xref_src_db": "PDB"
+            },
+            {
+              "xref_id": "6RPG",
+              "xref_name": null,
+              "xref_src_db": "PDB"
+            },
+            {
+              "xref_id": "6VQN",
+              "xref_name": null,
+              "xref_src_db": "PDB"
+            },
+            {
+              "xref_id": "6YCR",
+              "xref_name": null,
+              "xref_src_db": "PDB"
+            },
+            {
+              "xref_id": "7BEA",
+              "xref_name": null,
+              "xref_src_db": "PDB"
+            },
+            {
+              "xref_id": "7C88",
+              "xref_name": null,
+              "xref_src_db": "PDB"
+            },
+            {
+              "xref_id": "7CZD",
+              "xref_name": null,
+              "xref_src_db": "PDB"
+            },
+            {
+              "xref_id": "7DCV",
+              "xref_name": null,
+              "xref_src_db": "PDB"
+            },
+            {
+              "xref_id": "7DY7",
+              "xref_name": null,
+              "xref_src_db": "PDB"
+            },
+            {
+              "xref_id": "7NLD",
+              "xref_name": null,
+              "xref_src_db": "PDB"
+            },
+            {
+              "xref_id": "7OUN",
+              "xref_name": null,
+              "xref_src_db": "PDB"
+            },
+            {
+              "xref_id": "7SJQ",
+              "xref_name": null,
+              "xref_src_db": "PDB"
+            },
+            {
+              "xref_id": "7TPS",
+              "xref_name": null,
+              "xref_src_db": "PDB"
+            },
+            {
+              "xref_id": "7UX5",
+              "xref_name": null,
+              "xref_src_db": "PDB"
+            },
+            {
+              "xref_id": "7UXO",
+              "xref_name": null,
+              "xref_src_db": "PDB"
+            },
+            {
+              "xref_id": "7UXP",
+              "xref_name": null,
+              "xref_src_db": "PDB"
+            },
+            {
+              "xref_id": "7UXQ",
+              "xref_name": null,
+              "xref_src_db": "PDB"
+            },
+            {
+              "xref_id": "7VUN",
+              "xref_name": null,
+              "xref_src_db": "PDB"
+            },
+            {
+              "xref_id": "7XAD",
+              "xref_name": null,
+              "xref_src_db": "PDB"
+            },
+            {
+              "xref_id": "7XAE",
+              "xref_name": null,
+              "xref_src_db": "PDB"
+            },
+            {
+              "xref_id": "7XYQ",
+              "xref_name": null,
+              "xref_src_db": "PDB"
+            },
+            {
+              "xref_id": "7YDS",
+              "xref_name": null,
+              "xref_src_db": "PDB"
+            },
+            {
+              "xref_id": "8ALX",
+              "xref_name": null,
+              "xref_src_db": "PDB"
+            },
+            {
+              "xref_id": "8AOK",
+              "xref_name": null,
+              "xref_src_db": "PDB"
+            },
+            {
+              "xref_id": "8AOM",
+              "xref_name": null,
+              "xref_src_db": "PDB"
+            },
+            {
+              "xref_id": "8JBA",
+              "xref_name": null,
+              "xref_src_db": "PDB"
+            },
+            {
+              "xref_id": "8K5N",
+              "xref_name": null,
+              "xref_src_db": "PDB"
+            },
+            {
+              "xref_id": "8OR1",
+              "xref_name": null,
+              "xref_src_db": "PDB"
+            },
+            {
+              "xref_id": "8P1O",
+              "xref_name": null,
+              "xref_src_db": "PDB"
+            },
+            {
+              "xref_id": "8R6Q",
+              "xref_name": null,
+              "xref_src_db": "PDB"
+            },
+            {
+              "xref_id": "8RPB",
+              "xref_name": null,
+              "xref_src_db": "PDB"
+            },
+            {
+              "xref_id": "8XR5",
+              "xref_name": null,
+              "xref_src_db": "PDB"
+            },
+            {
+              "xref_id": "8ZNL",
+              "xref_name": null,
+              "xref_src_db": "PDB"
+            },
+            {
+              "xref_id": "9INU",
+              "xref_name": null,
+              "xref_src_db": "PDB"
+            },
+            {
+              "xref_id": "3BIK",
+              "xref_name": "A",
+              "xref_src_db": "PDBe"
+            },
+            {
+              "xref_id": "3BIS",
+              "xref_name": "A",
+              "xref_src_db": "PDBe"
+            },
+            {
+              "xref_id": "3FN3",
+              "xref_name": "A",
+              "xref_src_db": "PDBe"
+            },
+            {
+              "xref_id": "3SBW",
+              "xref_name": "A",
+              "xref_src_db": "PDBe"
+            },
+            {
+              "xref_id": "4Z18",
+              "xref_name": "A",
+              "xref_src_db": "PDBe"
+            },
+            {
+              "xref_id": "4ZQK",
+              "xref_name": "A",
+              "xref_src_db": "PDBe"
+            },
+            {
+              "xref_id": "5C3T",
+              "xref_name": "A",
+              "xref_src_db": "PDBe"
+            },
+            {
+              "xref_id": "5GGT",
+              "xref_name": "A",
+              "xref_src_db": "PDBe"
+            },
+            {
+              "xref_id": "5GRJ",
+              "xref_name": "A",
+              "xref_src_db": "PDBe"
+            },
+            {
+              "xref_id": "5IUS",
+              "xref_name": "A",
+              "xref_src_db": "PDBe"
+            },
+            {
+              "xref_id": "5J89",
+              "xref_name": "A",
+              "xref_src_db": "PDBe"
+            },
+            {
+              "xref_id": "5J8O",
+              "xref_name": "A",
+              "xref_src_db": "PDBe"
+            },
+            {
+              "xref_id": "5JDR",
+              "xref_name": "A",
+              "xref_src_db": "PDBe"
+            },
+            {
+              "xref_id": "5JDS",
+              "xref_name": "A",
+              "xref_src_db": "PDBe"
+            },
+            {
+              "xref_id": "5N2D",
+              "xref_name": "A",
+              "xref_src_db": "PDBe"
+            },
+            {
+              "xref_id": "5N2F",
+              "xref_name": "A",
+              "xref_src_db": "PDBe"
+            },
+            {
+              "xref_id": "5NIU",
+              "xref_name": "A",
+              "xref_src_db": "PDBe"
+            },
+            {
+              "xref_id": "5O45",
+              "xref_name": "A",
+              "xref_src_db": "PDBe"
+            },
+            {
+              "xref_id": "5O4Y",
+              "xref_name": "A",
+              "xref_src_db": "PDBe"
+            },
+            {
+              "xref_id": "5X8L",
+              "xref_name": "A",
+              "xref_src_db": "PDBe"
+            },
+            {
+              "xref_id": "5X8M",
+              "xref_name": "A",
+              "xref_src_db": "PDBe"
+            },
+            {
+              "xref_id": "5XJ4",
+              "xref_name": "A",
+              "xref_src_db": "PDBe"
+            },
+            {
+              "xref_id": "5XXY",
+              "xref_name": "A",
+              "xref_src_db": "PDBe"
+            },
+            {
+              "xref_id": "6NM7",
+              "xref_name": "A",
+              "xref_src_db": "PDBe"
+            },
+            {
+              "xref_id": "6NM8",
+              "xref_name": "A",
+              "xref_src_db": "PDBe"
+            },
+            {
+              "xref_id": "6NNV",
+              "xref_name": "A",
+              "xref_src_db": "PDBe"
+            },
+            {
+              "xref_id": "6NOJ",
+              "xref_name": "A",
+              "xref_src_db": "PDBe"
+            },
+            {
+              "xref_id": "6NOS",
+              "xref_name": "A",
+              "xref_src_db": "PDBe"
+            },
+            {
+              "xref_id": "6NP9",
+              "xref_name": "A",
+              "xref_src_db": "PDBe"
+            },
+            {
+              "xref_id": "6PV9",
+              "xref_name": "A",
+              "xref_src_db": "PDBe"
+            },
+            {
+              "xref_id": "6R3K",
+              "xref_name": "A",
+              "xref_src_db": "PDBe"
+            },
+            {
+              "xref_id": "6RPG",
+              "xref_name": "A",
+              "xref_src_db": "PDBe"
+            },
+            {
+              "xref_id": "6VQN",
+              "xref_name": "A",
+              "xref_src_db": "PDBe"
+            },
+            {
+              "xref_id": "6YCR",
+              "xref_name": "A",
+              "xref_src_db": "PDBe"
+            },
+            {
+              "xref_id": "7BEA",
+              "xref_name": "A",
+              "xref_src_db": "PDBe"
+            },
+            {
+              "xref_id": "7C88",
+              "xref_name": "A",
+              "xref_src_db": "PDBe"
+            },
+            {
+              "xref_id": "7CZD",
+              "xref_name": "A",
+              "xref_src_db": "PDBe"
+            },
+            {
+              "xref_id": "7DY7",
+              "xref_name": "A",
+              "xref_src_db": "PDBe"
+            },
+            {
+              "xref_id": "7NLD",
+              "xref_name": "A",
+              "xref_src_db": "PDBe"
+            },
+            {
+              "xref_id": "7OUN",
+              "xref_name": "A",
+              "xref_src_db": "PDBe"
+            },
+            {
+              "xref_id": "7SJQ",
+              "xref_name": "A",
+              "xref_src_db": "PDBe"
+            },
+            {
+              "xref_id": "7TPS",
+              "xref_name": "A",
+              "xref_src_db": "PDBe"
+            },
+            {
+              "xref_id": "7UX5",
+              "xref_name": "A",
+              "xref_src_db": "PDBe"
+            },
+            {
+              "xref_id": "7UXO",
+              "xref_name": "A",
+              "xref_src_db": "PDBe"
+            },
+            {
+              "xref_id": "7UXP",
+              "xref_name": "A",
+              "xref_src_db": "PDBe"
+            },
+            {
+              "xref_id": "7UXQ",
+              "xref_name": "A",
+              "xref_src_db": "PDBe"
+            },
+            {
+              "xref_id": "7VUN",
+              "xref_name": "A",
+              "xref_src_db": "PDBe"
+            },
+            {
+              "xref_id": "7XAD",
+              "xref_name": "A",
+              "xref_src_db": "PDBe"
+            },
+            {
+              "xref_id": "7XAE",
+              "xref_name": "A",
+              "xref_src_db": "PDBe"
+            },
+            {
+              "xref_id": "7XYQ",
+              "xref_name": "A",
+              "xref_src_db": "PDBe"
+            },
+            {
+              "xref_id": "7YDS",
+              "xref_name": "A",
+              "xref_src_db": "PDBe"
+            },
+            {
+              "xref_id": "8ALX",
+              "xref_name": "A",
+              "xref_src_db": "PDBe"
+            },
+            {
+              "xref_id": "8AOK",
+              "xref_name": "A",
+              "xref_src_db": "PDBe"
+            },
+            {
+              "xref_id": "8AOM",
+              "xref_name": "A",
+              "xref_src_db": "PDBe"
+            },
+            {
+              "xref_id": "8JBA",
+              "xref_name": "A",
+              "xref_src_db": "PDBe"
+            },
+            {
+              "xref_id": "8K5N",
+              "xref_name": "A",
+              "xref_src_db": "PDBe"
+            },
+            {
+              "xref_id": "8OR1",
+              "xref_name": "A",
+              "xref_src_db": "PDBe"
+            },
+            {
+              "xref_id": "8P1O",
+              "xref_name": "A",
+              "xref_src_db": "PDBe"
+            },
+            {
+              "xref_id": "8R6Q",
+              "xref_name": "A",
+              "xref_src_db": "PDBe"
+            },
+            {
+              "xref_id": "8RPB",
+              "xref_name": "A",
+              "xref_src_db": "PDBe"
+            },
+            {
+              "xref_id": "8XR5",
+              "xref_name": "A",
+              "xref_src_db": "PDBe"
+            },
+            {
+              "xref_id": "8ZNL",
+              "xref_name": "A",
+              "xref_src_db": "PDBe"
+            },
+            {
+              "xref_id": "9INU",
+              "xref_name": "A",
+              "xref_src_db": "PDBe"
+            },
+            {
+              "xref_id": "PF07686",
+              "xref_name": "V-set",
+              "xref_src_db": "Pfam"
+            },
+            {
+              "xref_id": "PF08205",
+              "xref_name": "C2-set_2",
+              "xref_src_db": "Pfam"
+            },
+            {
+              "xref_id": "PA134915280",
+              "xref_name": "CD274 molecule",
+              "xref_src_db": "PharmGKB"
+            },
+            {
+              "xref_id": "Q9NZQ7",
+              "xref_name": null,
+              "xref_src_db": "Pharos"
+            },
+            {
+              "xref_id": "R-HSA-389948",
+              "xref_name": "Co-inhibition by PD-1",
+              "xref_src_db": "Reactome"
+            },
+            {
+              "xref_id": "R-HSA-9701898",
+              "xref_name": "STAT3 nuclear events downstream of ALK signaling",
+              "xref_src_db": "Reactome"
+            },
+            {
+              "xref_id": "B2RBA2",
+              "xref_name": "Programmed cell death 1 ligand 1",
+              "xref_src_db": "UniProt"
+            },
+            {
+              "xref_id": "B4DU27",
+              "xref_name": "Programmed cell death 1 ligand 1",
+              "xref_src_db": "UniProt"
+            },
+            {
+              "xref_id": "Q14CJ2",
+              "xref_name": "Programmed cell death 1 ligand 1",
+              "xref_src_db": "UniProt"
+            },
+            {
+              "xref_id": "Q2V8D5",
+              "xref_name": "Programmed cell death 1 ligand 1",
+              "xref_src_db": "UniProt"
+            },
+            {
+              "xref_id": "Q66RK1",
+              "xref_name": "Programmed cell death 1 ligand 1",
+              "xref_src_db": "UniProt"
+            },
+            {
+              "xref_id": "Q6WEX4",
+              "xref_name": "Programmed cell death 1 ligand 1",
+              "xref_src_db": "UniProt"
+            },
+            {
+              "xref_id": "Q9NUZ5",
+              "xref_name": "Programmed cell death 1 ligand 1",
+              "xref_src_db": "UniProt"
+            },
+            {
+              "xref_id": "Q9NZQ7",
+              "xref_name": "Programmed cell death 1 ligand 1",
+              "xref_src_db": "UniProt"
+            }
+          ]
+        }
+      ],
+      "target_type": "PROTEIN COMPLEX",
+      "tax_id": 9606
+    },
+    {
+      "cross_references": [],
+      "organism": "Homo sapiens",
+      "pref_name": "PD1-PDL2",
+      "species_group_flag": false,
+      "target_chembl_id": "CHEMBL5482985",
+      "target_components": [
+        {
+          "accession": "Q15116",
+          "component_description": "Programmed cell death protein 1",
+          "component_id": 8668,
+          "component_type": "PROTEIN",
+          "relationship": "PROTEIN SUBUNIT",
+          "target_component_synonyms": [
+            {
+              "component_synonym": "CD_antigen=CD279",
+              "syn_type": "UNIPROT"
+            },
+            {
+              "component_synonym": "hPD-1",
+              "syn_type": "UNIPROT"
+            },
+            {
+              "component_synonym": "PD1",
+              "syn_type": "GENE_SYMBOL_OTHER"
+            },
+            {
+              "component_synonym": "PDCD1",
+              "syn_type": "GENE_SYMBOL"
+            },
+            {
+              "component_synonym": "Programmed cell death protein 1",
+              "syn_type": "UNIPROT"
+            },
+            {
+              "component_synonym": "Protein PD-1",
+              "syn_type": "UNIPROT"
+            },
+            {
+              "component_synonym": "Synonyms=PD1",
+              "syn_type": "GENE_SYMBOL_OTHER"
+            }
+          ],
+          "target_component_xrefs": [
+            {
+              "xref_id": "Q15116",
+              "xref_name": null,
+              "xref_src_db": "AlphaFoldDB"
+            },
+            {
+              "xref_id": "Q15116",
+              "xref_name": null,
+              "xref_src_db": "ExpressionAtlas"
+            },
+            {
+              "xref_id": "GO:0005886",
+              "xref_name": "plasma membrane",
+              "xref_src_db": "GoComponent"
+            },
+            {
+              "xref_id": "GO:0009897",
+              "xref_name": "external side of plasma membrane",
+              "xref_src_db": "GoComponent"
+            },
+            {
+              "xref_id": "GO:0016020",
+              "xref_name": "membrane",
+              "xref_src_db": "GoComponent"
+            },
+            {
+              "xref_id": "GO:0005515",
+              "xref_name": "protein binding",
+              "xref_src_db": "GoFunction"
+            },
+            {
+              "xref_id": "GO:0038023",
+              "xref_name": "signaling receptor activity",
+              "xref_src_db": "GoFunction"
+            },
+            {
+              "xref_id": "GO:0001783",
+              "xref_name": "B cell apoptotic process",
+              "xref_src_db": "GoProcess"
+            },
+            {
+              "xref_id": "GO:0002250",
+              "xref_name": "adaptive immune response",
+              "xref_src_db": "GoProcess"
+            },
+            {
+              "xref_id": "GO:0002644",
+              "xref_name": "negative regulation of tolerance induction",
+              "xref_src_db": "GoProcess"
+            },
+            {
+              "xref_id": "GO:0002841",
+              "xref_name": "negative regulation of T cell mediated immune response to tumor cell",
+              "xref_src_db": "GoProcess"
+            },
+            {
+              "xref_id": "GO:0002903",
+              "xref_name": "negative regulation of B cell apoptotic process",
+              "xref_src_db": "GoProcess"
+            },
+            {
+              "xref_id": "GO:0006915",
+              "xref_name": "apoptotic process",
+              "xref_src_db": "GoProcess"
+            },
+            {
+              "xref_id": "GO:0006959",
+              "xref_name": "humoral immune response",
+              "xref_src_db": "GoProcess"
+            },
+            {
+              "xref_id": "GO:0050776",
+              "xref_name": "regulation of immune response",
+              "xref_src_db": "GoProcess"
+            },
+            {
+              "xref_id": "GO:0050777",
+              "xref_name": "negative regulation of immune response",
+              "xref_src_db": "GoProcess"
+            },
+            {
+              "xref_id": "GO:0050868",
+              "xref_name": "negative regulation of T cell activation",
+              "xref_src_db": "GoProcess"
+            },
+            {
+              "xref_id": "GO:0070234",
+              "xref_name": "positive regulation of T cell apoptotic process",
+              "xref_src_db": "GoProcess"
+            },
+            {
+              "xref_id": "GO:1902482",
+              "xref_name": "regulatory T cell apoptotic process",
+              "xref_src_db": "GoProcess"
+            },
+            {
+              "xref_id": "HGNC:8760",
+              "xref_name": "PDCD1",
+              "xref_src_db": "HGNC"
+            },
+            {
+              "xref_id": "Q15116",
+              "xref_name": null,
+              "xref_src_db": "IntAct"
+            },
+            {
+              "xref_id": "IPR003599",
+              "xref_name": "Ig_sub",
+              "xref_src_db": "InterPro"
+            },
+            {
+              "xref_id": "IPR007110",
+              "xref_name": "Ig-like_dom",
+              "xref_src_db": "InterPro"
+            },
+            {
+              "xref_id": "IPR013106",
+              "xref_name": "Ig_V-set",
+              "xref_src_db": "InterPro"
+            },
+            {
+              "xref_id": "IPR013783",
+              "xref_name": "Ig-like_fold",
+              "xref_src_db": "InterPro"
+            },
+            {
+              "xref_id": "IPR036179",
+              "xref_name": "Ig-like_dom_sf",
+              "xref_src_db": "InterPro"
+            },
+            {
+              "xref_id": "IPR042379",
+              "xref_name": "PDCD1",
+              "xref_src_db": "InterPro"
+            },
+            {
+              "xref_id": "PTHR15264",
+              "xref_name": "PROGRAMMED CELL DEATH PROTEIN 1",
+              "xref_src_db": "PANTHER"
+            },
+            {
+              "xref_id": "PTHR15264:SF2",
+              "xref_name": "PROGRAMMED CELL DEATH PROTEIN 1",
+              "xref_src_db": "PANTHER"
+            },
+            {
+              "xref_id": "2M2D",
+              "xref_name": null,
+              "xref_src_db": "PDB"
+            },
+            {
+              "xref_id": "3RRQ",
+              "xref_name": null,
+              "xref_src_db": "PDB"
+            },
+            {
+              "xref_id": "4ZQK",
+              "xref_name": null,
+              "xref_src_db": "PDB"
+            },
+            {
+              "xref_id": "5B8C",
+              "xref_name": null,
+              "xref_src_db": "PDB"
+            },
+            {
+              "xref_id": "5GGR",
+              "xref_name": null,
+              "xref_src_db": "PDB"
+            },
+            {
+              "xref_id": "5GGS",
+              "xref_name": null,
+              "xref_src_db": "PDB"
+            },
+            {
+              "xref_id": "5IUS",
+              "xref_name": null,
+              "xref_src_db": "PDB"
+            },
+            {
+              "xref_id": "5JXE",
+              "xref_name": null,
+              "xref_src_db": "PDB"
+            },
+            {
+              "xref_id": "5WT9",
+              "xref_name": null,
+              "xref_src_db": "PDB"
+            },
+            {
+              "xref_id": "6HIG",
+              "xref_name": null,
+              "xref_src_db": "PDB"
+            },
+            {
+              "xref_id": "6J14",
+              "xref_name": null,
+              "xref_src_db": "PDB"
+            },
+            {
+              "xref_id": "6J15",
+              "xref_name": null,
+              "xref_src_db": "PDB"
+            },
+            {
+              "xref_id": "6JBT",
+              "xref_name": null,
+              "xref_src_db": "PDB"
+            },
+            {
+              "xref_id": "6JJP",
+              "xref_name": null,
+              "xref_src_db": "PDB"
+            },
+            {
+              "xref_id": "6K0Y",
+              "xref_name": null,
+              "xref_src_db": "PDB"
+            },
+            {
+              "xref_id": "6R5G",
+              "xref_name": null,
+              "xref_src_db": "PDB"
+            },
+            {
+              "xref_id": "6ROY",
+              "xref_name": null,
+              "xref_src_db": "PDB"
+            },
+            {
+              "xref_id": "6ROZ",
+              "xref_name": null,
+              "xref_src_db": "PDB"
+            },
+            {
+              "xref_id": "6UMT",
+              "xref_name": null,
+              "xref_src_db": "PDB"
+            },
+            {
+              "xref_id": "6UMU",
+              "xref_name": null,
+              "xref_src_db": "PDB"
+            },
+            {
+              "xref_id": "6UMV",
+              "xref_name": null,
+              "xref_src_db": "PDB"
+            },
+            {
+              "xref_id": "6XKR",
+              "xref_name": null,
+              "xref_src_db": "PDB"
+            },
+            {
+              "xref_id": "7BXA",
+              "xref_name": null,
+              "xref_src_db": "PDB"
+            },
+            {
+              "xref_id": "7CGW",
+              "xref_name": null,
+              "xref_src_db": "PDB"
+            },
+            {
+              "xref_id": "7CU5",
+              "xref_name": null,
+              "xref_src_db": "PDB"
+            },
+            {
+              "xref_id": "7E9B",
+              "xref_name": null,
+              "xref_src_db": "PDB"
+            },
+            {
+              "xref_id": "7VUX",
+              "xref_name": null,
+              "xref_src_db": "PDB"
+            },
+            {
+              "xref_id": "7WSL",
+              "xref_name": null,
+              "xref_src_db": "PDB"
+            },
+            {
+              "xref_id": "7WVM",
+              "xref_name": null,
+              "xref_src_db": "PDB"
+            },
+            {
+              "xref_id": "8AS0",
+              "xref_name": null,
+              "xref_src_db": "PDB"
+            },
+            {
+              "xref_id": "8EQ6",
+              "xref_name": null,
+              "xref_src_db": "PDB"
+            },
+            {
+              "xref_id": "8GY5",
+              "xref_name": null,
+              "xref_src_db": "PDB"
+            },
+            {
+              "xref_id": "8U31",
+              "xref_name": null,
+              "xref_src_db": "PDB"
+            },
+            {
+              "xref_id": "8U32",
+              "xref_name": null,
+              "xref_src_db": "PDB"
+            },
+            {
+              "xref_id": "9HK1",
+              "xref_name": null,
+              "xref_src_db": "PDB"
+            },
+            {
+              "xref_id": "9Q8L",
+              "xref_name": null,
+              "xref_src_db": "PDB"
+            },
+            {
+              "xref_id": "3RRQ",
+              "xref_name": "A",
+              "xref_src_db": "PDBe"
+            },
+            {
+              "xref_id": "4ZQK",
+              "xref_name": "A",
+              "xref_src_db": "PDBe"
+            },
+            {
+              "xref_id": "5B8C",
+              "xref_name": "A",
+              "xref_src_db": "PDBe"
+            },
+            {
+              "xref_id": "5GGR",
+              "xref_name": "A",
+              "xref_src_db": "PDBe"
+            },
+            {
+              "xref_id": "5GGS",
+              "xref_name": "A",
+              "xref_src_db": "PDBe"
+            },
+            {
+              "xref_id": "5IUS",
+              "xref_name": "A",
+              "xref_src_db": "PDBe"
+            },
+            {
+              "xref_id": "5JXE",
+              "xref_name": "A",
+              "xref_src_db": "PDBe"
+            },
+            {
+              "xref_id": "5WT9",
+              "xref_name": "A",
+              "xref_src_db": "PDBe"
+            },
+            {
+              "xref_id": "6HIG",
+              "xref_name": "A",
+              "xref_src_db": "PDBe"
+            },
+            {
+              "xref_id": "6J14",
+              "xref_name": "A",
+              "xref_src_db": "PDBe"
+            },
+            {
+              "xref_id": "6J15",
+              "xref_name": "A",
+              "xref_src_db": "PDBe"
+            },
+            {
+              "xref_id": "6JBT",
+              "xref_name": "A",
+              "xref_src_db": "PDBe"
+            },
+            {
+              "xref_id": "6JJP",
+              "xref_name": "A",
+              "xref_src_db": "PDBe"
+            },
+            {
+              "xref_id": "6K0Y",
+              "xref_name": "A",
+              "xref_src_db": "PDBe"
+            },
+            {
+              "xref_id": "6ROY",
+              "xref_name": "A",
+              "xref_src_db": "PDBe"
+            },
+            {
+              "xref_id": "6ROZ",
+              "xref_name": "A",
+              "xref_src_db": "PDBe"
+            },
+            {
+              "xref_id": "6UMT",
+              "xref_name": "A",
+              "xref_src_db": "PDBe"
+            },
+            {
+              "xref_id": "6UMU",
+              "xref_name": "A",
+              "xref_src_db": "PDBe"
+            },
+            {
+              "xref_id": "6UMV",
+              "xref_name": "A",
+              "xref_src_db": "PDBe"
+            },
+            {
+              "xref_id": "6XKR",
+              "xref_name": "A",
+              "xref_src_db": "PDBe"
+            },
+            {
+              "xref_id": "7BXA",
+              "xref_name": "A",
+              "xref_src_db": "PDBe"
+            },
+            {
+              "xref_id": "7CGW",
+              "xref_name": "A",
+              "xref_src_db": "PDBe"
+            },
+            {
+              "xref_id": "7CU5",
+              "xref_name": "A",
+              "xref_src_db": "PDBe"
+            },
+            {
+              "xref_id": "7E9B",
+              "xref_name": "A",
+              "xref_src_db": "PDBe"
+            },
+            {
+              "xref_id": "7VUX",
+              "xref_name": "A",
+              "xref_src_db": "PDBe"
+            },
+            {
+              "xref_id": "7WSL",
+              "xref_name": "A",
+              "xref_src_db": "PDBe"
+            },
+            {
+              "xref_id": "7WVM",
+              "xref_name": "A",
+              "xref_src_db": "PDBe"
+            },
+            {
+              "xref_id": "8AS0",
+              "xref_name": "A",
+              "xref_src_db": "PDBe"
+            },
+            {
+              "xref_id": "8EQ6",
+              "xref_name": "A",
+              "xref_src_db": "PDBe"
+            },
+            {
+              "xref_id": "8GY5",
+              "xref_name": "A",
+              "xref_src_db": "PDBe"
+            },
+            {
+              "xref_id": "8U31",
+              "xref_name": "A",
+              "xref_src_db": "PDBe"
+            },
+            {
+              "xref_id": "8U32",
+              "xref_name": "A",
+              "xref_src_db": "PDBe"
+            },
+            {
+              "xref_id": "9HK1",
+              "xref_name": "A",
+              "xref_src_db": "PDBe"
+            },
+            {
+              "xref_id": "9Q8L",
+              "xref_name": "A",
+              "xref_src_db": "PDBe"
+            },
+            {
+              "xref_id": "PF07686",
+              "xref_name": "V-set",
+              "xref_src_db": "Pfam"
+            },
+            {
+              "xref_id": "PA33110",
+              "xref_name": "programmed cell death 1",
+              "xref_src_db": "PharmGKB"
+            },
+            {
+              "xref_id": "Q15116",
+              "xref_name": null,
+              "xref_src_db": "Pharos"
+            },
+            {
+              "xref_id": "R-HSA-389948",
+              "xref_name": "Co-inhibition by PD-1",
+              "xref_src_db": "Reactome"
+            },
+            {
+              "xref_id": "R-HSA-9679191",
+              "xref_name": "Potential therapeutics for SARS",
+              "xref_src_db": "Reactome"
+            },
+            {
+              "xref_id": "O00517",
+              "xref_name": "Programmed cell death protein 1",
+              "xref_src_db": "UniProt"
+            },
+            {
+              "xref_id": "Q15116",
+              "xref_name": "Programmed cell death protein 1",
+              "xref_src_db": "UniProt"
+            },
+            {
+              "xref_id": "Q8IX89",
+              "xref_name": "Programmed cell death protein 1",
+              "xref_src_db": "UniProt"
+            }
+          ]
+        },
+        {
+          "accession": "Q9BQ51",
+          "component_description": "Programmed cell death 1 ligand 2",
+          "component_id": 15160,
+          "component_type": "PROTEIN",
+          "relationship": "PROTEIN SUBUNIT",
+          "target_component_synonyms": [
+            {
+              "component_synonym": "B7-DC",
+              "syn_type": "UNIPROT"
+            },
+            {
+              "component_synonym": "B7DC",
+              "syn_type": "GENE_SYMBOL_OTHER"
+            },
+            {
+              "component_synonym": "Butyrophilin B7-DC",
+              "syn_type": "UNIPROT"
+            },
+            {
+              "component_synonym": "CD273",
+              "syn_type": "GENE_SYMBOL_OTHER"
+            },
+            {
+              "component_synonym": "CD_antigen=CD273",
+              "syn_type": "UNIPROT"
+            },
+            {
+              "component_synonym": "PD-1 ligand 2",
+              "syn_type": "UNIPROT"
+            },
+            {
+              "component_synonym": "PDCD1L2",
+              "syn_type": "GENE_SYMBOL_OTHER"
+            },
+            {
+              "component_synonym": "PDCD1LG2",
+              "syn_type": "GENE_SYMBOL"
+            },
+            {
+              "component_synonym": "PDCD1 ligand 2",
+              "syn_type": "UNIPROT"
+            },
+            {
+              "component_synonym": "PD-L2",
+              "syn_type": "UNIPROT"
+            },
+            {
+              "component_synonym": "PDL2",
+              "syn_type": "GENE_SYMBOL_OTHER"
+            },
+            {
+              "component_synonym": "Programmed cell death 1 ligand 2",
+              "syn_type": "UNIPROT"
+            },
+            {
+              "component_synonym": "Programmed death ligand 2",
+              "syn_type": "UNIPROT"
+            }
+          ],
+          "target_component_xrefs": [
+            {
+              "xref_id": "Q9BQ51",
+              "xref_name": null,
+              "xref_src_db": "AlphaFoldDB"
+            },
+            {
+              "xref_id": "GO:0005576",
+              "xref_name": "extracellular region",
+              "xref_src_db": "GoComponent"
+            },
+            {
+              "xref_id": "GO:0005886",
+              "xref_name": "plasma membrane",
+              "xref_src_db": "GoComponent"
+            },
+            {
+              "xref_id": "GO:0009897",
+              "xref_name": "external side of plasma membrane",
+              "xref_src_db": "GoComponent"
+            },
+            {
+              "xref_id": "GO:0005515",
+              "xref_name": "protein binding",
+              "xref_src_db": "GoFunction"
+            },
+            {
+              "xref_id": "GO:0002250",
+              "xref_name": "adaptive immune response",
+              "xref_src_db": "GoProcess"
+            },
+            {
+              "xref_id": "GO:0006955",
+              "xref_name": "immune response",
+              "xref_src_db": "GoProcess"
+            },
+            {
+              "xref_id": "GO:0007166",
+              "xref_name": "cell surface receptor signaling pathway",
+              "xref_src_db": "GoProcess"
+            },
+            {
+              "xref_id": "GO:0031295",
+              "xref_name": "T cell costimulation",
+              "xref_src_db": "GoProcess"
+            },
+            {
+              "xref_id": "GO:0032689",
+              "xref_name": "negative regulation of type II interferon production",
+              "xref_src_db": "GoProcess"
+            },
+            {
+              "xref_id": "GO:0032693",
+              "xref_name": "negative regulation of interleukin-10 production",
+              "xref_src_db": "GoProcess"
+            },
+            {
+              "xref_id": "GO:0042102",
+              "xref_name": "positive regulation of T cell proliferation",
+              "xref_src_db": "GoProcess"
+            },
+            {
+              "xref_id": "GO:0042130",
+              "xref_name": "negative regulation of T cell proliferation",
+              "xref_src_db": "GoProcess"
+            },
+            {
+              "xref_id": "GO:0046007",
+              "xref_name": "negative regulation of activated T cell proliferation",
+              "xref_src_db": "GoProcess"
+            },
+            {
+              "xref_id": "GO:0071222",
+              "xref_name": "cellular response to lipopolysaccharide",
+              "xref_src_db": "GoProcess"
+            },
+            {
+              "xref_id": "HGNC:18731",
+              "xref_name": "PDCD1LG2",
+              "xref_src_db": "HGNC"
+            },
+            {
+              "xref_id": "Q9BQ51",
+              "xref_name": null,
+              "xref_src_db": "IntAct"
+            },
+            {
+              "xref_id": "IPR003599",
+              "xref_name": "Ig_sub",
+              "xref_src_db": "InterPro"
+            },
+            {
+              "xref_id": "IPR007110",
+              "xref_name": "Ig-like_dom",
+              "xref_src_db": "InterPro"
+            },
+            {
+              "xref_id": "IPR013783",
+              "xref_name": "Ig-like_fold",
+              "xref_src_db": "InterPro"
+            },
+            {
+              "xref_id": "IPR036179",
+              "xref_name": "Ig-like_dom_sf",
+              "xref_src_db": "InterPro"
+            },
+            {
+              "xref_id": "IPR051713",
+              "xref_name": "T-cell_Activation_Regulation",
+              "xref_src_db": "InterPro"
+            },
+            {
+              "xref_id": "IPR053896",
+              "xref_name": "BTN3A2-like_Ig-C",
+              "xref_src_db": "InterPro"
+            },
+            {
+              "xref_id": "PTHR25466",
+              "xref_name": "T-LYMPHOCYTE ACTIVATION ANTIGEN",
+              "xref_src_db": "PANTHER"
+            },
+            {
+              "xref_id": "PTHR25466:SF1",
+              "xref_name": "PROGRAMMED CELL DEATH 1 LIGAND 2",
+              "xref_src_db": "PANTHER"
+            },
+            {
+              "xref_id": "6UMT",
+              "xref_name": null,
+              "xref_src_db": "PDB"
+            },
+            {
+              "xref_id": "8J3V",
+              "xref_name": null,
+              "xref_src_db": "PDB"
+            },
+            {
+              "xref_id": "6UMT",
+              "xref_name": "A",
+              "xref_src_db": "PDBe"
+            },
+            {
+              "xref_id": "PF22705",
+              "xref_name": "C2-set_3",
+              "xref_src_db": "Pfam"
+            },
+            {
+              "xref_id": "PA134891547",
+              "xref_name": "programmed cell death 1 ligand 2",
+              "xref_src_db": "PharmGKB"
+            },
+            {
+              "xref_id": "Q9BQ51",
+              "xref_name": null,
+              "xref_src_db": "Pharos"
+            },
+            {
+              "xref_id": "R-HSA-389948",
+              "xref_name": "Co-inhibition by PD-1",
+              "xref_src_db": "Reactome"
+            },
+            {
+              "xref_id": "Q14CN8",
+              "xref_name": "Programmed cell death 1 ligand 2",
+              "xref_src_db": "UniProt"
+            },
+            {
+              "xref_id": "Q5T7Z6",
+              "xref_name": "Programmed cell death 1 ligand 2",
+              "xref_src_db": "UniProt"
+            },
+            {
+              "xref_id": "Q6JXL8",
+              "xref_name": "Programmed cell death 1 ligand 2",
+              "xref_src_db": "UniProt"
+            },
+            {
+              "xref_id": "Q6JXL9",
+              "xref_name": "Programmed cell death 1 ligand 2",
+              "xref_src_db": "UniProt"
+            },
+            {
+              "xref_id": "Q9BQ51",
+              "xref_name": "Programmed cell death 1 ligand 2",
+              "xref_src_db": "UniProt"
+            }
+          ]
+        }
+      ],
+      "target_type": "PROTEIN COMPLEX",
+      "tax_id": 9606
+    }
+  ]
+}

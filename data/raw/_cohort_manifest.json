@@ -1,0 +1,158 @@
+{
+  "captured_utc": "2026-07-23T18:26:37Z",
+  "versions": {
+    "open_targets": "26.06",
+    "chembl": "ChEMBL_37",
+    "clinicaltrials": "API 2.0.5",
+    "ct_cutoff": "2023-07-01"
+  },
+  "cohort": {
+    "PDCD1": {
+      "ensembl": "ENSG00000188389",
+      "uniprot": "Q15116",
+      "group": "saturated_checkpoint",
+      "chembl_target": "CHEMBL3307223",
+      "flagship_drugs": [
+        "NIVOLUMAB",
+        "PEMBROLIZUMAB",
+        "CEMIPLIMAB",
+        "TISLELIZUMAB",
+        "TORIPALIMAB"
+      ]
+    },
+    "CD274": {
+      "ensembl": "ENSG00000120217",
+      "uniprot": "Q9NZQ7",
+      "group": "saturated_checkpoint",
+      "chembl_target": "CHEMBL3580522",
+      "flagship_drugs": [
+        "DURVALUMAB",
+        "ATEZOLIZUMAB",
+        "AVELUMAB",
+        "COSIBELIMAB",
+        "SUGEMALIMAB"
+      ]
+    },
+    "CTLA4": {
+      "ensembl": "ENSG00000163599",
+      "uniprot": "P16410",
+      "group": "saturated_checkpoint",
+      "chembl_target": "CHEMBL2364164",
+      "flagship_drugs": [
+        "IPILIMUMAB",
+        "TREMELIMUMAB",
+        "CADONILIMAB",
+        "QUAVONLIMAB",
+        "ERFONRILIMAB"
+      ]
+    },
+    "LAG3": {
+      "ensembl": "ENSG00000089692",
+      "uniprot": "P18627",
+      "group": "saturated_checkpoint",
+      "chembl_target": "CHEMBL4630881",
+      "flagship_drugs": [
+        "RELATLIMAB",
+        "FAVEZELIMAB",
+        "FIANLIMAB",
+        "IERAMILIMAB",
+        "EFTILAGIMOD ALFA"
+      ]
+    },
+    "HAVCR2": {
+      "ensembl": "ENSG00000135077",
+      "uniprot": "Q8TDQ0",
+      "group": "saturated_checkpoint",
+      "chembl_target": "CHEMBL4630879",
+      "flagship_drugs": [
+        "SABATOLIMAB",
+        "COBOLIMAB",
+        "LOMVASTOMIG"
+      ]
+    },
+    "TIGIT": {
+      "ensembl": "ENSG00000181847",
+      "uniprot": "Q495A1",
+      "group": "saturated_checkpoint",
+      "chembl_target": "CHEMBL4630878",
+      "flagship_drugs": [
+        "VIBOSTOLIMAB",
+        "TIRAGOLUMAB",
+        "DOMVANALIMAB",
+        "OCIPERLIMAB",
+        "ETIGILIMAB"
+      ]
+    },
+    "TNFRSF9": {
+      "ensembl": "ENSG00000049249",
+      "uniprot": "Q07011",
+      "group": "costim_receptor",
+      "chembl_target": "CHEMBL3712857",
+      "flagship_drugs": [
+        "UTOMILUMAB",
+        "URELUMAB"
+      ]
+    },
+    "TNFRSF4": {
+      "ensembl": "ENSG00000186827",
+      "uniprot": "P43489",
+      "group": "costim_receptor",
+      "chembl_target": "CHEMBL3989383",
+      "flagship_drugs": [
+        "IVUXOLIMAB",
+        "ROCATINLIMAB",
+        "MEDI-6469",
+        "GSK-3174998",
+        "TELAZORLIMAB"
+      ]
+    },
+    "CD40": {
+      "ensembl": "ENSG00000101017",
+      "uniprot": "P25942",
+      "group": "costim_receptor",
+      "chembl_target": "CHEMBL1250358",
+      "flagship_drugs": [
+        "DACETUZUMAB",
+        "LUCATUMUMAB",
+        "TENELIXIMAB",
+        "PG-102",
+        "SELICRELUMAB"
+      ]
+    },
+    "ICOS": {
+      "ensembl": "ENSG00000163600",
+      "uniprot": "Q9Y6W8",
+      "group": "costim_receptor",
+      "chembl_target": "CHEMBL3712953",
+      "flagship_drugs": [
+        "FELADILIMAB",
+        "VOPRATELIMAB",
+        "ROZIBAFUSP ALFA",
+        "MEDI-570"
+      ]
+    },
+    "MAP4K1": {
+      "ensembl": "ENSG00000104814",
+      "uniprot": "Q92918",
+      "group": "emerging_intracellular",
+      "chembl_target": "CHEMBL5749",
+      "flagship_drugs": []
+    },
+    "CBLB": {
+      "ensembl": "ENSG00000114423",
+      "uniprot": "Q13191",
+      "group": "emerging_intracellular",
+      "chembl_target": "CHEMBL4879459",
+      "flagship_drugs": []
+    },
+    "TMEM173": {
+      "ensembl": "ENSG00000184584",
+      "uniprot": "Q86WV6",
+      "group": "emerging_intracellular",
+      "chembl_target": "CHEMBL4523377",
+      "flagship_drugs": [
+        "ADU-S100"
+      ]
+    }
+  }
+}

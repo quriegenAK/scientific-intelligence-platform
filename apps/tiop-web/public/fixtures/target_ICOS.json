@@ -1,0 +1,408 @@
+{
+  "symbol": "ICOS",
+  "ensembl": "ENSG00000163600",
+  "uniprot": "Q9Y6W8",
+  "group": "costim_receptor",
+  "facts": [
+    {
+      "field": "gene",
+      "label": "Gene",
+      "value": "ICOS",
+      "confidence": "HIGH",
+      "derivation": "",
+      "notes": "",
+      "is_reasoned": false,
+      "data_prov": {
+        "source": "Open Targets Platform",
+        "endpoint": "https://api.platform.opentargets.org/api/v4/graphql",
+        "data_version": "26.06",
+        "access_utc": "2026-07-23T18:26:37Z",
+        "query": "target(ensemblId:ENSG00000163600){ identity, class, tractability, subcellular, associatedDiseases, drugAndClinicalCandidates }",
+        "record_url": "https://platform.opentargets.org/target/ENSG00000163600",
+        "snapshot": "data/raw/ICOS/ot.json",
+        "citation": "Open Targets Platform v26.06 (2026-07-23)"
+      },
+      "reasoning_prov": null
+    },
+    {
+      "field": "protein",
+      "label": "Protein",
+      "value": "inducible T cell costimulator",
+      "confidence": "HIGH",
+      "derivation": "",
+      "notes": "",
+      "is_reasoned": false,
+      "data_prov": {
+        "source": "Open Targets Platform",
+        "endpoint": "https://api.platform.opentargets.org/api/v4/graphql",
+        "data_version": "26.06",
+        "access_utc": "2026-07-23T18:26:37Z",
+        "query": "target(ensemblId:ENSG00000163600){ identity, class, tractability, subcellular, associatedDiseases, drugAndClinicalCandidates }",
+        "record_url": "https://platform.opentargets.org/target/ENSG00000163600",
+        "snapshot": "data/raw/ICOS/ot.json",
+        "citation": "Open Targets Platform v26.06 (2026-07-23)"
+      },
+      "reasoning_prov": null
+    },
+    {
+      "field": "uniprot",
+      "label": "UniProt",
+      "value": "Q9Y6W8",
+      "confidence": "HIGH",
+      "derivation": "",
+      "notes": "",
+      "is_reasoned": false,
+      "data_prov": {
+        "source": "Open Targets Platform",
+        "endpoint": "https://api.platform.opentargets.org/api/v4/graphql",
+        "data_version": "26.06",
+        "access_utc": "2026-07-23T18:26:37Z",
+        "query": "target(ensemblId:ENSG00000163600){ identity, class, tractability, subcellular, associatedDiseases, drugAndClinicalCandidates }",
+        "record_url": "https://platform.opentargets.org/target/ENSG00000163600",
+        "snapshot": "data/raw/ICOS/ot.json",
+        "citation": "Open Targets Platform v26.06 (2026-07-23)"
+      },
+      "reasoning_prov": null
+    },
+    {
+      "field": "target_family_class",
+      "label": "Target family / class",
+      "value": "Unclassified protein",
+      "confidence": "HIGH",
+      "derivation": "",
+      "notes": "",
+      "is_reasoned": false,
+      "data_prov": {
+        "source": "Open Targets Platform",
+        "endpoint": "https://api.platform.opentargets.org/api/v4/graphql",
+        "data_version": "26.06",
+        "access_utc": "2026-07-23T18:26:37Z",
+        "query": "target(ensemblId:ENSG00000163600){ identity, class, tractability, subcellular, associatedDiseases, drugAndClinicalCandidates }",
+        "record_url": "https://platform.opentargets.org/target/ENSG00000163600",
+        "snapshot": "data/raw/ICOS/ot.json",
+        "citation": "Open Targets Platform v26.06 (2026-07-23)"
+      },
+      "reasoning_prov": null
+    },
+    {
+      "field": "subcellular_location",
+      "label": "Subcellular location",
+      "value": "Actin filaments",
+      "confidence": "HIGH",
+      "derivation": "",
+      "notes": "Intracellular/cytoplasmic => aligns with QurieGen's white-space thesis.",
+      "is_reasoned": false,
+      "data_prov": {
+        "source": "Open Targets Platform",
+        "endpoint": "https://api.platform.opentargets.org/api/v4/graphql",
+        "data_version": "26.06",
+        "access_utc": "2026-07-23T18:26:37Z",
+        "query": "target(ensemblId:ENSG00000163600){ identity, class, tractability, subcellular, associatedDiseases, drugAndClinicalCandidates }",
+        "record_url": "https://platform.opentargets.org/target/ENSG00000163600",
+        "snapshot": "data/raw/ICOS/ot.json",
+        "citation": "Open Targets Platform v26.06 (2026-07-23)"
+      },
+      "reasoning_prov": null
+    },
+    {
+      "field": "development_level",
+      "label": "Development level",
+      "value": "Tchem",
+      "confidence": "DERIVED",
+      "derivation": "ChEMBL max_phase==4 => Tclin; else phase>=2 or tractable => Tchem; else Tbio. Pharos pull deferred.",
+      "notes": "",
+      "is_reasoned": false,
+      "data_prov": {
+        "source": "ChEMBL",
+        "endpoint": "https://www.ebi.ac.uk/chembl/api/data",
+        "data_version": "ChEMBL_37",
+        "access_utc": "2026-07-23T18:26:37Z",
+        "query": "mechanism?target_chembl_id=CHEMBL3712953; molecule?molecule_chembl_id__in=<mechanism molecules>",
+        "record_url": "https://www.ebi.ac.uk/chembl/target_report_card/CHEMBL3712953/",
+        "snapshot": "data/raw/ICOS/chembl.json",
+        "citation": "ChEMBL vChEMBL_37 (2026-07-23)"
+      },
+      "reasoning_prov": null
+    },
+    {
+      "field": "approved_drugs",
+      "label": "Approved drug(s)",
+      "value": "None (no approved drug)",
+      "confidence": "HIGH",
+      "derivation": "",
+      "notes": "No approved drug \u2014 part of the white-space signal.",
+      "is_reasoned": false,
+      "data_prov": {
+        "source": "ChEMBL",
+        "endpoint": "https://www.ebi.ac.uk/chembl/api/data",
+        "data_version": "ChEMBL_37",
+        "access_utc": "2026-07-23T18:26:37Z",
+        "query": "mechanism?target_chembl_id=CHEMBL3712953; molecule?molecule_chembl_id__in=<mechanism molecules>",
+        "record_url": "https://www.ebi.ac.uk/chembl/target_report_card/CHEMBL3712953/",
+        "snapshot": "data/raw/ICOS/chembl.json",
+        "citation": "ChEMBL vChEMBL_37 (2026-07-23)"
+      },
+      "reasoning_prov": null
+    },
+    {
+      "field": "mechanism_moa",
+      "label": "Mechanism / MoA",
+      "value": "Inducible T-cell costimulator agonist; Inducible T-cell costimulator inhibitor",
+      "confidence": "HIGH",
+      "derivation": "",
+      "notes": "",
+      "is_reasoned": false,
+      "data_prov": {
+        "source": "ChEMBL",
+        "endpoint": "https://www.ebi.ac.uk/chembl/api/data",
+        "data_version": "ChEMBL_37",
+        "access_utc": "2026-07-23T18:26:37Z",
+        "query": "mechanism?target_chembl_id=CHEMBL3712953; molecule?molecule_chembl_id__in=<mechanism molecules>",
+        "record_url": "https://www.ebi.ac.uk/chembl/target_report_card/CHEMBL3712953/",
+        "snapshot": "data/raw/ICOS/chembl.json",
+        "citation": "ChEMBL vChEMBL_37 (2026-07-23)"
+      },
+      "reasoning_prov": null
+    },
+    {
+      "field": "modality",
+      "label": "Modality",
+      "value": "Antibody, Protein",
+      "confidence": "HIGH",
+      "derivation": "",
+      "notes": "",
+      "is_reasoned": false,
+      "data_prov": {
+        "source": "ChEMBL",
+        "endpoint": "https://www.ebi.ac.uk/chembl/api/data",
+        "data_version": "ChEMBL_37",
+        "access_utc": "2026-07-23T18:26:37Z",
+        "query": "mechanism?target_chembl_id=CHEMBL3712953; molecule?molecule_chembl_id__in=<mechanism molecules>",
+        "record_url": "https://www.ebi.ac.uk/chembl/target_report_card/CHEMBL3712953/",
+        "snapshot": "data/raw/ICOS/chembl.json",
+        "citation": "ChEMBL vChEMBL_37 (2026-07-23)"
+      },
+      "reasoning_prov": null
+    },
+    {
+      "field": "first_approval_year",
+      "label": "First approval year",
+      "value": null,
+      "confidence": "MEDIUM",
+      "derivation": "",
+      "notes": "No approval yet.",
+      "is_reasoned": false,
+      "data_prov": {
+        "source": "ChEMBL",
+        "endpoint": "https://www.ebi.ac.uk/chembl/api/data",
+        "data_version": "ChEMBL_37",
+        "access_utc": "2026-07-23T18:26:37Z",
+        "query": "mechanism?target_chembl_id=CHEMBL3712953; molecule?molecule_chembl_id__in=<mechanism molecules>",
+        "record_url": "https://www.ebi.ac.uk/chembl/target_report_card/CHEMBL3712953/",
+        "snapshot": "data/raw/ICOS/chembl.json",
+        "citation": "ChEMBL vChEMBL_37 (2026-07-23)"
+      },
+      "reasoning_prov": null
+    },
+    {
+      "field": "highest_phase",
+      "label": "Highest phase",
+      "value": "Phase 3",
+      "confidence": "HIGH",
+      "derivation": "",
+      "notes": "From Open Targets max clinical stage across candidates; CT.gov corroborates trial activity.",
+      "is_reasoned": false,
+      "data_prov": {
+        "source": "ClinicalTrials.gov",
+        "endpoint": "https://clinicaltrials.gov/api/v2/studies",
+        "data_version": "API 2.0.5",
+        "access_utc": "2026-07-23T18:26:37Z",
+        "query": "studies?query.intr=<flagship drugs>&fields=Phase,LeadSponsor* (industry sponsors; as-of-cutoff censor)",
+        "record_url": "https://clinicaltrials.gov/search?term=ICOS",
+        "snapshot": "data/raw/ICOS/ct.json",
+        "citation": "ClinicalTrials.gov vAPI 2.0.5 (2026-07-23)"
+      },
+      "reasoning_prov": null
+    },
+    {
+      "field": "companies_developing",
+      "label": "Companies developing",
+      "value": "Amgen, GlaxoSmithKline, Jounce Therapeutics, Inc., MedImmune LLC",
+      "confidence": "MEDIUM",
+      "derivation": "Distinct industry lead sponsors across flagship-drug trials (sampled).",
+      "notes": "",
+      "is_reasoned": false,
+      "data_prov": {
+        "source": "ClinicalTrials.gov",
+        "endpoint": "https://clinicaltrials.gov/api/v2/studies",
+        "data_version": "API 2.0.5",
+        "access_utc": "2026-07-23T18:26:37Z",
+        "query": "studies?query.intr=<flagship drugs>&fields=Phase,LeadSponsor* (industry sponsors; as-of-cutoff censor)",
+        "record_url": "https://clinicaltrials.gov/search?term=ICOS",
+        "snapshot": "data/raw/ICOS/ct.json",
+        "citation": "ClinicalTrials.gov vAPI 2.0.5 (2026-07-23)"
+      },
+      "reasoning_prov": null
+    },
+    {
+      "field": "disease_indication",
+      "label": "Disease / indication",
+      "value": "immunodeficiency, common variable, 1, common variable immunodeficiency, hypothyroidism, severe combined immunodeficiency, combined immunodeficiency, recurrent infections associated with rare immunoglobulin isotypes deficiency",
+      "confidence": "HIGH",
+      "derivation": "",
+      "notes": "Top OT disease associations by score.",
+      "is_reasoned": false,
+      "data_prov": {
+        "source": "Open Targets Platform",
+        "endpoint": "https://api.platform.opentargets.org/api/v4/graphql",
+        "data_version": "26.06",
+        "access_utc": "2026-07-23T18:26:37Z",
+        "query": "target(ensemblId:ENSG00000163600){ identity, class, tractability, subcellular, associatedDiseases, drugAndClinicalCandidates }",
+        "record_url": "https://platform.opentargets.org/target/ENSG00000163600",
+        "snapshot": "data/raw/ICOS/ot.json",
+        "citation": "Open Targets Platform v26.06 (2026-07-23)"
+      },
+      "reasoning_prov": null
+    },
+    {
+      "field": "therapeutic_area",
+      "label": "Therapeutic area",
+      "value": "Immuno-oncology",
+      "confidence": "DERIVED",
+      "derivation": "IO cohort scope.",
+      "notes": "",
+      "is_reasoned": false,
+      "data_prov": {
+        "source": "Open Targets Platform",
+        "endpoint": "https://api.platform.opentargets.org/api/v4/graphql",
+        "data_version": "26.06",
+        "access_utc": "2026-07-23T18:26:37Z",
+        "query": "target(ensemblId:ENSG00000163600){ identity, class, tractability, subcellular, associatedDiseases, drugAndClinicalCandidates }",
+        "record_url": "https://platform.opentargets.org/target/ENSG00000163600",
+        "snapshot": "data/raw/ICOS/ot.json",
+        "citation": "Open Targets Platform v26.06 (2026-07-23)"
+      },
+      "reasoning_prov": null
+    },
+    {
+      "field": "white_space_score",
+      "label": "White Space score",
+      "value": 45.42,
+      "confidence": "MEDIUM",
+      "derivation": "WS = 100\u00b7V\u00b7T\u00b7(1\u2212S); V=0.7313 (OT assoc), T=0.9 (OT tractability), S=0.3099 (cohort-normalized saturation). Rank 3/13.",
+      "notes": "",
+      "is_reasoned": false,
+      "data_prov": {
+        "source": "ClinicalTrials.gov",
+        "endpoint": "https://clinicaltrials.gov/api/v2/studies",
+        "data_version": "API 2.0.5",
+        "access_utc": "2026-07-23T18:26:37Z",
+        "query": "studies?query.intr=<flagship drugs>&fields=Phase,LeadSponsor* (industry sponsors; as-of-cutoff censor)",
+        "record_url": "https://clinicaltrials.gov/search?term=ICOS",
+        "snapshot": "data/raw/ICOS/ct.json",
+        "citation": "ClinicalTrials.gov vAPI 2.0.5 (2026-07-23)"
+      },
+      "reasoning_prov": null
+    },
+    {
+      "field": "qurie_relevance",
+      "label": "QurieGen relevance",
+      "value": "High edge \u2014 intracellular + validated + unsaturated",
+      "confidence": "DERIVED",
+      "derivation": "Composed from localization + white-space rank; QurieGen edge is highest for validated, unsaturated, intracellular targets its causal multi-omics platform can address.",
+      "notes": "",
+      "is_reasoned": true,
+      "data_prov": {
+        "source": "Open Targets Platform",
+        "endpoint": "https://api.platform.opentargets.org/api/v4/graphql",
+        "data_version": "26.06",
+        "access_utc": "2026-07-23T18:26:37Z",
+        "query": "target(ensemblId:ENSG00000163600){ identity, class, tractability, subcellular, associatedDiseases, drugAndClinicalCandidates }",
+        "record_url": "https://platform.opentargets.org/target/ENSG00000163600",
+        "snapshot": "data/raw/ICOS/ot.json",
+        "citation": "Open Targets Platform v26.06 (2026-07-23)"
+      },
+      "reasoning_prov": {
+        "model_version": "claude-fable-5",
+        "prompt_version": "brief-2026-07-23.v2",
+        "inputs_hash": "72a13b2540e95feb",
+        "reasoning_kind": "classification"
+      }
+    }
+  ],
+  "white_space": {
+    "score": 45.42,
+    "formula": "WS = 100 \u00b7 Validation \u00b7 Tractability \u00b7 (1 \u2212 Saturation)",
+    "components": [
+      {
+        "name": "Validation (V)",
+        "value": 0.7313,
+        "weight_role": "multiplicative",
+        "inputs": "Open Targets max disease-association score",
+        "data_prov": {
+          "source": "Open Targets Platform",
+          "endpoint": "https://api.platform.opentargets.org/api/v4/graphql",
+          "data_version": "26.06",
+          "access_utc": "2026-07-23T18:26:37Z",
+          "query": "target(ensemblId:ENSG00000163600){ identity, class, tractability, subcellular, associatedDiseases, drugAndClinicalCandidates }",
+          "record_url": "https://platform.opentargets.org/target/ENSG00000163600",
+          "snapshot": "data/raw/ICOS/ot.json",
+          "citation": "Open Targets Platform v26.06 (2026-07-23)"
+        }
+      },
+      {
+        "name": "Tractability (T)",
+        "value": 0.9,
+        "weight_role": "multiplicative",
+        "inputs": "Open Targets tractability \u2014 best drugging-path bucket",
+        "data_prov": {
+          "source": "Open Targets Platform",
+          "endpoint": "https://api.platform.opentargets.org/api/v4/graphql",
+          "data_version": "26.06",
+          "access_utc": "2026-07-23T18:26:37Z",
+          "query": "target(ensemblId:ENSG00000163600){ identity, class, tractability, subcellular, associatedDiseases, drugAndClinicalCandidates }",
+          "record_url": "https://platform.opentargets.org/target/ENSG00000163600",
+          "snapshot": "data/raw/ICOS/ot.json",
+          "citation": "Open Targets Platform v26.06 (2026-07-23)"
+        }
+      },
+      {
+        "name": "Saturation (S)",
+        "value": 0.3099,
+        "weight_role": "multiplicative",
+        "inputs": "Cohort-normalized: approvals + candidates + trials + industry sponsors",
+        "data_prov": {
+          "source": "ClinicalTrials.gov",
+          "endpoint": "https://clinicaltrials.gov/api/v2/studies",
+          "data_version": "API 2.0.5",
+          "access_utc": "2026-07-23T18:26:37Z",
+          "query": "studies?query.intr=<flagship drugs>&fields=Phase,LeadSponsor* (industry sponsors; as-of-cutoff censor)",
+          "record_url": "https://clinicaltrials.gov/search?term=ICOS",
+          "snapshot": "data/raw/ICOS/ct.json",
+          "citation": "ClinicalTrials.gov vAPI 2.0.5 (2026-07-23)"
+        }
+      }
+    ],
+    "cohort_rank": 3,
+    "cohort_size": 13,
+    "percentile": 83.3,
+    "confidence": "MEDIUM",
+    "interpretation": "Top-tier white space \u2014 validated, tractable, and comparatively uncrowded within the IO cohort.",
+    "score_version": "whitespace-0.1.0"
+  },
+  "executive_brief_md": "## ICOS \u2014 inducible T cell costimulator\n\n**White Space score 45.42/100 \u00b7 rank 3/13 \u00b7 MEDIUM confidence.** Top-tier white space \u2014 validated, tractable, and comparatively uncrowded within the IO cohort.\n\nICOS is a actin filaments target in the immuno-oncology cohort with no approved drug yet. Development level **Tchem**; mechanism: Inducible T-cell costimulator agonist; Inducible T-cell costimulator inhibitor. Competitive footprint: 4 industry sponsor(s) in trials. Leading disease associations: immunodeficiency, common variable, 1, common variable immunodeficiency, hypothyroidism, severe combined immunodeficiency.\n\n**Score decomposition** \u2014 Validation 0.7313, Tractability 0.9, Saturation 0.3099 (cohort-normalized). The score is multiplicative, so crowding drives it down even when biology is validated \u2014 which is why saturated checkpoints sit low and validated-but-uncrowded targets rise.\n\n*Every figure above resolves to a versioned source in the Provenance tab. This brief is model-written (claude-fable-5) over sourced facts only.*",
+  "trust": {
+    "pipeline_version": "tiop-0.2.0",
+    "data_versions": {
+      "open_targets": "26.06",
+      "chembl": "ChEMBL_37",
+      "clinicaltrials": "API 2.0.5"
+    },
+    "reproducible": true,
+    "reproducibility_note": "Profile is a pure function of pinned data/raw snapshots + versioned score code; re-running build_cohort.py yields the same content_hash.",
+    "content_hash": "c3c9283e6dca1d65",
+    "model_version": "claude-fable-5",
+    "prompt_version": "brief-2026-07-23.v2"
+  },
+  "discrepancies": []
+}

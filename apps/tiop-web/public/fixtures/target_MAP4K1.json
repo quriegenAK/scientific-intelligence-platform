@@ -1,0 +1,408 @@
+{
+  "symbol": "MAP4K1",
+  "ensembl": "ENSG00000104814",
+  "uniprot": "Q92918",
+  "group": "emerging_intracellular",
+  "facts": [
+    {
+      "field": "gene",
+      "label": "Gene",
+      "value": "MAP4K1",
+      "confidence": "HIGH",
+      "derivation": "",
+      "notes": "",
+      "is_reasoned": false,
+      "data_prov": {
+        "source": "Open Targets Platform",
+        "endpoint": "https://api.platform.opentargets.org/api/v4/graphql",
+        "data_version": "26.06",
+        "access_utc": "2026-07-23T18:26:37Z",
+        "query": "target(ensemblId:ENSG00000104814){ identity, class, tractability, subcellular, associatedDiseases, drugAndClinicalCandidates }",
+        "record_url": "https://platform.opentargets.org/target/ENSG00000104814",
+        "snapshot": "data/raw/MAP4K1/ot.json",
+        "citation": "Open Targets Platform v26.06 (2026-07-23)"
+      },
+      "reasoning_prov": null
+    },
+    {
+      "field": "protein",
+      "label": "Protein",
+      "value": "mitogen-activated protein kinase kinase kinase kinase 1",
+      "confidence": "HIGH",
+      "derivation": "",
+      "notes": "",
+      "is_reasoned": false,
+      "data_prov": {
+        "source": "Open Targets Platform",
+        "endpoint": "https://api.platform.opentargets.org/api/v4/graphql",
+        "data_version": "26.06",
+        "access_utc": "2026-07-23T18:26:37Z",
+        "query": "target(ensemblId:ENSG00000104814){ identity, class, tractability, subcellular, associatedDiseases, drugAndClinicalCandidates }",
+        "record_url": "https://platform.opentargets.org/target/ENSG00000104814",
+        "snapshot": "data/raw/MAP4K1/ot.json",
+        "citation": "Open Targets Platform v26.06 (2026-07-23)"
+      },
+      "reasoning_prov": null
+    },
+    {
+      "field": "uniprot",
+      "label": "UniProt",
+      "value": "Q92918",
+      "confidence": "HIGH",
+      "derivation": "",
+      "notes": "",
+      "is_reasoned": false,
+      "data_prov": {
+        "source": "Open Targets Platform",
+        "endpoint": "https://api.platform.opentargets.org/api/v4/graphql",
+        "data_version": "26.06",
+        "access_utc": "2026-07-23T18:26:37Z",
+        "query": "target(ensemblId:ENSG00000104814){ identity, class, tractability, subcellular, associatedDiseases, drugAndClinicalCandidates }",
+        "record_url": "https://platform.opentargets.org/target/ENSG00000104814",
+        "snapshot": "data/raw/MAP4K1/ot.json",
+        "citation": "Open Targets Platform v26.06 (2026-07-23)"
+      },
+      "reasoning_prov": null
+    },
+    {
+      "field": "target_family_class",
+      "label": "Target family / class",
+      "value": "Protein Kinase, STE protein kinase STE20 family, STE protein kinase group, Enzyme, Kinase, STE protein kinase KHS subfamily",
+      "confidence": "HIGH",
+      "derivation": "",
+      "notes": "",
+      "is_reasoned": false,
+      "data_prov": {
+        "source": "Open Targets Platform",
+        "endpoint": "https://api.platform.opentargets.org/api/v4/graphql",
+        "data_version": "26.06",
+        "access_utc": "2026-07-23T18:26:37Z",
+        "query": "target(ensemblId:ENSG00000104814){ identity, class, tractability, subcellular, associatedDiseases, drugAndClinicalCandidates }",
+        "record_url": "https://platform.opentargets.org/target/ENSG00000104814",
+        "snapshot": "data/raw/MAP4K1/ot.json",
+        "citation": "Open Targets Platform v26.06 (2026-07-23)"
+      },
+      "reasoning_prov": null
+    },
+    {
+      "field": "subcellular_location",
+      "label": "Subcellular location",
+      "value": "Plasma membrane",
+      "confidence": "HIGH",
+      "derivation": "",
+      "notes": "Intracellular/cytoplasmic => aligns with QurieGen's white-space thesis.",
+      "is_reasoned": false,
+      "data_prov": {
+        "source": "Open Targets Platform",
+        "endpoint": "https://api.platform.opentargets.org/api/v4/graphql",
+        "data_version": "26.06",
+        "access_utc": "2026-07-23T18:26:37Z",
+        "query": "target(ensemblId:ENSG00000104814){ identity, class, tractability, subcellular, associatedDiseases, drugAndClinicalCandidates }",
+        "record_url": "https://platform.opentargets.org/target/ENSG00000104814",
+        "snapshot": "data/raw/MAP4K1/ot.json",
+        "citation": "Open Targets Platform v26.06 (2026-07-23)"
+      },
+      "reasoning_prov": null
+    },
+    {
+      "field": "development_level",
+      "label": "Development level",
+      "value": "Tchem",
+      "confidence": "DERIVED",
+      "derivation": "ChEMBL max_phase==4 => Tclin; else phase>=2 or tractable => Tchem; else Tbio. Pharos pull deferred.",
+      "notes": "",
+      "is_reasoned": false,
+      "data_prov": {
+        "source": "ChEMBL",
+        "endpoint": "https://www.ebi.ac.uk/chembl/api/data",
+        "data_version": "ChEMBL_37",
+        "access_utc": "2026-07-23T18:26:37Z",
+        "query": "mechanism?target_chembl_id=CHEMBL5749; molecule?molecule_chembl_id__in=<mechanism molecules>",
+        "record_url": "https://www.ebi.ac.uk/chembl/target_report_card/CHEMBL5749/",
+        "snapshot": "data/raw/MAP4K1/chembl.json",
+        "citation": "ChEMBL vChEMBL_37 (2026-07-23)"
+      },
+      "reasoning_prov": null
+    },
+    {
+      "field": "approved_drugs",
+      "label": "Approved drug(s)",
+      "value": "None (no approved drug)",
+      "confidence": "HIGH",
+      "derivation": "",
+      "notes": "No approved drug \u2014 part of the white-space signal.",
+      "is_reasoned": false,
+      "data_prov": {
+        "source": "ChEMBL",
+        "endpoint": "https://www.ebi.ac.uk/chembl/api/data",
+        "data_version": "ChEMBL_37",
+        "access_utc": "2026-07-23T18:26:37Z",
+        "query": "mechanism?target_chembl_id=CHEMBL5749; molecule?molecule_chembl_id__in=<mechanism molecules>",
+        "record_url": "https://www.ebi.ac.uk/chembl/target_report_card/CHEMBL5749/",
+        "snapshot": "data/raw/MAP4K1/chembl.json",
+        "citation": "ChEMBL vChEMBL_37 (2026-07-23)"
+      },
+      "reasoning_prov": null
+    },
+    {
+      "field": "mechanism_moa",
+      "label": "Mechanism / MoA",
+      "value": "No ChEMBL-registered mechanism yet",
+      "confidence": "MEDIUM",
+      "derivation": "",
+      "notes": "",
+      "is_reasoned": false,
+      "data_prov": {
+        "source": "ChEMBL",
+        "endpoint": "https://www.ebi.ac.uk/chembl/api/data",
+        "data_version": "ChEMBL_37",
+        "access_utc": "2026-07-23T18:26:37Z",
+        "query": "mechanism?target_chembl_id=CHEMBL5749; molecule?molecule_chembl_id__in=<mechanism molecules>",
+        "record_url": "https://www.ebi.ac.uk/chembl/target_report_card/CHEMBL5749/",
+        "snapshot": "data/raw/MAP4K1/chembl.json",
+        "citation": "ChEMBL vChEMBL_37 (2026-07-23)"
+      },
+      "reasoning_prov": null
+    },
+    {
+      "field": "modality",
+      "label": "Modality",
+      "value": "n/a (no approved modality)",
+      "confidence": "HIGH",
+      "derivation": "",
+      "notes": "",
+      "is_reasoned": false,
+      "data_prov": {
+        "source": "ChEMBL",
+        "endpoint": "https://www.ebi.ac.uk/chembl/api/data",
+        "data_version": "ChEMBL_37",
+        "access_utc": "2026-07-23T18:26:37Z",
+        "query": "mechanism?target_chembl_id=CHEMBL5749; molecule?molecule_chembl_id__in=<mechanism molecules>",
+        "record_url": "https://www.ebi.ac.uk/chembl/target_report_card/CHEMBL5749/",
+        "snapshot": "data/raw/MAP4K1/chembl.json",
+        "citation": "ChEMBL vChEMBL_37 (2026-07-23)"
+      },
+      "reasoning_prov": null
+    },
+    {
+      "field": "first_approval_year",
+      "label": "First approval year",
+      "value": null,
+      "confidence": "MEDIUM",
+      "derivation": "",
+      "notes": "No approval yet.",
+      "is_reasoned": false,
+      "data_prov": {
+        "source": "ChEMBL",
+        "endpoint": "https://www.ebi.ac.uk/chembl/api/data",
+        "data_version": "ChEMBL_37",
+        "access_utc": "2026-07-23T18:26:37Z",
+        "query": "mechanism?target_chembl_id=CHEMBL5749; molecule?molecule_chembl_id__in=<mechanism molecules>",
+        "record_url": "https://www.ebi.ac.uk/chembl/target_report_card/CHEMBL5749/",
+        "snapshot": "data/raw/MAP4K1/chembl.json",
+        "citation": "ChEMBL vChEMBL_37 (2026-07-23)"
+      },
+      "reasoning_prov": null
+    },
+    {
+      "field": "highest_phase",
+      "label": "Highest phase",
+      "value": "Preclinical",
+      "confidence": "HIGH",
+      "derivation": "",
+      "notes": "From Open Targets max clinical stage across candidates; CT.gov corroborates trial activity.",
+      "is_reasoned": false,
+      "data_prov": {
+        "source": "ClinicalTrials.gov",
+        "endpoint": "https://clinicaltrials.gov/api/v2/studies",
+        "data_version": "API 2.0.5",
+        "access_utc": "2026-07-23T18:26:37Z",
+        "query": "studies?query.intr=<flagship drugs>&fields=Phase,LeadSponsor* (industry sponsors; as-of-cutoff censor)",
+        "record_url": "https://clinicaltrials.gov/search?term=MAP4K1",
+        "snapshot": "data/raw/MAP4K1/ct.json",
+        "citation": "ClinicalTrials.gov vAPI 2.0.5 (2026-07-23)"
+      },
+      "reasoning_prov": null
+    },
+    {
+      "field": "companies_developing",
+      "label": "Companies developing",
+      "value": "None registered (industry)",
+      "confidence": "MEDIUM",
+      "derivation": "Distinct industry lead sponsors across flagship-drug trials (sampled).",
+      "notes": "No ChEMBL-named drug -> CT.gov trial count is a floor (real activity may be higher).",
+      "is_reasoned": false,
+      "data_prov": {
+        "source": "ClinicalTrials.gov",
+        "endpoint": "https://clinicaltrials.gov/api/v2/studies",
+        "data_version": "API 2.0.5",
+        "access_utc": "2026-07-23T18:26:37Z",
+        "query": "studies?query.intr=<flagship drugs>&fields=Phase,LeadSponsor* (industry sponsors; as-of-cutoff censor)",
+        "record_url": "https://clinicaltrials.gov/search?term=MAP4K1",
+        "snapshot": "data/raw/MAP4K1/ct.json",
+        "citation": "ClinicalTrials.gov vAPI 2.0.5 (2026-07-23)"
+      },
+      "reasoning_prov": null
+    },
+    {
+      "field": "disease_indication",
+      "label": "Disease / indication",
+      "value": "response to xenobiotic stimulus, poisoning, injury, neoplasm, acute myeloid leukemia, systemic lupus erythematosus",
+      "confidence": "HIGH",
+      "derivation": "",
+      "notes": "Top OT disease associations by score.",
+      "is_reasoned": false,
+      "data_prov": {
+        "source": "Open Targets Platform",
+        "endpoint": "https://api.platform.opentargets.org/api/v4/graphql",
+        "data_version": "26.06",
+        "access_utc": "2026-07-23T18:26:37Z",
+        "query": "target(ensemblId:ENSG00000104814){ identity, class, tractability, subcellular, associatedDiseases, drugAndClinicalCandidates }",
+        "record_url": "https://platform.opentargets.org/target/ENSG00000104814",
+        "snapshot": "data/raw/MAP4K1/ot.json",
+        "citation": "Open Targets Platform v26.06 (2026-07-23)"
+      },
+      "reasoning_prov": null
+    },
+    {
+      "field": "therapeutic_area",
+      "label": "Therapeutic area",
+      "value": "Immuno-oncology",
+      "confidence": "DERIVED",
+      "derivation": "IO cohort scope.",
+      "notes": "",
+      "is_reasoned": false,
+      "data_prov": {
+        "source": "Open Targets Platform",
+        "endpoint": "https://api.platform.opentargets.org/api/v4/graphql",
+        "data_version": "26.06",
+        "access_utc": "2026-07-23T18:26:37Z",
+        "query": "target(ensemblId:ENSG00000104814){ identity, class, tractability, subcellular, associatedDiseases, drugAndClinicalCandidates }",
+        "record_url": "https://platform.opentargets.org/target/ENSG00000104814",
+        "snapshot": "data/raw/MAP4K1/ot.json",
+        "citation": "Open Targets Platform v26.06 (2026-07-23)"
+      },
+      "reasoning_prov": null
+    },
+    {
+      "field": "white_space_score",
+      "label": "White Space score",
+      "value": 13.18,
+      "confidence": "MEDIUM",
+      "derivation": "WS = 100\u00b7V\u00b7T\u00b7(1\u2212S); V=0.2197 (OT assoc), T=0.6 (OT tractability), S=0.0 (cohort-normalized saturation). Rank 11/13.",
+      "notes": "No ChEMBL-named drug -> CT.gov trial count is a floor (real activity may be higher).",
+      "is_reasoned": false,
+      "data_prov": {
+        "source": "ClinicalTrials.gov",
+        "endpoint": "https://clinicaltrials.gov/api/v2/studies",
+        "data_version": "API 2.0.5",
+        "access_utc": "2026-07-23T18:26:37Z",
+        "query": "studies?query.intr=<flagship drugs>&fields=Phase,LeadSponsor* (industry sponsors; as-of-cutoff censor)",
+        "record_url": "https://clinicaltrials.gov/search?term=MAP4K1",
+        "snapshot": "data/raw/MAP4K1/ct.json",
+        "citation": "ClinicalTrials.gov vAPI 2.0.5 (2026-07-23)"
+      },
+      "reasoning_prov": null
+    },
+    {
+      "field": "qurie_relevance",
+      "label": "QurieGen relevance",
+      "value": "Benchmark / saturated \u2014 calibration only",
+      "confidence": "DERIVED",
+      "derivation": "Composed from localization + white-space rank; QurieGen edge is highest for validated, unsaturated, intracellular targets its causal multi-omics platform can address.",
+      "notes": "",
+      "is_reasoned": true,
+      "data_prov": {
+        "source": "Open Targets Platform",
+        "endpoint": "https://api.platform.opentargets.org/api/v4/graphql",
+        "data_version": "26.06",
+        "access_utc": "2026-07-23T18:26:37Z",
+        "query": "target(ensemblId:ENSG00000104814){ identity, class, tractability, subcellular, associatedDiseases, drugAndClinicalCandidates }",
+        "record_url": "https://platform.opentargets.org/target/ENSG00000104814",
+        "snapshot": "data/raw/MAP4K1/ot.json",
+        "citation": "Open Targets Platform v26.06 (2026-07-23)"
+      },
+      "reasoning_prov": {
+        "model_version": "claude-fable-5",
+        "prompt_version": "brief-2026-07-23.v2",
+        "inputs_hash": "c8c14ef013115096",
+        "reasoning_kind": "classification"
+      }
+    }
+  ],
+  "white_space": {
+    "score": 13.18,
+    "formula": "WS = 100 \u00b7 Validation \u00b7 Tractability \u00b7 (1 \u2212 Saturation)",
+    "components": [
+      {
+        "name": "Validation (V)",
+        "value": 0.2197,
+        "weight_role": "multiplicative",
+        "inputs": "Open Targets max disease-association score",
+        "data_prov": {
+          "source": "Open Targets Platform",
+          "endpoint": "https://api.platform.opentargets.org/api/v4/graphql",
+          "data_version": "26.06",
+          "access_utc": "2026-07-23T18:26:37Z",
+          "query": "target(ensemblId:ENSG00000104814){ identity, class, tractability, subcellular, associatedDiseases, drugAndClinicalCandidates }",
+          "record_url": "https://platform.opentargets.org/target/ENSG00000104814",
+          "snapshot": "data/raw/MAP4K1/ot.json",
+          "citation": "Open Targets Platform v26.06 (2026-07-23)"
+        }
+      },
+      {
+        "name": "Tractability (T)",
+        "value": 0.6,
+        "weight_role": "multiplicative",
+        "inputs": "Open Targets tractability \u2014 best drugging-path bucket",
+        "data_prov": {
+          "source": "Open Targets Platform",
+          "endpoint": "https://api.platform.opentargets.org/api/v4/graphql",
+          "data_version": "26.06",
+          "access_utc": "2026-07-23T18:26:37Z",
+          "query": "target(ensemblId:ENSG00000104814){ identity, class, tractability, subcellular, associatedDiseases, drugAndClinicalCandidates }",
+          "record_url": "https://platform.opentargets.org/target/ENSG00000104814",
+          "snapshot": "data/raw/MAP4K1/ot.json",
+          "citation": "Open Targets Platform v26.06 (2026-07-23)"
+        }
+      },
+      {
+        "name": "Saturation (S)",
+        "value": 0.0,
+        "weight_role": "multiplicative",
+        "inputs": "Cohort-normalized: approvals + candidates + trials + industry sponsors",
+        "data_prov": {
+          "source": "ClinicalTrials.gov",
+          "endpoint": "https://clinicaltrials.gov/api/v2/studies",
+          "data_version": "API 2.0.5",
+          "access_utc": "2026-07-23T18:26:37Z",
+          "query": "studies?query.intr=<flagship drugs>&fields=Phase,LeadSponsor* (industry sponsors; as-of-cutoff censor)",
+          "record_url": "https://clinicaltrials.gov/search?term=MAP4K1",
+          "snapshot": "data/raw/MAP4K1/ct.json",
+          "citation": "ClinicalTrials.gov vAPI 2.0.5 (2026-07-23)"
+        }
+      }
+    ],
+    "cohort_rank": 11,
+    "cohort_size": 13,
+    "percentile": 16.7,
+    "confidence": "MEDIUM",
+    "interpretation": "Mid-cohort \u2014 real biology with moderate competition; watch the momentum trend.",
+    "score_version": "whitespace-0.1.0"
+  },
+  "executive_brief_md": "## MAP4K1 \u2014 mitogen-activated protein kinase kinase kinase kinase 1\n\n**White Space score 13.18/100 \u00b7 rank 11/13 \u00b7 MEDIUM confidence.** Mid-cohort \u2014 real biology with moderate competition; watch the momentum trend.\n\nMAP4K1 is a plasma membrane target in the immuno-oncology cohort with no approved drug yet. Development level **Tchem**; mechanism: no ChEMBL-registered mechanism yet. Competitive footprint: no registered industry sponsors. Leading disease associations: response to xenobiotic stimulus, poisoning, injury, neoplasm.\n\n**Score decomposition** \u2014 Validation 0.2197, Tractability 0.6, Saturation 0.0 (cohort-normalized). The score is multiplicative, so crowding drives it down even when biology is validated \u2014 which is why saturated checkpoints sit low and validated-but-uncrowded targets rise.\n\n*Every figure above resolves to a versioned source in the Provenance tab. This brief is model-written (claude-fable-5) over sourced facts only.*",
+  "trust": {
+    "pipeline_version": "tiop-0.2.0",
+    "data_versions": {
+      "open_targets": "26.06",
+      "chembl": "ChEMBL_37",
+      "clinicaltrials": "API 2.0.5"
+    },
+    "reproducible": true,
+    "reproducibility_note": "Profile is a pure function of pinned data/raw snapshots + versioned score code; re-running build_cohort.py yields the same content_hash.",
+    "content_hash": "be657158414d45de",
+    "model_version": "claude-fable-5",
+    "prompt_version": "brief-2026-07-23.v2"
+  },
+  "discrepancies": []
+}

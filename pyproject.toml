@@ -1,0 +1,11 @@
+[project]
+name = "scientific-intelligence-platform"
+version = "0.2.0"
+requires-python = ">=3.11"
+description = "QurieGen Scientific Intelligence Platform — TIOP first product"
+
+[tool.uv.workspace]
+members = ["packages/*", "apps/tiop"]
+
+[tool.ruff]
+line-length = 110

@@ -1,0 +1,67 @@
+/* TIOP design tokens — neutral, professional, swappable for QurieGen brand.
+   Replace the --brand-* and font values when brand assets are finalized; nothing
+   else in the app hardcodes color. Light + dark. */
+:root {
+  --brand-accent: #3b5bdb;
+  --brand-accent-weak: #e7ecfb;
+  --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  --font-mono: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+
+  --radius: 12px;
+  --radius-sm: 8px;
+  --space-1: 4px; --space-2: 8px; --space-3: 12px; --space-4: 16px;
+  --space-5: 24px; --space-6: 32px; --space-8: 48px;
+  --shadow: 0 1px 2px rgba(16,24,40,.06), 0 1px 3px rgba(16,24,40,.1);
+
+  /* light */
+  --bg: #f7f8fa;
+  --surface: #ffffff;
+  --surface-2: #f2f4f7;
+  --border: #e4e7ec;
+  --text: #101828;
+  --text-muted: #667085;
+  --accent: var(--brand-accent);
+  --accent-weak: var(--brand-accent-weak);
+
+  /* confidence tiers (consistent everywhere) */
+  --c-high: #087443;
+  --c-high-bg: #e6f4ec;
+  --c-medium: #b54708;
+  --c-medium-bg: #fdf0e6;
+  --c-derived: #5b53b5;
+  --c-derived-bg: #ecebf9;
+  --c-low: #b42318;
+  --c-low-bg: #fbeae8;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #0f1216;
+    --surface: #171b21;
+    --surface-2: #1e232b;
+    --border: #2a313b;
+    --text: #e7ebf0;
+    --text-muted: #98a2b3;
+    --accent: #7c93f0;
+    --accent-weak: #202a44;
+    --brand-accent-weak: #202a44;
+    --c-high: #4ac48a; --c-high-bg: #14301f;
+    --c-medium: #f0a35e; --c-medium-bg: #33230f;
+    --c-derived: #a79ef0; --c-derived-bg: #232045;
+    --c-low: #f0857a; --c-low-bg: #3a1a16;
+    --shadow: 0 1px 2px rgba(0,0,0,.3);
+  }
+}
+
+* { box-sizing: border-box; }
+html, body, #root { height: 100%; }
+body {
+  margin: 0; background: var(--bg); color: var(--text);
+  font-family: var(--font-sans); font-size: 14.5px; line-height: 1.55;
+  -webkit-font-smoothing: antialiased;
+}
+a { color: var(--accent); text-decoration: none; }
+a:hover { text-decoration: underline; }
+code { font-family: var(--font-mono); font-size: 12px;
+  background: var(--surface-2); border: 1px solid var(--border);
+  border-radius: 5px; padding: 1px 5px; }

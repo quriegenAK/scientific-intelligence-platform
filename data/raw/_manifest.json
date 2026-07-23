@@ -1,0 +1,46 @@
+{
+  "snapshot_captured_utc": "2026-07-23T04:22:33Z",
+  "target": {
+    "gene": "PDCD1",
+    "ensembl": "ENSG00000188389",
+    "uniprot": "Q15116"
+  },
+  "sources": {
+    "open_targets": {
+      "name": "Open Targets Platform",
+      "endpoint": "https://api.platform.opentargets.org/api/v4/graphql",
+      "data_version": "26.06",
+      "access_utc": "2026-07-23T04:22:33Z",
+      "snapshot": "raw/ot_pdcd1.json",
+      "record_url": "https://platform.opentargets.org/target/ENSG00000188389"
+    },
+    "chembl": {
+      "name": "ChEMBL",
+      "endpoint": "https://www.ebi.ac.uk/chembl/api/data",
+      "data_version": "ChEMBL_37",
+      "release_date": "2026-05-01",
+      "access_utc": "2026-07-23T04:22:33Z",
+      "snapshot": [
+        "raw/chembl_mech.json",
+        "raw/chembl_molecules.json",
+        "raw/chembl_target.json"
+      ],
+      "record_url": "https://www.ebi.ac.uk/chembl/target_report_card/CHEMBL3307223/"
+    },
+    "clinicaltrials": {
+      "name": "ClinicalTrials.gov",
+      "endpoint": "https://clinicaltrials.gov/api/v2/studies",
+      "api_version": "2.0.5",
+      "data_timestamp": "2026-07-22T09:00:05",
+      "access_utc": "2026-07-23T04:22:33Z",
+      "snapshot": [
+        "raw/ct_sponsors.json",
+        "raw/ct_pembro.json"
+      ],
+      "record_url": "https://clinicaltrials.gov/search?intr=Pembrolizumab"
+    }
+  },
+  "pipeline_version": "tiop-0.1.0",
+  "prompt_version": "brief-2026-07-23.v1",
+  "model_version": "claude-fable-5"
+}

@@ -1,0 +1,791 @@
+{
+  "mechanisms": [
+    {
+      "action_type": "INHIBITOR",
+      "binding_site_comment": null,
+      "direct_interaction": 1,
+      "disease_efficacy": 1,
+      "max_phase": 4,
+      "mec_id": 2300,
+      "mechanism_comment": null,
+      "mechanism_of_action": "Programmed cell death protein 1 inhibitor",
+      "mechanism_refs": [
+        {
+          "ref_id": "label/2014/125514lbl.pdf",
+          "ref_type": "FDA",
+          "ref_url": "http://www.accessdata.fda.gov/drugsatfda_docs/label/2014/125514lbl.pdf"
+        }
+      ],
+      "molecular_mechanism": 1,
+      "molecule_chembl_id": "CHEMBL3137343",
+      "parent_molecule_chembl_id": "CHEMBL3137343",
+      "record_id": 1976818,
+      "selectivity_comment": null,
+      "site_id": null,
+      "target_chembl_id": "CHEMBL3307223",
+      "variant_sequence": null
+    },
+    {
+      "action_type": "INHIBITOR",
+      "binding_site_comment": null,
+      "direct_interaction": 1,
+      "disease_efficacy": 1,
+      "max_phase": 4,
+      "mec_id": 2326,
+      "mechanism_comment": null,
+      "mechanism_of_action": "Programmed cell death protein 1 inhibitor",
+      "mechanism_refs": [
+        {
+          "ref_id": "label/2015/125527s000lbl.pdf",
+          "ref_type": "FDA",
+          "ref_url": "http://www.accessdata.fda.gov/drugsatfda_docs/label/2015/125527s000lbl.pdf"
+        }
+      ],
+      "molecular_mechanism": 1,
+      "molecule_chembl_id": "CHEMBL2108738",
+      "parent_molecule_chembl_id": "CHEMBL2108738",
+      "record_id": 1696513,
+      "selectivity_comment": null,
+      "site_id": null,
+      "target_chembl_id": "CHEMBL3307223",
+      "variant_sequence": null
+    },
+    {
+      "action_type": "INHIBITOR",
+      "binding_site_comment": null,
+      "direct_interaction": 1,
+      "disease_efficacy": 1,
+      "max_phase": 2,
+      "mec_id": 6369,
+      "mechanism_comment": null,
+      "mechanism_of_action": "Programmed cell death protein 1 inhibitor",
+      "mechanism_refs": [
+        {
+          "ref_id": "https://druginfo.nlm.nih.gov/drugportal/rn/1036730-42-3",
+          "ref_type": "Other",
+          "ref_url": "https://druginfo.nlm.nih.gov/drugportal/rn/1036730-42-3"
+        },
+        {
+          "ref_id": "24332512",
+          "ref_type": "PubMed",
+          "ref_url": "http://europepmc.org/abstract/MED/24332512"
+        }
+      ],
+      "molecular_mechanism": 1,
+      "molecule_chembl_id": "CHEMBL2108680",
+      "parent_molecule_chembl_id": "CHEMBL2108680",
+      "record_id": 1697545,
+      "selectivity_comment": null,
+      "site_id": null,
+      "target_chembl_id": "CHEMBL3307223",
+      "variant_sequence": null
+    },
+    {
+      "action_type": "INHIBITOR",
+      "binding_site_comment": null,
+      "direct_interaction": 1,
+      "disease_efficacy": 1,
+      "max_phase": 4,
+      "mec_id": 7397,
+      "mechanism_comment": "Binds to the T-cell PD-1 receptor preventing it's interaction with the PD-L1 and PD-L2 ligands and removing inhibition of immune response. ",
+      "mechanism_of_action": "Programmed cell death protein 1 inhibitor",
+      "mechanism_refs": [
+        {
+          "ref_id": "label/2018/761097s000lbl.pdf",
+          "ref_type": "FDA",
+          "ref_url": "https://www.accessdata.fda.gov/drugsatfda_docs/label/2018/761097s000lbl.pdf"
+        }
+      ],
+      "molecular_mechanism": 1,
+      "molecule_chembl_id": "CHEMBL4297723",
+      "parent_molecule_chembl_id": "CHEMBL4297723",
+      "record_id": 3133336,
+      "selectivity_comment": null,
+      "site_id": null,
+      "target_chembl_id": "CHEMBL3307223",
+      "variant_sequence": null
+    },
+    {
+      "action_type": "ANTAGONIST",
+      "binding_site_comment": null,
+      "direct_interaction": 1,
+      "disease_efficacy": 1,
+      "max_phase": 4,
+      "mec_id": 7783,
+      "mechanism_comment": null,
+      "mechanism_of_action": "Programmed cell death protein 1 antagonist",
+      "mechanism_refs": [
+        {
+          "ref_id": "label/2021/761174s000lbl.pdf",
+          "ref_type": "FDA",
+          "ref_url": "http://www.accessdata.fda.gov/drugsatfda_docs/label/2021/761174s000lbl.pdf"
+        }
+      ],
+      "molecular_mechanism": 1,
+      "molecule_chembl_id": "CHEMBL4298124",
+      "parent_molecule_chembl_id": "CHEMBL4298124",
+      "record_id": 3133819,
+      "selectivity_comment": null,
+      "site_id": null,
+      "target_chembl_id": "CHEMBL3307223",
+      "variant_sequence": null
+    },
+    {
+      "action_type": "ANTAGONIST",
+      "binding_site_comment": null,
+      "direct_interaction": 1,
+      "disease_efficacy": 1,
+      "max_phase": 3,
+      "mec_id": 7784,
+      "mechanism_comment": null,
+      "mechanism_of_action": "Programmed cell death protein 1 antagonist",
+      "mechanism_refs": [
+        {
+          "ref_id": "31313098",
+          "ref_type": "PubMed",
+          "ref_url": "http://europepmc.org/abstract/MED/31313098"
+        },
+        {
+          "ref_id": "31847708",
+          "ref_type": "PubMed",
+          "ref_url": "http://europepmc.org/abstract/MED/31847708"
+        },
+        {
+          "ref_id": "32256049",
+          "ref_type": "PubMed",
+          "ref_url": "http://europepmc.org/abstract/MED/32256049"
+        }
+      ],
+      "molecular_mechanism": 1,
+      "molecule_chembl_id": "CHEMBL4297715",
+      "parent_molecule_chembl_id": "CHEMBL4297715",
+      "record_id": 3133328,
+      "selectivity_comment": null,
+      "site_id": null,
+      "target_chembl_id": "CHEMBL3307223",
+      "variant_sequence": null
+    },
+    {
+      "action_type": "ANTAGONIST",
+      "binding_site_comment": null,
+      "direct_interaction": 1,
+      "disease_efficacy": 1,
+      "max_phase": 3,
+      "mec_id": 7785,
+      "mechanism_comment": null,
+      "mechanism_of_action": "Programmed cell death protein 1 antagonist",
+      "mechanism_refs": [
+        {
+          "ref_id": "NCT03468751",
+          "ref_type": "ClinicalTrials",
+          "ref_url": "https://www.clinicaltrials.gov/ct2/show/NCT03468751"
+        },
+        {
+          "ref_id": "31847708",
+          "ref_type": "PubMed",
+          "ref_url": "http://europepmc.org/abstract/MED/31847708"
+        }
+      ],
+      "molecular_mechanism": 1,
+      "molecule_chembl_id": "CHEMBL4594550",
+      "parent_molecule_chembl_id": "CHEMBL4594550",
+      "record_id": 3461221,
+      "selectivity_comment": null,
+      "site_id": null,
+      "target_chembl_id": "CHEMBL3307223",
+      "variant_sequence": null
+    },
+    {
+      "action_type": "ANTAGONIST",
+      "binding_site_comment": null,
+      "direct_interaction": 1,
+      "disease_efficacy": 1,
+      "max_phase": 4,
+      "mec_id": 7786,
+      "mechanism_comment": null,
+      "mechanism_of_action": "Programmed cell death protein 1 antagonist",
+      "mechanism_refs": [
+        {
+          "ref_id": "https://www.macrogenics.com/mga012-pd-1/",
+          "ref_type": "Other",
+          "ref_url": "https://www.macrogenics.com/mga012-pd-1/"
+        },
+        {
+          "ref_id": "31847708",
+          "ref_type": "PubMed",
+          "ref_url": "http://europepmc.org/abstract/MED/31847708"
+        }
+      ],
+      "molecular_mechanism": 1,
+      "molecule_chembl_id": "CHEMBL4298037",
+      "parent_molecule_chembl_id": "CHEMBL4298037",
+      "record_id": 3133708,
+      "selectivity_comment": null,
+      "site_id": null,
+      "target_chembl_id": "CHEMBL3307223",
+      "variant_sequence": null
+    },
+    {
+      "action_type": "ANTAGONIST",
+      "binding_site_comment": null,
+      "direct_interaction": 1,
+      "disease_efficacy": 1,
+      "max_phase": 3,
+      "mec_id": 7787,
+      "mechanism_comment": null,
+      "mechanism_of_action": "Programmed cell death protein 1 antagonist",
+      "mechanism_refs": [
+        {
+          "ref_id": "NCT02947165",
+          "ref_type": "ClinicalTrials",
+          "ref_url": "https://www.clinicaltrials.gov/ct2/show/NCT02947165"
+        },
+        {
+          "ref_id": "https://ascopubs.org/doi/abs/10.1200/JCO.2019.37.15_suppl.2553",
+          "ref_type": "Other",
+          "ref_url": "https://ascopubs.org/doi/abs/10.1200/JCO.2019.37.15_suppl.2553"
+        },
+        {
+          "ref_id": "32179633",
+          "ref_type": "PubMed",
+          "ref_url": "http://europepmc.org/abstract/MED/32179633"
+        }
+      ],
+      "molecular_mechanism": 1,
+      "molecule_chembl_id": "CHEMBL4297831",
+      "parent_molecule_chembl_id": "CHEMBL4297831",
+      "record_id": 3133463,
+      "selectivity_comment": null,
+      "site_id": null,
+      "target_chembl_id": "CHEMBL3307223",
+      "variant_sequence": null
+    },
+    {
+      "action_type": "ANTAGONIST",
+      "binding_site_comment": null,
+      "direct_interaction": 1,
+      "disease_efficacy": 1,
+      "max_phase": 3,
+      "mec_id": 7788,
+      "mechanism_comment": null,
+      "mechanism_of_action": "Programmed cell death protein 1 antagonist",
+      "mechanism_refs": [
+        {
+          "ref_id": "https://www.pfizer.com/science/drug-product-pipeline",
+          "ref_type": "Other",
+          "ref_url": "https://www.pfizer.com/science/drug-product-pipeline"
+        },
+        {
+          "ref_id": "31145415",
+          "ref_type": "PubMed",
+          "ref_url": "http://europepmc.org/abstract/MED/31145415"
+        },
+        {
+          "ref_id": "32847983",
+          "ref_type": "PubMed",
+          "ref_url": "http://europepmc.org/abstract/MED/32847983"
+        }
+      ],
+      "molecular_mechanism": 1,
+      "molecule_chembl_id": "CHEMBL4298191",
+      "parent_molecule_chembl_id": "CHEMBL4298191",
+      "record_id": 3133890,
+      "selectivity_comment": null,
+      "site_id": null,
+      "target_chembl_id": "CHEMBL3307223",
+      "variant_sequence": null
+    },
+    {
+      "action_type": "ANTAGONIST",
+      "binding_site_comment": null,
+      "direct_interaction": 1,
+      "disease_efficacy": 1,
+      "max_phase": 3,
+      "mec_id": 7789,
+      "mechanism_comment": null,
+      "mechanism_of_action": "Programmed cell death protein 1 antagonist",
+      "mechanism_refs": [
+        {
+          "ref_id": "30742278",
+          "ref_type": "PubMed",
+          "ref_url": "http://europepmc.org/abstract/MED/30742278"
+        },
+        {
+          "ref_id": "31402780",
+          "ref_type": "PubMed",
+          "ref_url": "http://europepmc.org/abstract/MED/31402780"
+        },
+        {
+          "ref_id": "33292551",
+          "ref_type": "PubMed",
+          "ref_url": "http://europepmc.org/abstract/MED/33292551"
+        }
+      ],
+      "molecular_mechanism": 1,
+      "molecule_chembl_id": "CHEMBL4297829",
+      "parent_molecule_chembl_id": "CHEMBL4297829",
+      "record_id": 3133461,
+      "selectivity_comment": null,
+      "site_id": null,
+      "target_chembl_id": "CHEMBL3307223",
+      "variant_sequence": null
+    },
+    {
+      "action_type": "ANTAGONIST",
+      "binding_site_comment": null,
+      "direct_interaction": 1,
+      "disease_efficacy": 1,
+      "max_phase": 3,
+      "mec_id": 7790,
+      "mechanism_comment": null,
+      "mechanism_of_action": "Programmed cell death protein 1 antagonist",
+      "mechanism_refs": [
+        {
+          "ref_id": "NCT03894215",
+          "ref_type": "ClinicalTrials",
+          "ref_url": "https://www.clinicaltrials.gov/ct2/show/NCT03894215"
+        },
+        {
+          "ref_id": "https://agenusbio.com/pipeline/",
+          "ref_type": "Other",
+          "ref_url": "https://agenusbio.com/pipeline/"
+        },
+        {
+          "ref_id": "https://jitc.bmj.com/content/8/Suppl_3/A242.1",
+          "ref_type": "Other",
+          "ref_url": "https://jitc.bmj.com/content/8/Suppl_3/A242.1"
+        }
+      ],
+      "molecular_mechanism": 1,
+      "molecule_chembl_id": "CHEMBL4297877",
+      "parent_molecule_chembl_id": "CHEMBL4297877",
+      "record_id": 3133520,
+      "selectivity_comment": null,
+      "site_id": null,
+      "target_chembl_id": "CHEMBL3307223",
+      "variant_sequence": null
+    },
+    {
+      "action_type": "INHIBITOR",
+      "binding_site_comment": null,
+      "direct_interaction": 1,
+      "disease_efficacy": 1,
+      "max_phase": 3,
+      "mec_id": 7794,
+      "mechanism_comment": null,
+      "mechanism_of_action": "Programmed cell death protein 1 inhibitor",
+      "mechanism_refs": [
+        {
+          "ref_id": "NCT03852251",
+          "ref_type": "ClinicalTrials",
+          "ref_url": "https://www.clinicaltrials.gov/ct2/show/NCT03852251"
+        },
+        {
+          "ref_id": "https://ascopubs.org/doi/abs/10.1200/JCO.2021.39.3_suppl.232",
+          "ref_type": "Other",
+          "ref_url": "https://ascopubs.org/doi/abs/10.1200/JCO.2021.39.3_suppl.232"
+        },
+        {
+          "ref_id": "https://www.akesobio.com/media/1306/akeso-2020-interim-results-presentation.pdf",
+          "ref_type": "Other",
+          "ref_url": "https://www.akesobio.com/media/1306/akeso-2020-interim-results-presentation.pdf"
+        }
+      ],
+      "molecular_mechanism": 1,
+      "molecule_chembl_id": "CHEMBL4594456",
+      "parent_molecule_chembl_id": "CHEMBL4594456",
+      "record_id": 3461126,
+      "selectivity_comment": null,
+      "site_id": null,
+      "target_chembl_id": "CHEMBL3307223",
+      "variant_sequence": null
+    },
+    {
+      "action_type": "ANTAGONIST",
+      "binding_site_comment": null,
+      "direct_interaction": 1,
+      "disease_efficacy": 1,
+      "max_phase": 4,
+      "mec_id": 7963,
+      "mechanism_comment": null,
+      "mechanism_of_action": "Programmed cell death protein 1 antagonist",
+      "mechanism_refs": [
+        {
+          "ref_id": "30642373",
+          "ref_type": "PubMed",
+          "ref_url": "http://europepmc.org/abstract/MED/30642373"
+        },
+        {
+          "ref_id": "30805896",
+          "ref_type": "PubMed",
+          "ref_url": "http://europepmc.org/abstract/MED/30805896"
+        },
+        {
+          "ref_id": "32589350",
+          "ref_type": "PubMed",
+          "ref_url": "http://europepmc.org/abstract/MED/32589350"
+        }
+      ],
+      "molecular_mechanism": 1,
+      "molecule_chembl_id": "CHEMBL4297843",
+      "parent_molecule_chembl_id": "CHEMBL4297843",
+      "record_id": 3133479,
+      "selectivity_comment": null,
+      "site_id": null,
+      "target_chembl_id": "CHEMBL3307223",
+      "variant_sequence": null
+    },
+    {
+      "action_type": "INHIBITOR",
+      "binding_site_comment": null,
+      "direct_interaction": 1,
+      "disease_efficacy": 1,
+      "max_phase": 2,
+      "mec_id": 8092,
+      "mechanism_comment": null,
+      "mechanism_of_action": "Programmed cell death protein 1 inhibitor",
+      "mechanism_refs": [
+        {
+          "ref_id": "https://ascopubs.org/doi/abs/10.1200/JCO.2020.38.15_suppl.e15125",
+          "ref_type": "Other",
+          "ref_url": "https://ascopubs.org/doi/abs/10.1200/JCO.2020.38.15_suppl.e15125"
+        },
+        {
+          "ref_id": "33436023",
+          "ref_type": "PubMed",
+          "ref_url": "http://europepmc.org/abstract/MED/33436023"
+        }
+      ],
+      "molecular_mechanism": 1,
+      "molecule_chembl_id": "CHEMBL4594355",
+      "parent_molecule_chembl_id": "CHEMBL4594355",
+      "record_id": 3461025,
+      "selectivity_comment": null,
+      "site_id": null,
+      "target_chembl_id": "CHEMBL3307223",
+      "variant_sequence": null
+    },
+    {
+      "action_type": "INHIBITOR",
+      "binding_site_comment": null,
+      "direct_interaction": 1,
+      "disease_efficacy": 1,
+      "max_phase": 3,
+      "mec_id": 8093,
+      "mechanism_comment": null,
+      "mechanism_of_action": "Programmed cell death protein 1 inhibitor",
+      "mechanism_refs": [
+        {
+          "ref_id": "NCT03551782",
+          "ref_type": "ClinicalTrials",
+          "ref_url": "https://www.clinicaltrials.gov/ct2/show/NCT03551782"
+        },
+        {
+          "ref_id": "https://ascopubs.org/doi/abs/10.1200/JCO.2019.37.8_suppl.31",
+          "ref_type": "Other",
+          "ref_url": "https://ascopubs.org/doi/abs/10.1200/JCO.2019.37.8_suppl.31"
+        },
+        {
+          "ref_id": "https://www.jnj.com/janssen-to-highlight-depth-of-solid-tumor-portfolio-at-asco-gu",
+          "ref_type": "Other",
+          "ref_url": "https://www.jnj.com/janssen-to-highlight-depth-of-solid-tumor-portfolio-at-asco-gu"
+        }
+      ],
+      "molecular_mechanism": 1,
+      "molecule_chembl_id": "CHEMBL4298001",
+      "parent_molecule_chembl_id": "CHEMBL4298001",
+      "record_id": 3133663,
+      "selectivity_comment": null,
+      "site_id": null,
+      "target_chembl_id": "CHEMBL3307223",
+      "variant_sequence": null
+    },
+    {
+      "action_type": "INHIBITOR",
+      "binding_site_comment": null,
+      "direct_interaction": 1,
+      "disease_efficacy": 1,
+      "max_phase": 3,
+      "mec_id": 8285,
+      "mechanism_comment": null,
+      "mechanism_of_action": "Programmed cell death protein 1 inhibitor",
+      "mechanism_refs": [
+        {
+          "ref_id": "NCT03352531",
+          "ref_type": "ClinicalTrials",
+          "ref_url": "https://www.clinicaltrials.gov/ct2/show/NCT03352531"
+        },
+        {
+          "ref_id": "https://www.akesobio.com/media/1306/akeso-2020-interim-results-presentation.pdf",
+          "ref_type": "Other",
+          "ref_url": "https://www.akesobio.com/media/1306/akeso-2020-interim-results-presentation.pdf"
+        }
+      ],
+      "molecular_mechanism": 1,
+      "molecule_chembl_id": "CHEMBL4297571",
+      "parent_molecule_chembl_id": "CHEMBL4297571",
+      "record_id": 3133153,
+      "selectivity_comment": null,
+      "site_id": null,
+      "target_chembl_id": "CHEMBL3307223",
+      "variant_sequence": null
+    },
+    {
+      "action_type": "INHIBITOR",
+      "binding_site_comment": null,
+      "direct_interaction": 1,
+      "disease_efficacy": 1,
+      "max_phase": 4,
+      "mec_id": 8286,
+      "mechanism_comment": null,
+      "mechanism_of_action": "Programmed cell death protein 1 inhibitor",
+      "mechanism_refs": [
+        {
+          "ref_id": "https://ir.beigene.com/news-releases/news-release-details/beigene-announces-phase-3-trial-tislelizumab-combined",
+          "ref_type": "Other",
+          "ref_url": "https://ir.beigene.com/news-releases/news-release-details/beigene-announces-phase-3-trial-tislelizumab-combined"
+        },
+        {
+          "ref_id": "https://www.novartis.com/news/media-releases/novartis-strengthens-oncology-pipeline-successful-closing-tislelizumab-licensing",
+          "ref_type": "Other",
+          "ref_url": "https://www.novartis.com/news/media-releases/novartis-strengthens-oncology-pipeline-successful-closing-tislelizumab-licensing"
+        },
+        {
+          "ref_id": "33044117",
+          "ref_type": "PubMed",
+          "ref_url": "http://europepmc.org/abstract/MED/33044117"
+        }
+      ],
+      "molecular_mechanism": 1,
+      "molecule_chembl_id": "CHEMBL4297840",
+      "parent_molecule_chembl_id": "CHEMBL4297840",
+      "record_id": 3133475,
+      "selectivity_comment": null,
+      "site_id": null,
+      "target_chembl_id": "CHEMBL3307223",
+      "variant_sequence": null
+    },
+    {
+      "action_type": "INHIBITOR",
+      "binding_site_comment": null,
+      "direct_interaction": 1,
+      "disease_efficacy": 1,
+      "max_phase": 3,
+      "mec_id": 8439,
+      "mechanism_comment": null,
+      "mechanism_of_action": "Programmed cell death protein 1 inhibitor",
+      "mechanism_refs": [
+        {
+          "ref_id": "https://arcusbio.com/zimberelimab/",
+          "ref_type": "Other",
+          "ref_url": "https://arcusbio.com/zimberelimab/"
+        },
+        {
+          "ref_id": "https://ascopubs.org/doi/abs/10.1200/JCO.2020.38.15_suppl.8033",
+          "ref_type": "Other",
+          "ref_url": "https://ascopubs.org/doi/abs/10.1200/JCO.2020.38.15_suppl.8033"
+        },
+        {
+          "ref_id": "https://ijgc.bmj.com/content/30/Suppl_3/A147.1",
+          "ref_type": "Other",
+          "ref_url": "https://ijgc.bmj.com/content/30/Suppl_3/A147.1"
+        }
+      ],
+      "molecular_mechanism": 1,
+      "molecule_chembl_id": "CHEMBL4297856",
+      "parent_molecule_chembl_id": "CHEMBL4297856",
+      "record_id": 3133494,
+      "selectivity_comment": null,
+      "site_id": null,
+      "target_chembl_id": "CHEMBL3307223",
+      "variant_sequence": null
+    },
+    {
+      "action_type": "INHIBITOR",
+      "binding_site_comment": null,
+      "direct_interaction": 1,
+      "disease_efficacy": 1,
+      "max_phase": 3,
+      "mec_id": 8519,
+      "mechanism_comment": null,
+      "mechanism_of_action": "Programmed cell death protein 1 inhibitor",
+      "mechanism_refs": [
+        {
+          "ref_id": "32106752",
+          "ref_type": "PubMed",
+          "ref_url": "http://europepmc.org/abstract/MED/32106752"
+        },
+        {
+          "ref_id": "33060149",
+          "ref_type": "PubMed",
+          "ref_url": "http://europepmc.org/abstract/MED/33060149"
+        }
+      ],
+      "molecular_mechanism": 1,
+      "molecule_chembl_id": "CHEMBL4650472",
+      "parent_molecule_chembl_id": "CHEMBL4650472",
+      "record_id": 3490274,
+      "selectivity_comment": null,
+      "site_id": null,
+      "target_chembl_id": "CHEMBL3307223",
+      "variant_sequence": null
+    },
+    {
+      "action_type": "INHIBITOR",
+      "binding_site_comment": null,
+      "direct_interaction": 1,
+      "disease_efficacy": 1,
+      "max_phase": 2,
+      "mec_id": 8926,
+      "mechanism_comment": null,
+      "mechanism_of_action": "Programmed cell death protein 1 inhibitor",
+      "mechanism_refs": [
+        {
+          "ref_id": "https://cancerres.aacrjournals.org/content/76/14_Supplement/3217",
+          "ref_type": "Other",
+          "ref_url": "https://cancerres.aacrjournals.org/content/76/14_Supplement/3217"
+        }
+      ],
+      "molecular_mechanism": 1,
+      "molecule_chembl_id": "CHEMBL4594578",
+      "parent_molecule_chembl_id": "CHEMBL4594578",
+      "record_id": 3461249,
+      "selectivity_comment": null,
+      "site_id": null,
+      "target_chembl_id": "CHEMBL3307223",
+      "variant_sequence": null
+    },
+    {
+      "action_type": "INHIBITOR",
+      "binding_site_comment": null,
+      "direct_interaction": 1,
+      "disease_efficacy": 1,
+      "max_phase": 2,
+      "mec_id": 8980,
+      "mechanism_comment": null,
+      "mechanism_of_action": "Programmed cell death protein 1 inhibitor",
+      "mechanism_refs": [
+        {
+          "ref_id": "34216247",
+          "ref_type": "PubMed",
+          "ref_url": "https://pubmed.ncbi.nlm.nih.gov/34216247/"
+        }
+      ],
+      "molecular_mechanism": 1,
+      "molecule_chembl_id": "CHEMBL4297858",
+      "parent_molecule_chembl_id": "CHEMBL4297858",
+      "record_id": 3133496,
+      "selectivity_comment": null,
+      "site_id": null,
+      "target_chembl_id": "CHEMBL3307223",
+      "variant_sequence": null
+    },
+    {
+      "action_type": "INHIBITOR",
+      "binding_site_comment": null,
+      "direct_interaction": 1,
+      "disease_efficacy": 1,
+      "max_phase": 3,
+      "mec_id": 9175,
+      "mechanism_comment": null,
+      "mechanism_of_action": "Programmed cell death protein 1 inhibitor",
+      "mechanism_refs": [
+        {
+          "ref_id": "NCT04171284",
+          "ref_type": "ClinicalTrials",
+          "ref_url": "https://clinicaltrials.gov/ct2/show/NCT04171284"
+        }
+      ],
+      "molecular_mechanism": 1,
+      "molecule_chembl_id": "CHEMBL4650516",
+      "parent_molecule_chembl_id": "CHEMBL4650516",
+      "record_id": 3490327,
+      "selectivity_comment": null,
+      "site_id": null,
+      "target_chembl_id": "CHEMBL3307223",
+      "variant_sequence": null
+    },
+    {
+      "action_type": "INHIBITOR",
+      "binding_site_comment": null,
+      "direct_interaction": 1,
+      "disease_efficacy": 1,
+      "max_phase": 2,
+      "mec_id": 9176,
+      "mechanism_comment": null,
+      "mechanism_of_action": "Programmed cell death protein 1 inhibitor",
+      "mechanism_refs": [
+        {
+          "ref_id": "34025438",
+          "ref_type": "PubMed",
+          "ref_url": "https://pubmed.ncbi.nlm.nih.gov/34025438/"
+        }
+      ],
+      "molecular_mechanism": 1,
+      "molecule_chembl_id": "CHEMBL4594602",
+      "parent_molecule_chembl_id": "CHEMBL4594602",
+      "record_id": 3461273,
+      "selectivity_comment": null,
+      "site_id": null,
+      "target_chembl_id": "CHEMBL3307223",
+      "variant_sequence": null
+    },
+    {
+      "action_type": "INHIBITOR",
+      "binding_site_comment": null,
+      "direct_interaction": 1,
+      "disease_efficacy": 1,
+      "max_phase": 3,
+      "mec_id": 9230,
+      "mechanism_comment": null,
+      "mechanism_of_action": "Programmed cell death protein 1 inhibitor",
+      "mechanism_refs": [
+        {
+          "ref_id": "32467569",
+          "ref_type": "PubMed",
+          "ref_url": "https://pubmed.ncbi.nlm.nih.gov/32467569/"
+        }
+      ],
+      "molecular_mechanism": 1,
+      "molecule_chembl_id": "CHEMBL4594536",
+      "parent_molecule_chembl_id": "CHEMBL4594536",
+      "record_id": 3461207,
+      "selectivity_comment": null,
+      "site_id": null,
+      "target_chembl_id": "CHEMBL3307223",
+      "variant_sequence": null
+    },
+    {
+      "action_type": "INHIBITOR",
+      "binding_site_comment": null,
+      "direct_interaction": 1,
+      "disease_efficacy": 1,
+      "max_phase": 2,
+      "mec_id": 9231,
+      "mechanism_comment": null,
+      "mechanism_of_action": "Programmed cell death protein 1 inhibitor",
+      "mechanism_refs": [
+        {
+          "ref_id": "32989552",
+          "ref_type": "PubMed",
+          "ref_url": "https://pubmed.ncbi.nlm.nih.gov/32989552/"
+        }
+      ],
+      "molecular_mechanism": 1,
+      "molecule_chembl_id": "CHEMBL4650482",
+      "parent_molecule_chembl_id": "CHEMBL4650482",
+      "record_id": 3490285,
+      "selectivity_comment": null,
+      "site_id": null,
+      "target_chembl_id": "CHEMBL3307223",
+      "variant_sequence": null
+    }
+  ],
+  "page_meta": {
+    "limit": 1000,
+    "next": null,
+    "offset": 0,
+    "previous": null,
+    "total_count": 26
+  }
+}
