@@ -2,8 +2,9 @@
    Replace the --brand-* and font values when brand assets are finalized; nothing
    else in the app hardcodes color. Light + dark. */
 :root {
-  --brand-accent: #3b5bdb;
-  --brand-accent-weak: #e7ecfb;
+  --brand-accent: #2f52c9;
+  --brand-accent-weak: #eef2fd;
+  --open: #087443;
   --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
   --font-mono: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
 
@@ -34,24 +35,7 @@
   --c-low-bg: #fbeae8;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --bg: #0f1216;
-    --surface: #171b21;
-    --surface-2: #1e232b;
-    --border: #2a313b;
-    --text: #e7ebf0;
-    --text-muted: #98a2b3;
-    --accent: #7c93f0;
-    --accent-weak: #202a44;
-    --brand-accent-weak: #202a44;
-    --c-high: #4ac48a; --c-high-bg: #14301f;
-    --c-medium: #f0a35e; --c-medium-bg: #33230f;
-    --c-derived: #a79ef0; --c-derived-bg: #232045;
-    --c-low: #f0857a; --c-low-bg: #3a1a16;
-    --shadow: 0 1px 2px rgba(0,0,0,.3);
-  }
-}
+/* Light-only to match the approved prototype exactly on every reviewer's machine. */
 
 * { box-sizing: border-box; }
 html, body, #root { height: 100%; }

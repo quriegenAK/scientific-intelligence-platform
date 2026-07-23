@@ -1,7 +1,6 @@
 import { BrowserRouter, Routes, Route, NavLink } from "react-router-dom";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { Dashboard } from "./pages/Dashboard";
-import { TargetProfile } from "./pages/TargetProfile";
 import { BackTestPage } from "./pages/BackTest";
 import { MODE } from "./lib/api";
 
@@ -22,11 +21,11 @@ function Nav() {
     }}>
       <div style={{ display: "flex", alignItems: "baseline", gap: 8 }}>
         <span style={{ fontWeight: 800, letterSpacing: "-.02em" }}>TIOP</span>
-        <span style={{ fontSize: 11, color: "var(--text-muted)" }}>Target Intelligence</span>
+        <span style={{ fontSize: 11, color: "var(--text-muted)" }}>Target Intelligence and Opportunity Platform</span>
       </div>
       <nav style={{ display: "flex", gap: 20 }}>
-        <NavLink to="/" style={link} end>Dashboard</NavLink>
-        <NavLink to="/backtest" style={link}>Score Validation</NavLink>
+        <NavLink to="/" style={link} end>Opportunities</NavLink>
+        <NavLink to="/backtest" style={link}>Score check</NavLink>
       </nav>
       <span style={{ marginLeft: "auto", fontSize: 11, color: "var(--text-muted)" }}>{MODE}</span>
     </header>
@@ -38,10 +37,9 @@ export default function App() {
     <QueryClientProvider client={qc}>
       <BrowserRouter>
         <Nav />
-        <main style={{ maxWidth: 1080, margin: "0 auto", padding: "var(--space-6) var(--space-5)" }}>
+        <main style={{ maxWidth: 940, margin: "0 auto", padding: "var(--space-6) var(--space-5)" }}>
           <Routes>
             <Route path="/" element={<Dashboard />} />
-            <Route path="/target/:symbol" element={<TargetProfile />} />
             <Route path="/backtest" element={<BackTestPage />} />
           </Routes>
         </main>
