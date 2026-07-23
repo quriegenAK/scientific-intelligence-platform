@@ -6,6 +6,7 @@ import type { TargetSummary, Fact, Provenance } from "../lib/contract";
 import {
   clean, DEV_LEVEL, CONFIDENCE_PLAIN, opportunityTag, plainRead, plainQurie, SCIENCE_ROWS,
 } from "../lib/plain";
+import { Hero } from "../components/Hero";
 
 export function Dashboard() {
   const { data, isLoading, error } = useQuery({ queryKey: ["cohort"], queryFn: getCohort });
@@ -25,11 +26,7 @@ export function Dashboard() {
 
   return (
     <>
-      <h1 style={{ margin: "0 0 6px" }}>Where the open opportunities are in drug targets</h1>
-      <p style={{ color: "var(--text-muted)", margin: "0 0 4px", fontSize: 16 }}>
-        {data.therapeutic_area}, ranked by how open the opportunity is. Start with the answer.
-        Open any target to see the science. Open any number to see where it came from.
-      </p>
+      <Hero />
       <div style={howStyle}>
         <b>How to read this.</b> Each target has a plain summary and an opportunity score from 0 to 100.
         Higher means the biology is proven, it can be drugged, and the field is not yet crowded. Click a

@@ -20,12 +20,7 @@ function Nav() {
       gap: 24, padding: "0 var(--space-6)", height: 64,
     }}>
       <div style={{ display: "flex", alignItems: "center", gap: 12 }}>
-        <div className="qmark" aria-hidden>
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
-            <circle cx="11" cy="11" r="7.5" stroke="#fff" strokeWidth="2.4" />
-            <path d="M15 15 L19 19" stroke="#fff" strokeWidth="2.4" strokeLinecap="round" />
-          </svg>
-        </div>
+        <img src="/logo.svg" alt="QurieGen" width={40} height={35} style={{ display: "block", flex: "none" }} />
         <div style={{ lineHeight: 1.1 }}>
           <div className="brandname" style={{ fontSize: 16 }}>Target Intelligence and Opportunity Platform</div>
           <div style={{ fontSize: 10.5, color: "var(--text-muted)", letterSpacing: ".08em", textTransform: "uppercase" }}>by QurieGen</div>
