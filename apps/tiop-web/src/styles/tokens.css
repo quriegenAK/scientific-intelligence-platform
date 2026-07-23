@@ -49,3 +49,26 @@ a:hover { text-decoration: underline; }
 code { font-family: var(--font-mono); font-size: 12px;
   background: var(--surface-2); border: 1px solid var(--border);
   border-radius: 5px; padding: 1px 5px; }
+
+/* Brand mark. Placeholder Q monogram with a subtle animated sheen.
+   Swap the whole .qmark contents for the real QurieGen logo when ready. */
+.qmark {
+  width: 36px; height: 36px; border-radius: 10px;
+  display: flex; align-items: center; justify-content: center;
+  background: linear-gradient(135deg, #2f52c9, #2aa3b8);
+  box-shadow: 0 2px 8px rgba(47, 82, 201, .32);
+  position: relative; overflow: hidden; flex: none;
+}
+.qmark svg { position: relative; z-index: 1; }
+.qmark::after {
+  content: ""; position: absolute; inset: -50%;
+  background: conic-gradient(from 0deg, transparent 0deg, rgba(255,255,255,.45) 40deg, transparent 90deg);
+  animation: qsheen 7s linear infinite;
+}
+@keyframes qsheen { to { transform: rotate(360deg); } }
+.brandname {
+  font-weight: 800; letter-spacing: -.01em;
+  background: linear-gradient(90deg, #14235e, #2f52c9 55%, #0f8a6a);
+  -webkit-background-clip: text; background-clip: text; color: transparent;
+}
+@media (prefers-reduced-motion: reduce) { .qmark::after { animation: none; } }

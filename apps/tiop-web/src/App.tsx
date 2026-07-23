@@ -17,13 +17,21 @@ function Nav() {
     <header style={{
       position: "sticky", top: 0, zIndex: 10, background: "var(--surface)",
       borderBottom: "1px solid var(--border)", display: "flex", alignItems: "center",
-      gap: 24, padding: "0 var(--space-6)", height: 56,
+      gap: 24, padding: "0 var(--space-6)", height: 64,
     }}>
-      <div style={{ display: "flex", alignItems: "baseline", gap: 8 }}>
-        <span style={{ fontWeight: 800, letterSpacing: "-.02em" }}>TIOP</span>
-        <span style={{ fontSize: 11, color: "var(--text-muted)" }}>Target Intelligence and Opportunity Platform</span>
+      <div style={{ display: "flex", alignItems: "center", gap: 12 }}>
+        <div className="qmark" aria-hidden>
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+            <circle cx="11" cy="11" r="7.5" stroke="#fff" strokeWidth="2.4" />
+            <path d="M15 15 L19 19" stroke="#fff" strokeWidth="2.4" strokeLinecap="round" />
+          </svg>
+        </div>
+        <div style={{ lineHeight: 1.1 }}>
+          <div className="brandname" style={{ fontSize: 16 }}>Target Intelligence and Opportunity Platform</div>
+          <div style={{ fontSize: 10.5, color: "var(--text-muted)", letterSpacing: ".08em", textTransform: "uppercase" }}>by QurieGen</div>
+        </div>
       </div>
-      <nav style={{ display: "flex", gap: 20 }}>
+      <nav style={{ display: "flex", gap: 20, marginLeft: 8 }}>
         <NavLink to="/" style={link} end>Opportunities</NavLink>
         <NavLink to="/backtest" style={link}>Score check</NavLink>
       </nav>
