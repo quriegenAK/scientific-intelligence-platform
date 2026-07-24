@@ -21,12 +21,36 @@ export const CONFIDENCE_PLAIN: Record<string, string> = {
   LOW: "Limited data",
 };
 
-export function opportunityTag(rank: number, n: number): { label: string; color: string } {
-  if (rank === n) return { label: "Benchmark", color: "#6b7280" };
-  if (rank <= Math.floor(n / 3)) return { label: "Open", color: "#087443" };
-  if (rank <= Math.floor((2 * n) / 3)) return { label: "Some room", color: "#b45309" };
-  return { label: "Crowded", color: "#9a6a00" };
+export function opportunityLabel(rank: number, n: number): string {
+  if (rank === n) return "Benchmark";
+  if (rank <= Math.floor(n / 3)) return "Open";
+  if (rank <= Math.floor((2 * n) / 3)) return "Some room";
+  return "Crowded";
 }
+
+// Continuous green -> amber -> orange -> red scale keyed to the opportunity score,
+// so scientists read openness at a glance. Higher (more open) = greener.
+export function scoreColor(v: number): string {
+  if (v >= 45) return "#0f8a4d"; // green   - open
+  if (v >= 35) return "#5f9b1f"; // yellow-green
+  if (v >= 27) return "#d19100"; // amber
+  if (v >= 18) return "#e8730c"; // orange
+  return "#cf3c2e";              // red     - crowded
+}
+
+// Tag pill color: benchmark is a neutral reference, everything else follows the ramp.
+export function tagColor(label: string, score: number): string {
+  return label === "Benchmark" ? "#475569" : scoreColor(score);
+}
+
+// The CBO functional taxonomy, in display order.
+export const CATEGORY_ORDER = [
+  "Receptors", "Ion channels", "Enzymes", "Transporters and pumps",
+  "Transcription factors and gene regulators", "Structural and cytoskeletal proteins",
+  "Signalling adaptors and protein-protein interactions",
+  "Secreted ligands and extracellular mediators", "Cell-surface antigens",
+  "Nucleic acids and genes", "Translational machinery", "Pathogen-specific targets",
+];
 
 export function plainRead(group: string, rank: number, n: number): string {
   const intra = group === "emerging_intracellular";

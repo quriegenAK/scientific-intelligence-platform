@@ -58,7 +58,7 @@
         "data_version": "26.06",
         "access_utc": "2026-07-23T18:26:37Z",
         "query": "target(ensemblId:ENSG00000114423){ identity, class, tractability, subcellular, associatedDiseases, drugAndClinicalCandidates }",
-        "record_url": "https://platform.opentargets.org/target/ENSG00000114423",
+        "record_url": "https://www.uniprot.org/uniprotkb/Q13191/entry",
         "snapshot": "data/raw/CBLB/ot.json",
         "citation": "Open Targets Platform v26.06 (2026-07-23)"
       },
@@ -258,7 +258,7 @@
         "data_version": "26.06",
         "access_utc": "2026-07-23T18:26:37Z",
         "query": "target(ensemblId:ENSG00000114423){ identity, class, tractability, subcellular, associatedDiseases, drugAndClinicalCandidates }",
-        "record_url": "https://platform.opentargets.org/target/ENSG00000114423",
+        "record_url": "https://platform.opentargets.org/target/ENSG00000114423/associations",
         "snapshot": "data/raw/CBLB/ot.json",
         "citation": "Open Targets Platform v26.06 (2026-07-23)"
       },

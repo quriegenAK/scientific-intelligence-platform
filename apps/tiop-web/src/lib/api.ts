@@ -5,7 +5,8 @@ import type { CohortResponse, TargetProfile, BackTest } from "./contract";
 
 const API_BASE = import.meta.env.VITE_API_BASE as string | undefined;
 const STATIC = !API_BASE;
-const BASE = API_BASE ?? "/fixtures";
+// BASE_URL is "/" in dev and "/<repo>/" on GitHub Pages, so fixtures resolve under the subpath.
+const BASE = API_BASE ?? `${import.meta.env.BASE_URL}fixtures`;
 
 async function get<T>(path: string): Promise<T> {
   const res = await fetch(path);

@@ -80,6 +80,7 @@ class TargetSummaryModel(BaseModel):
     protein: str
     uniprot: str
     group: str
+    category: str
     target_class: str
     subcellular: str
     development_level: str

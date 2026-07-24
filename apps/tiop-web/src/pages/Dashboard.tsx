@@ -3,26 +3,35 @@ import type { CSSProperties, ReactNode } from "react";
 import { useQuery } from "@tanstack/react-query";
 import { getCohort, getTarget } from "../lib/api";
 import type { TargetSummary, Fact, Provenance } from "../lib/contract";
+import { Link } from "react-router-dom";
 import {
-  clean, DEV_LEVEL, CONFIDENCE_PLAIN, opportunityTag, plainRead, plainQurie, SCIENCE_ROWS,
+  clean, DEV_LEVEL, CONFIDENCE_PLAIN, opportunityLabel, scoreColor, tagColor,
+  CATEGORY_ORDER, plainRead, plainQurie, SCIENCE_ROWS,
 } from "../lib/plain";
 import { Hero } from "../components/Hero";
 
 export function Dashboard() {
   const { data, isLoading, error } = useQuery({ queryKey: ["cohort"], queryFn: getCohort });
   const [q, setQ] = useState("");
+  const [cat, setCat] = useState<string | null>(null);
 
   const ranked = useMemo(() => {
     if (!data) return [];
     return [...data.targets].sort((a, b) => b.white_space_score - a.white_space_score);
   }, [data]);
 
+  const categories = useMemo(() => {
+    const present = new Set(ranked.map((t) => t.category));
+    return CATEGORY_ORDER.filter((c) => present.has(c));
+  }, [ranked]);
+
   if (isLoading) return <p style={{ color: "var(--text-muted)" }}>Loading…</p>;
   if (error || !data) return <p style={{ color: "var(--c-low)" }}>Could not load the data.</p>;
 
   const n = ranked.length;
   const shown = ranked.filter((t) =>
-    (t.symbol + t.protein + t.group).toLowerCase().includes(q.toLowerCase()));
+    (t.symbol + t.protein + t.group).toLowerCase().includes(q.toLowerCase()) &&
+    (!cat || t.category === cat));
 
   return (
     <>
@@ -44,6 +53,25 @@ export function Dashboard() {
             padding: "6px 10px", color: "var(--text)", fontSize: 13, width: 200 }} />
       </div>
 
+      <div style={{ display: "flex", flexWrap: "wrap", gap: 6, marginBottom: 10 }}>
+        <Chip label={`All (${ranked.length})`} active={!cat} onClick={() => setCat(null)} />
+        {categories.map((c) => (
+          <Chip key={c} label={`${c} (${ranked.filter((t) => t.category === c).length})`}
+            active={cat === c} onClick={() => setCat(cat === c ? null : c)} />
+        ))}
+      </div>
+
+      <div style={{ display: "flex", alignItems: "center", gap: 14, marginBottom: 14, fontSize: 12, color: "var(--text-muted)" }}>
+        <span>Opportunity:</span>
+        {[["Open", 50], ["Some room", 32], ["Crowded", 22], ["Benchmark", 0]].map(([lab, v]) => (
+          <span key={lab as string} style={{ display: "inline-flex", alignItems: "center", gap: 5 }}>
+            <span style={{ width: 10, height: 10, borderRadius: 3, background: lab === "Benchmark" ? "#475569" : scoreColor(v as number) }} />
+            {lab}
+          </span>
+        ))}
+      </div>
+
+      {shown.length === 0 && <p style={{ color: "var(--text-muted)" }}>No targets match.</p>}
       {shown.map((t) => {
         const rank = ranked.indexOf(t) + 1;
         return <TargetCard key={t.symbol} t={t} rank={rank} n={n} />;
@@ -59,24 +87,36 @@ export function Dashboard() {
 
 function TargetCard({ t, rank, n }: { t: TargetSummary; rank: number; n: number }) {
   const [open, setOpen] = useState(false);
-  const tag = opportunityTag(rank, n);
+  const label = opportunityLabel(rank, n);
   const read = plainRead(t.group, rank, n);
+  const color = scoreColor(t.white_space_score);
   return (
-    <div style={{ background: "var(--surface)", border: "1px solid var(--border)", borderRadius: 14, margin: "12px 0", overflow: "hidden" }}>
+    <div style={{ background: "var(--surface)", border: "1px solid var(--border)", borderLeft: `4px solid ${label === "Benchmark" ? "#475569" : color}`, borderRadius: 14, margin: "12px 0", overflow: "hidden" }}>
       <div onClick={() => setOpen(!open)} style={{ display: "flex", alignItems: "center", gap: 16, padding: "16px 18px", cursor: "pointer" }}>
         <div style={{ minWidth: 100 }}>
           <div style={{ fontWeight: 700, fontSize: 17 }}>{t.symbol}</div>
           <div style={{ color: "var(--text-muted)", fontSize: 12.5 }}>{t.protein}</div>
         </div>
         <div style={{ flex: 1, color: "#2b3341" }}>{read}</div>
-        <span style={{ fontSize: 12, fontWeight: 700, color: "#fff", background: tag.color, borderRadius: 999, padding: "3px 10px", whiteSpace: "nowrap" }}>{tag.label}</span>
+        <span style={{ fontSize: 12, fontWeight: 700, color: "#fff", background: tagColor(label, t.white_space_score), borderRadius: 999, padding: "3px 10px", whiteSpace: "nowrap" }}>{label}</span>
         <div style={{ textAlign: "right", minWidth: 74 }}>
-          <div style={{ fontSize: 24, fontWeight: 800 }}>{t.white_space_score.toFixed(1)}</div>
+          <div style={{ fontSize: 24, fontWeight: 800, color }}>{t.white_space_score.toFixed(1)}</div>
           <div style={{ fontSize: 11, color: "var(--text-muted)" }}>opportunity</div>
         </div>
       </div>
       {open && <Science symbol={t.symbol} rank={rank} n={n} dev={t.development_level} />}
     </div>
+  );
+}
+
+function Chip({ label, active, onClick }: { label: string; active: boolean; onClick: () => void }) {
+  return (
+    <button onClick={onClick} style={{
+      fontSize: 12.5, borderRadius: 999, padding: "4px 12px", cursor: "pointer",
+      border: `1px solid ${active ? "var(--accent)" : "var(--border)"}`,
+      background: active ? "var(--accent-weak)" : "var(--surface)",
+      color: active ? "var(--accent)" : "var(--text-muted)", fontWeight: active ? 700 : 500,
+    }}>{label}</button>
   );
 }
 
@@ -100,7 +140,8 @@ function Science({ symbol, rank, n, dev }: { symbol: string; rank: number; n: nu
       </div>
       <div style={formulaStyle}>
         We rank a target higher when the biology is proven, it can be drugged, and the field is not yet
-        crowded. {symbol} ranks {rank} of {n}. {devPlain}. {confPlain}.
+        crowded. {symbol} ranks {rank} of {n}. {devPlain}. {confPlain}.{" "}
+        <Link to="/methods" style={{ fontWeight: 600 }}>How is this scored?</Link>
       </div>
       {SCIENCE_ROWS.map(([label, field]) => {
         const f = fact(field);

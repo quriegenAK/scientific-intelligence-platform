@@ -9,10 +9,10 @@ export function BackTestPage() {
 
   return (
     <>
-      <h1 style={{ marginTop: 0 }}>Score Validation — Back-test</h1>
+      <h1 style={{ marginTop: 0 }}>Score Validation: Back-test</h1>
       <p style={{ color: "var(--text-muted)", maxWidth: 760 }}>{data.method}</p>
 
-      <Card title={`Gates & expectations — cutoff ${data.cutoff}`}>
+      <Card title={`Gates & expectations: cutoff ${data.cutoff}`}>
         <p style={{ marginTop: 0, fontSize: 13, color: "var(--text-muted)" }}>{data.preregistration}</p>
         {data.checks.map((c) => (
           <div key={c.id} style={{ display: "flex", gap: 12, padding: "10px 0", borderTop: "1px solid var(--border)" }}>
@@ -30,17 +30,17 @@ export function BackTestPage() {
           </div>
         ))}
         <div style={{ marginTop: 14, padding: "10px 14px", borderRadius: 8, background: data.passed ? "var(--c-high-bg)" : "var(--c-low-bg)", color: data.passed ? "var(--c-high)" : "var(--c-low)", fontWeight: 700 }}>
-          {data.passed ? "GATES PASSED — the score is calibrated (PD-1 at the floor; saturation tracks real crowding)." : "GATE FAILED — score not validated."}
+          {data.passed ? "GATES PASSED: the score is calibrated (PD-1 at the floor; saturation tracks real crowding)." : "GATE FAILED: score not validated."}
         </div>
       </Card>
 
       {data.findings && data.findings.length > 0 && (
-        <Card title="Findings — what the back-test taught">
+        <Card title="Findings: what the back-test taught">
           {data.findings.map((f, i) => <p key={i} style={{ marginTop: i ? 12 : 0 }}>{f}</p>)}
         </Card>
       )}
 
-      <Card title="Caveats — stated, not hidden">
+      <Card title="Caveats: stated, not hidden">
         <ul style={{ margin: 0, paddingLeft: 18 }}>
           {data.caveats.map((c, i) => <li key={i} style={{ marginBottom: 6, color: "var(--text-muted)" }}>{c}</li>)}
         </ul>

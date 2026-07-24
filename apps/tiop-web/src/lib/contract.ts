@@ -29,7 +29,7 @@ export interface TrustStamp {
   model_version: string; prompt_version: string;
 }
 export interface TargetSummary {
-  symbol: string; protein: string; uniprot: string; group: string;
+  symbol: string; protein: string; uniprot: string; group: string; category: string;
   target_class: string; subcellular: string; development_level: string;
   approved_drugs_count: number; modality: string; highest_phase: string;
   white_space_score: number; white_space_confidence: Confidence; therapeutic_area: string;

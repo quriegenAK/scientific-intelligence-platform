@@ -7,6 +7,8 @@ validates every object against packages/contracts, and writes fixtures consumed 
 FastAPI service and the React UI. Deterministic.
 """
 import json, os, sys, hashlib, datetime
+from dataclasses import replace as dc_replace
+from urllib.parse import quote
 
 ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", ".."))
 for _p in ("provenance", "trust", "contracts"):
@@ -27,6 +29,16 @@ PIPELINE_VERSION = "tiop-0.2.0"
 man = json.load(open(f"{RAW}/_cohort_manifest.json"))
 VERS = man["versions"]
 ACCESS = man["captured_utc"]
+
+# CBO target taxonomy (curated). Which functional class each target belongs to.
+CATEGORY = {
+    "PDCD1": "Receptors", "CTLA4": "Receptors", "LAG3": "Receptors", "HAVCR2": "Receptors",
+    "TIGIT": "Receptors", "TNFRSF9": "Receptors", "TNFRSF4": "Receptors", "ICOS": "Receptors",
+    "CD40": "Receptors",
+    "CD274": "Cell-surface antigens",
+    "MAP4K1": "Enzymes", "CBLB": "Enzymes",
+    "TMEM173": "Signalling adaptors and protein-protein interactions",
+}
 
 PHASE = {"APPROVAL": "Approved (Phase 4)", "PHASE_3": "Phase 3", "PHASE_2_3": "Phase 2/3",
          "PHASE_2": "Phase 2", "PHASE_1_2": "Phase 1/2", "PHASE_1": "Phase 1", "PRECLINICAL": "Preclinical"}
@@ -103,13 +115,20 @@ def assemble(sym, meta, sc):
     diseases = [d["disease"]["name"] for d in ot["associatedDiseases"]["rows"][:6]]
     dev = "Tclin" if approved else ("Tchem" if any(ph(m) >= 2 for m in mols) or r["T"] >= 0.5 else "Tbio")
 
+    # --- deep-link URLs: land on the exact inner page per fact ---
+    flagship = ct.get("flagship_drugs", [])
+    ot_assoc = f"https://platform.opentargets.org/target/{ens}/associations"
+    ct_search = (f"https://clinicaltrials.gov/search?intr={quote(flagship[0])}" if flagship
+                 else f"https://clinicaltrials.gov/search?term={quote(sym)}")
+
     facts = []
-    def F(field, value, prov, conf="HIGH", deriv="", notes=""):
-        facts.append(Fact(field=field, value=value, data_prov=prov, confidence=conf, derivation=deriv, notes=notes))
+    def F(field, value, prov, conf="HIGH", deriv="", notes="", url=None):
+        p = dc_replace(prov, record_url=url) if url else prov
+        facts.append(Fact(field=field, value=value, data_prov=p, confidence=conf, derivation=deriv, notes=notes))
 
     F("gene", ot["approvedSymbol"], P_ot)
     F("protein", ot["approvedName"], P_ot)
-    F("uniprot", uni, P_ot)
+    F("uniprot", uni, P_ot, url=f"https://www.uniprot.org/uniprotkb/{uni}/entry" if uni else None)
     F("target_family_class", r["target_class"] or "n/a", P_ot)
     F("subcellular_location", r["subcellular"], P_ot,
       notes="Intracellular/cytoplasmic => aligns with QurieGen's white-space thesis." if r["subcellular"].lower().startswith(("cyto","plasma","basal","actin")) else "Cell-surface.")
@@ -122,16 +141,16 @@ def assemble(sym, meta, sc):
     F("modality", ", ".join(modality) if modality else "n/a (no approved modality)", P_ch)
     F("first_approval_year", (min(fa) if fa else None), P_ch, conf="HIGH" if fa else "MEDIUM",
       notes="" if fa else "No approval yet.")
-    F("highest_phase", PHASE.get(hp, hp), P_ct,
+    F("highest_phase", PHASE.get(hp, hp), P_ct, url=ct_search,
       notes="From Open Targets max clinical stage across candidates; CT.gov corroborates trial activity.")
     F("companies_developing", ", ".join(companies[:10]) if companies else "None registered (industry)", P_ct,
       conf="MEDIUM", deriv="Distinct industry lead sponsors across flagship-drug trials (sampled).",
-      notes=r["note"] or "")
-    F("disease_indication", ", ".join(diseases), P_ot, notes="Top OT disease associations by score.")
+      notes=r["note"] or "", url=ct_search)
+    F("disease_indication", ", ".join(diseases), P_ot, notes="Top OT disease associations by score.", url=ot_assoc)
     F("therapeutic_area", "Immuno-oncology", P_ot, conf="DERIVED", deriv="IO cohort scope.")
 
     # --- White Space score fact (carries the score components' provenance) ---
-    F("white_space_score", r["white_space"], P_ct, conf=r["confidence"],
+    F("white_space_score", r["white_space"], P_ct, conf=r["confidence"], url=ct_search,
       deriv=f"WS = 100·V·T·(1−S); V={r['V']} (OT assoc), T={r['T']} (OT tractability), S={r['S']} (cohort-normalized saturation). Rank {r['rank']}/{len(sc)}.",
       notes=r["note"] or "")
 
@@ -182,6 +201,7 @@ def assemble(sym, meta, sc):
         white_space=ws_model, executive_brief_md=brief, trust=trust_model, discrepancies=[])
 
     summary = C.TargetSummaryModel(symbol=sym, protein=ot["approvedName"], uniprot=uni, group=meta["group"],
+        category=CATEGORY.get(sym, "Uncategorized"),
         target_class=r["target_class"] or "n/a", subcellular=r["subcellular"], development_level=dev,
         approved_drugs_count=len(approved), modality=(", ".join(modality) or "n/a"),
         highest_phase=PHASE.get(hp, hp), white_space_score=r["white_space"],
