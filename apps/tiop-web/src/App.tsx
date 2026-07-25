@@ -3,6 +3,7 @@ import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { Dashboard } from "./pages/Dashboard";
 import { BackTestPage } from "./pages/BackTest";
 import { Methods } from "./pages/Methods";
+import { Comments } from "./pages/Comments";
 import { Feedback } from "./components/Feedback";
 import { MODE } from "./lib/api";
 
@@ -33,6 +34,7 @@ function Nav() {
         <NavLink to="/" style={link} end>Opportunities</NavLink>
         <NavLink to="/methods" style={link}>Methods</NavLink>
         <NavLink to="/backtest" style={link}>Score check</NavLink>
+        <NavLink to="/comments" style={link}>Comments</NavLink>
       </nav>
       <span style={{ marginLeft: "auto", fontSize: 11, color: "var(--text-muted)" }}>{MODE}</span>
     </header>
@@ -49,6 +51,7 @@ export default function App() {
             <Route path="/" element={<Dashboard />} />
             <Route path="/methods" element={<Methods />} />
             <Route path="/backtest" element={<BackTestPage />} />
+            <Route path="/comments" element={<Comments />} />
           </Routes>
         </main>
         <Feedback />
