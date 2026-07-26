@@ -534,6 +534,102 @@ team, and it is not within easy reach of a competitor who has bet on models inst
 
 ---
 
+## 12. Addendum: Discovery front-ends (ANNi, HGT) and the Bayesian decision core
+
+This addendum resolves two questions raised after the main review: where swarm neural networks
+(ANNi) fit, and whether Agent 6 should use a heterogeneous graph transformer (HGT), as the wider
+AIVC OS vision proposed, or Bayesian fusion, as this review recommends. Both resolve the same way:
+they are not competitors with the decision core; they are discovery front-ends that feed it.
+
+### 12.1 The layering principle
+
+Agent 6 has two separable jobs. **Discovery** proposes candidate target-disease hypotheses.
+**Decision** turns evidence about a candidate into a defensible recommendation with calibrated
+uncertainty, provenance, and a faithful decomposition. Discovery is a representation and
+feature-selection problem. Decision is a reliability-weighted evidence-fusion problem. Using a
+discovery tool as the decision-maker forfeits the moat, because discovery tools do not natively
+produce calibration or provenance.
+
+```
+  DISCOVERY FRONT-ENDS (hypothesis generators, behind the faithful substrate)
+    ANNi / swarm neural networks   <- raw proprietary multi-omics (wet lab, later)
+    HGT / graph transformer        <- novel links from the knowledge graph (V4+)
+        |
+        v  candidate target-disease pairs, each tagged with a discovery confidence
+  DECISION CORE
+    Bayesian evidence fusion (reliability-weighted, source-correlation modeled)
+      + desirability aggregation + conformal uncertainty
+        |
+        v
+    calibrated decision object, wrapped by the Scientific Trust Layer
+        (metapath paths are the explanation over the whole pipeline)
+```
+
+### 12.2 ANNi (swarm neural networks) as the proprietary discovery front-end
+
+ANNi is not a peer of Agent 6; it is a peer of the discovery methods in Graham's comparison table
+(differential expression, LASSO, WGCNA, MOFA, DIABLO, ARACNe, MOGONET). It operates on raw cohort
+multi-omics and identifies phenotype-informative features and network drivers, including
+interaction-driven targets that differential expression misses [LIKELY: the muscle-ageing ANNi
+application and swarm-based AML work cited in the source deck].
+
+Why it matters for QurieGen: it is a candidate for the proprietary discovery asset the main review
+found missing against Xaira and Recursion. Three properties make it fit the platform rather than
+fight it. Its stability mechanic (selection frequency and rank consistency across resamples,
+cohorts, and omics layers) is formal stability selection and is a genuine discovery-layer
+confidence signal that plugs into the Trust Layer and the ranking-stability validation milestone.
+Its per-model evidence trail (feature in, phenotype out, samples held out, error, selection
+frequency) is provenance one layer upstream of ours. And it sits on the phenotype-and-network-first
+side of the methodological fault line, so it hedges the genetics-first core: genetics gives causal
+human relevance, ANNi gives mechanistic breadth.
+
+The hard constraints, stated honestly. ANNi's own documentation concedes its network directions are
+"computational hypotheses rather than proven causal edges" and that its evidence base is smaller
+than that of established statistical methods. So it is [EMERGING], it must never be presented as
+causal until confirmed by genetics, time-series, or perturbation, and it must clear the same
+pre-registered temporal and ablation gate as any model. It also carries a data-generation
+dependency: it needs labeled multi-omics cohorts, which the QurieGen wet lab will produce later.
+This places ANNi at Version 5 (the closed experimental loop), not in the Version 3 core.
+
+### 12.3 HGT versus Bayesian for the decision core: Bayesian
+
+For Agent 6's decision core, Bayesian evidence fusion is the correct choice, and HGT belongs in the
+discovery layer, for three reasons.
+
+First, the deliverable. Agent 6 must state how sure it is, on what basis, and along which axis.
+Bayesian fusion gives all three natively: the posterior propagates uncertainty, priors and
+per-source likelihoods are inspectable, and each source's contribution decomposes. HGT yields a
+learned score with attention weights that are not faithful explanations [KNOWN: Jain-Wallace 2019]
+and no native calibration or provenance.
+
+Second, the evidence structure. Agent 6 fuses sources of very different reliability and must not
+double-count evidence of shared origin. Bayesian fusion models source reliability and correlation
+explicitly; HGT learns from topology and inherits knowledge-graph degree and popularity bias, so it
+tends to predict on how well-studied a gene is rather than on biology [KNOWN: GNN degree-bias
+critiques].
+
+Third, the data reality. Near-term Agent 6 scores tens to a few hundred known target-disease pairs
+from curated public evidence. HGT is data-hungry and earns its value on large graphs for novel-link
+discovery; using it to score a small set of known pairs is over-engineering with worse auditability,
+and it is the "single black-box target picker" this review told the team to avoid [KNOWN: HGT, Hu et
+al., WWW 2020].
+
+Where HGT does belong: the evidence and discovery layer, as a pilot hypothesis generator over the
+knowledge graph, gated on beating a degree-weighted metapath baseline, feeding the Bayesian core as
+one confidence-tagged evidence input, never as the decision and never as the explanation.
+
+### 12.4 Reconciling the AIVC OS vision
+
+The AIVC OS bet on HGT and this review's Bayesian recommendation are both correct, for different
+layers. HGT is a sound knowledge-graph reasoning and discovery substrate; Bayesian fusion is the
+decision core. The only error would be letting HGT become the decision-maker, which would trade the
+platform's auditability moat for a black box. Sequencing follows the roadmap: Bayesian fusion plus
+metapath explanation in Version 3 now; HGT as a gated discovery pilot at Version 4-plus when the
+graph is large and discovery matters; ANNi as the proprietary discovery front-end at Version 5-plus
+when the wet lab delivers labeled multi-omics data.
+
+---
+
 ## Citations
 
 Genetics and clinical success: Nelson et al., Nat Genet 2015 (ng.3314); King, Davis, Degner, PLoS
