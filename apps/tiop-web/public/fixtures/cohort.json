@@ -3,7 +3,7 @@
   "generated_utc": "2026-07-23T18:26:37Z",
   "therapeutic_area": "Immuno-oncology",
   "funnel": {
-    "headline": "Of ~20,000 human proteins, ~4,479 are druggable and only ~667 (~3.3%) have yielded an approved drug \u2014 the untapped-opportunity headline.",
+    "headline": "Of ~20,000 human proteins, ~4,479 are druggable and only ~667 (~3.3%) have yielded an approved drug, the untapped-opportunity headline.",
     "steps": [
       {
         "field": "human_proteome",
@@ -80,7 +80,7 @@
       "development_level": "Tchem",
       "approved_drugs_count": 0,
       "modality": "Antibody",
-      "highest_phase": "Approved (Phase 4)",
+      "highest_phase": "Phase 3",
       "white_space_score": 48.07,
       "white_space_confidence": "HIGH",
       "therapeutic_area": "Immuno-oncology"

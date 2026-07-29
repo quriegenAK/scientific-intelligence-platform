@@ -130,7 +130,7 @@
       "value": "None (no approved drug)",
       "confidence": "HIGH",
       "derivation": "",
-      "notes": "No approved drug \u2014 part of the white-space signal.",
+      "notes": "No approved drug, part of the white-space signal.",
       "is_reasoned": false,
       "data_prov": {
         "source": "ChEMBL",
@@ -208,19 +208,19 @@
       "field": "highest_phase",
       "label": "Highest phase",
       "value": "Phase 2",
-      "confidence": "HIGH",
-      "derivation": "",
-      "notes": "From Open Targets max clinical stage across candidates; CT.gov corroborates trial activity.",
+      "confidence": "DERIVED",
+      "derivation": "Highest clinical stage reconciled between Open Targets candidate stages and ChEMBL max_phase; 'Approved' is shown only when an approved drug (ChEMBL max_phase 4) corroborates it.",
+      "notes": "Corroborated by ChEMBL max_phase and CT.gov trial activity.",
       "is_reasoned": false,
       "data_prov": {
-        "source": "ClinicalTrials.gov",
-        "endpoint": "https://clinicaltrials.gov/api/v2/studies",
-        "data_version": "API 2.0.5",
+        "source": "Open Targets Platform",
+        "endpoint": "https://api.platform.opentargets.org/api/v4/graphql",
+        "data_version": "26.06",
         "access_utc": "2026-07-23T18:26:37Z",
-        "query": "studies?query.intr=<flagship drugs>&fields=Phase,LeadSponsor* (industry sponsors; as-of-cutoff censor)",
-        "record_url": "https://clinicaltrials.gov/search?intr=ADU-S100",
-        "snapshot": "data/raw/TMEM173/ct.json",
-        "citation": "ClinicalTrials.gov vAPI 2.0.5 (2026-07-23)"
+        "query": "target(ensemblId:ENSG00000184584){ identity, class, tractability, subcellular, associatedDiseases, drugAndClinicalCandidates }",
+        "record_url": "https://platform.opentargets.org/target/ENSG00000184584",
+        "snapshot": "data/raw/TMEM173/ot.json",
+        "citation": "Open Targets Platform v26.06 (2026-07-23)"
       },
       "reasoning_prov": null
     },
@@ -307,7 +307,7 @@
     {
       "field": "qurie_relevance",
       "label": "QurieGen relevance",
-      "value": "High edge \u2014 intracellular + validated + unsaturated",
+      "value": "High edge, intracellular + validated + unsaturated",
       "confidence": "DERIVED",
       "derivation": "Composed from localization + white-space rank; QurieGen edge is highest for validated, unsaturated, intracellular targets its causal multi-omics platform can address.",
       "notes": "",
@@ -354,7 +354,7 @@
         "name": "Tractability (T)",
         "value": 0.9,
         "weight_role": "multiplicative",
-        "inputs": "Open Targets tractability \u2014 best drugging-path bucket",
+        "inputs": "Open Targets tractability, best drugging-path bucket",
         "data_prov": {
           "source": "Open Targets Platform",
           "endpoint": "https://api.platform.opentargets.org/api/v4/graphql",
@@ -387,10 +387,10 @@
     "cohort_size": 13,
     "percentile": 100.0,
     "confidence": "MEDIUM",
-    "interpretation": "Top-tier white space \u2014 validated, tractable, and comparatively uncrowded within the IO cohort.",
+    "interpretation": "Top-tier white space, validated, tractable, and comparatively uncrowded within the IO cohort.",
     "score_version": "whitespace-0.1.0"
   },
-  "executive_brief_md": "## TMEM173 \u2014 stimulator of interferon response cGAMP interactor 1\n\n**White Space score 55.81/100 \u00b7 rank 1/13 \u00b7 MEDIUM confidence.** Top-tier white space \u2014 validated, tractable, and comparatively uncrowded within the IO cohort.\n\nTMEM173 is a basal body target in the immuno-oncology cohort with no approved drug yet. Development level **Tchem**; mechanism: Stimulator of interferon genes protein agonist. Competitive footprint: 2 industry sponsor(s) in trials. Leading disease associations: STING-associated vasculopathy with onset in infancy, COVID-19, dengue disease, hypothyroidism.\n\n**Score decomposition** \u2014 Validation 0.7418, Tractability 0.9, Saturation 0.1641 (cohort-normalized). The score is multiplicative, so crowding drives it down even when biology is validated \u2014 which is why saturated checkpoints sit low and validated-but-uncrowded targets rise.\n\n*Every figure above resolves to a versioned source in the Provenance tab. This brief is model-written (claude-fable-5) over sourced facts only.*",
+  "executive_brief_md": "## TMEM173, stimulator of interferon response cGAMP interactor 1\n\n**White Space score 55.81/100 \u00b7 rank 1/13 \u00b7 MEDIUM confidence.** Top-tier white space, validated, tractable, and comparatively uncrowded within the IO cohort.\n\nTMEM173 is a basal body target in the immuno-oncology cohort with no approved drug yet. Development level **Tchem**; mechanism: Stimulator of interferon genes protein agonist. Competitive footprint: 2 industry sponsor(s) in trials. Leading disease associations: STING-associated vasculopathy with onset in infancy, COVID-19, dengue disease, hypothyroidism.\n\n**Score decomposition**, Validation 0.7418, Tractability 0.9, Saturation 0.1641 (cohort-normalized). The score is multiplicative, so crowding drives it down even when biology is validated, which is why saturated checkpoints sit low and validated-but-uncrowded targets rise.\n\n*Every figure above resolves to a versioned source in the Provenance tab. This brief is model-written (claude-fable-5) over sourced facts only.*",
   "trust": {
     "pipeline_version": "tiop-0.2.0",
     "data_versions": {
@@ -400,7 +400,7 @@
     },
     "reproducible": true,
     "reproducibility_note": "Profile is a pure function of pinned data/raw snapshots + versioned score code; re-running build_cohort.py yields the same content_hash.",
-    "content_hash": "8dfdbc09afe34de6",
+    "content_hash": "cbfc4a94cbbfaeab",
     "model_version": "claude-fable-5",
     "prompt_version": "brief-2026-07-23.v2"
   },

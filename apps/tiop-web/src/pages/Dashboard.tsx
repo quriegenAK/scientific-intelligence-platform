@@ -101,7 +101,7 @@ function TargetCard({ t, rank, n }: { t: TargetSummary; rank: number; n: number 
         <span style={{ fontSize: 12, fontWeight: 700, color: "#fff", background: tagColor(label, t.white_space_score), borderRadius: 999, padding: "3px 10px", whiteSpace: "nowrap" }}>{label}</span>
         <div style={{ textAlign: "right", minWidth: 74 }}>
           <div style={{ fontSize: 24, fontWeight: 800, color }}>{t.white_space_score.toFixed(1)}</div>
-          <div style={{ fontSize: 11, color: "var(--text-muted)" }}>opportunity</div>
+          <div style={{ fontSize: 11, color: "var(--text-muted)" }}>opportunity score</div>
         </div>
       </div>
       {open && <Science symbol={t.symbol} rank={rank} n={n} dev={t.development_level} />}
@@ -134,13 +134,14 @@ function Science({ symbol, rank, n, dev }: { symbol: string; rank: number; n: nu
     <div style={{ padding: "4px 18px 20px", borderTop: "1px solid var(--border)" }}>
       <div style={whyStyle}>Why it scored this way</div>
       <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr 1fr", gap: 14, marginBottom: 8 }}>
-        <Bar label="How proven the biology is" v={proven} />
-        <Bar label="Whether it can be drugged" v={druggable} />
-        <Bar label="How much room is left" v={room} />
+        <Bar label="Biological validation" v={proven} />
+        <Bar label="Druggability" v={druggable} />
+        <Bar label="Competitive whitespace" v={room} />
       </div>
       <div style={formulaStyle}>
-        We rank a target higher when the biology is proven, it can be drugged, and the field is not yet
-        crowded. {symbol} ranks {rank} of {n}. {devPlain}. {confPlain}.{" "}
+        Targets score higher when the biology is well validated, the target is druggable, and the
+        competitive landscape remains relatively open. {symbol} ranks #{rank} of {n} comparable targets.{" "}
+        {devPlain}. {confPlain}.{" "}
         <Link to="/methods" style={{ fontWeight: 600 }}>How is this scored?</Link>
       </div>
       {SCIENCE_ROWS.map(([label, field]) => {
@@ -150,8 +151,8 @@ function Science({ symbol, rank, n, dev }: { symbol: string; rank: number; n: nu
         return <ScienceRow key={field} label={label} value={value} prov={f.data_prov} conf={f.confidence} note={clean(f.notes)} reasoned={f.is_reasoned} />;
       })}
       <div style={trustStyle}>
-        You can trace every number above to its source. The result is reproducible: the same data gives the
-        same answer every time (reference {p.trust.content_hash}). Data versions: Open Targets {p.trust.data_versions.open_targets},
+        Every score is fully traceable to its underlying data sources and reproducible using the same
+        inputs (reference {p.trust.content_hash}). Data sources: Open Targets {p.trust.data_versions.open_targets},
         ChEMBL {p.trust.data_versions.chembl}, ClinicalTrials.gov {p.trust.data_versions.clinicaltrials}.
       </div>
     </div>

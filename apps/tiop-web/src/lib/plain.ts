@@ -9,14 +9,14 @@ export function clean(s: unknown): string {
 }
 
 export const DEV_LEVEL: Record<string, string> = {
-  Tclin: "Has an approved drug",
-  Tchem: "Has drugs in testing",
+  Tclin: "Has an approved therapy",
+  Tchem: "Multiple drug candidates in clinical development",
   Tbio: "Studied, no drug yet",
 };
 
 export const CONFIDENCE_PLAIN: Record<string, string> = {
   HIGH: "Strong data",
-  MEDIUM: "Some data gaps",
+  MEDIUM: "Some evidence remains incomplete",
   DERIVED: "Worked out from the data",
   LOW: "Limited data",
 };
@@ -57,8 +57,8 @@ export function plainRead(group: string, rank: number, n: number): string {
   if (rank === n) return "Proven, but very crowded. We use this as our benchmark, not as an opening.";
   if (rank <= Math.floor(n / 3)) {
     return intra
-      ? "Proven biology, still room to move, and it sits inside the cell where our platform has an edge."
-      : "Proven biology with room still open in the field.";
+      ? "Validated biology, meaningful remaining opportunity, and an intracellular target well suited to our platform."
+      : "Validated biology with meaningful opportunity still open in the field.";
   }
   if (intra) return "Inside the cell and promising, but still early.";
   return "Real biology with a moderate amount of competition.";
@@ -66,7 +66,7 @@ export function plainRead(group: string, rank: number, n: number): string {
 
 export function plainQurie(v: unknown): string {
   const s = String(v ?? "");
-  if (s.includes("High edge")) return "A strong fit for our platform: proven, not crowded, and inside the cell.";
+  if (s.includes("High edge")) return "Validated biology, competitive whitespace, and an intracellular target make this a strong fit for our platform.";
   if (s.includes("White-space") || s.toLowerCase().includes("opportunity")) return "An opening worth tracking.";
   if (s.includes("Benchmark") || s.includes("saturated")) return "We use this as a benchmark, not an opening.";
   return clean(s);
@@ -74,11 +74,11 @@ export function plainQurie(v: unknown): string {
 
 // science rows shown when a target is opened: plain label -> contract field
 export const SCIENCE_ROWS: [string, string][] = [
-  ["how it works", "mechanism_moa"],
-  ["approved drugs", "approved_drugs"],
-  ["highest stage of testing", "highest_phase"],
-  ["companies working on it", "companies_developing"],
-  ["main diseases", "disease_indication"],
-  ["where it sits in the cell", "subcellular_location"],
-  ["why it matters to us", "qurie_relevance"],
+  ["Mechanism", "mechanism_moa"],
+  ["Approved therapies", "approved_drugs"],
+  ["Highest clinical stage", "highest_phase"],
+  ["Active developers", "companies_developing"],
+  ["Primary indications", "disease_indication"],
+  ["Cellular localization", "subcellular_location"],
+  ["Platform fit", "qurie_relevance"],
 ];

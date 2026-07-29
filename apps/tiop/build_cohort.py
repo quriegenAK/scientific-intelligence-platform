@@ -108,9 +108,18 @@ def assemble(sym, meta, sc):
     fa = [int(m["first_approval"]) for m in mols if m.get("first_approval")]
     moa = sorted({m["mechanism_of_action"] for m in ch["mechanisms"]["mechanisms"]})
     modality = sorted({m.get("molecule_type") for m in mols if m.get("molecule_type") and m.get("molecule_type") != "Unknown"})
-    # highest phase from OT candidate max stage
-    stages = [row["drug"]["maximumClinicalStage"] for row in ot["drugAndClinicalCandidates"]["rows"] if row["drug"].get("maximumClinicalStage")]
-    hp = max(stages, key=lambda s: PHASE_RANK.get(s, 0)) if stages else "PRECLINICAL"
+    # Highest clinical stage, reconciled between Open Targets (stage vocab) and ChEMBL (max_phase).
+    # Guard: never display "Approved" unless an actual approved drug exists (ChEMBL max_phase==4),
+    # so "Highest stage" can never contradict the "approved drugs" fact (fixes the HAVCR2 case where
+    # OT reported APPROVAL for a drug ChEMBL still lists at Phase 3).
+    chembl_max = max((ph(m) for m in mols), default=0.0)
+    CHEMBL_TO_STAGE = {4.0: "APPROVAL", 3.0: "PHASE_3", 2.0: "PHASE_2", 1.0: "PHASE_1", 0.5: "PHASE_1"}
+    ot_stages = [row["drug"]["maximumClinicalStage"] for row in ot["drugAndClinicalCandidates"]["rows"] if row["drug"].get("maximumClinicalStage")]
+    stage_conflict = ("APPROVAL" in ot_stages) and not approved
+    candidates = [s for s in ot_stages if not (s == "APPROVAL" and not approved)]
+    if chembl_max in CHEMBL_TO_STAGE and (approved or chembl_max < 4.0):
+        candidates.append(CHEMBL_TO_STAGE[chembl_max])
+    hp = max(candidates, key=lambda s: PHASE_RANK.get(s, 0)) if candidates else "PRECLINICAL"
     companies = sorted({s for d in ct["drug_trials"].values() for s in d.get("industry_sponsors", {})})
     diseases = [d["disease"]["name"] for d in ot["associatedDiseases"]["rows"][:6]]
     dev = "Tclin" if approved else ("Tchem" if any(ph(m) >= 2 for m in mols) or r["T"] >= 0.5 else "Tbio")
@@ -135,14 +144,15 @@ def assemble(sym, meta, sc):
     F("development_level", dev, P_ch, conf="DERIVED",
       deriv="ChEMBL max_phase==4 => Tclin; else phase>=2 or tractable => Tchem; else Tbio. Pharos pull deferred.")
     F("approved_drugs", ", ".join(approved) if approved else "None (no approved drug)", P_ch,
-      notes=f"{len(approved)} approved at ChEMBL max_phase=4." if approved else "No approved drug — part of the white-space signal.")
+      notes=f"{len(approved)} approved at ChEMBL max_phase=4." if approved else "No approved drug, part of the white-space signal.")
     F("mechanism_moa", "; ".join(moa) if moa else "No ChEMBL-registered mechanism yet", P_ch,
       conf="HIGH" if moa else "MEDIUM")
     F("modality", ", ".join(modality) if modality else "n/a (no approved modality)", P_ch)
     F("first_approval_year", (min(fa) if fa else None), P_ch, conf="HIGH" if fa else "MEDIUM",
       notes="" if fa else "No approval yet.")
-    F("highest_phase", PHASE.get(hp, hp), P_ct, url=ct_search,
-      notes="From Open Targets max clinical stage across candidates; CT.gov corroborates trial activity.")
+    F("highest_phase", PHASE.get(hp, hp), P_ot, conf="DERIVED", url=f"https://platform.opentargets.org/target/{ens}",
+      deriv="Highest clinical stage reconciled between Open Targets candidate stages and ChEMBL max_phase; 'Approved' is shown only when an approved drug (ChEMBL max_phase 4) corroborates it.",
+      notes=("Open Targets lists a candidate at approval stage not yet corroborated by an approved drug in ChEMBL, so the highest corroborated stage is shown." if stage_conflict else "Corroborated by ChEMBL max_phase and CT.gov trial activity."))
     F("companies_developing", ", ".join(companies[:10]) if companies else "None registered (industry)", P_ct,
       conf="MEDIUM", deriv="Distinct industry lead sponsors across flagship-drug trials (sampled).",
       notes=r["note"] or "", url=ct_search)
@@ -158,11 +168,11 @@ def assemble(sym, meta, sc):
     inputs_hash = hashlib.sha256(json.dumps({k: r[k] for k in ("V","T","S","subcellular","white_space")}, sort_keys=True).encode()).hexdigest()[:16]
     intr = r["subcellular"].lower().startswith(("cyto", "plasma", "basal", "actin"))
     if intr and r["white_space"] >= 25:
-        qr = "High edge — intracellular + validated + unsaturated"
+        qr = "High edge, intracellular + validated + unsaturated"
     elif r["rank"] <= len(sc) // 3:
-        qr = "White-space opportunity (surface) — track"
+        qr = "White-space opportunity (surface), track"
     else:
-        qr = "Benchmark / saturated — calibration only"
+        qr = "Benchmark / saturated, calibration only"
     rp = ReasoningProvenance(model_version=MODEL_VERSION, prompt_version=PROMPT_VERSION,
         inputs_hash=inputs_hash, reasoning_kind="classification")
     facts.append(Fact(field="qurie_relevance", value=qr, data_prov=P_ot, confidence="DERIVED",
@@ -185,7 +195,7 @@ def assemble(sym, meta, sc):
         formula="WS = 100 · Validation · Tractability · (1 − Saturation)",
         components=[
             scomp("Validation (V)", r["V"], "Open Targets max disease-association score", P_ot),
-            scomp("Tractability (T)", r["T"], "Open Targets tractability — best drugging-path bucket", P_ot),
+            scomp("Tractability (T)", r["T"], "Open Targets tractability, best drugging-path bucket", P_ot),
             scomp("Saturation (S)", r["S"], "Cohort-normalized: approvals + candidates + trials + industry sponsors", P_ct),
         ],
         cohort_rank=r["rank"], cohort_size=len(sc), percentile=r["percentile"], confidence=r["confidence"],
@@ -211,10 +221,10 @@ def assemble(sym, meta, sc):
 
 def _interpret(r, n):
     if r["rank"] == n:
-        return "Saturated floor — validated and tractable but maximally crowded. The calibration anchor."
+        return "Saturated floor, validated and tractable but maximally crowded. The calibration anchor."
     if r["rank"] <= n // 3:
-        return "Top-tier white space — validated, tractable, and comparatively uncrowded within the IO cohort."
-    return "Mid-cohort — real biology with moderate competition; watch the momentum trend."
+        return "Top-tier white space, validated, tractable, and comparatively uncrowded within the IO cohort."
+    return "Mid-cohort, real biology with moderate competition; watch the momentum trend."
 
 
 def _brief(sym, ot, r, approved, moa, companies, diseases, dev):
@@ -226,14 +236,14 @@ def _brief(sym, ot, r, approved, moa, companies, diseases, dev):
                 if approved else "no approved drug yet")
     comps = f"{len(companies)} industry sponsor(s) in trials" if companies else "no registered industry sponsors"
     verdict = _interpret(r, n)
-    return (f"## {sym} — {name}\n\n"
+    return (f"## {sym}, {name}\n\n"
             f"**White Space score {ws}/100 · rank {rank}/{n} · {r['confidence']} confidence.** {verdict}\n\n"
             f"{sym} is a {loc.lower()} target in the immuno-oncology cohort with {drugline}. "
             f"Development level **{dev}**; mechanism: {('; '.join(moa) if moa else 'no ChEMBL-registered mechanism yet')}. "
             f"Competitive footprint: {comps}. Leading disease associations: {', '.join(diseases[:4])}.\n\n"
-            f"**Score decomposition** — Validation {r['V']}, Tractability {r['T']}, Saturation {r['S']} "
+            f"**Score decomposition**, Validation {r['V']}, Tractability {r['T']}, Saturation {r['S']} "
             f"(cohort-normalized). The score is multiplicative, so crowding drives it down even when biology is "
-            f"validated — which is why saturated checkpoints sit low and validated-but-uncrowded targets rise.\n\n"
+            f"validated, which is why saturated checkpoints sit low and validated-but-uncrowded targets rise.\n\n"
             f"*Every figure above resolves to a versioned source in the Provenance tab. "
             f"This brief is model-written (claude-fable-5) over sourced facts only.*")
 
@@ -250,7 +260,7 @@ def main():
 
     # funnel (reuse Phase-0 literature anchors)
     funnel = C.FunnelModel(headline="Of ~20,000 human proteins, ~4,479 are druggable and only ~667 (~3.3%) "
-        "have yielded an approved drug — the untapped-opportunity headline.",
+        "have yielded an approved drug, the untapped-opportunity headline.",
         steps=[
             C.FunnelStepModel(field="human_proteome", label="Human proteome", value=20000,
                 data_prov=C.ProvenanceModel(source="UniProt / Ensembl", endpoint="https://www.uniprot.org/proteomes/UP000005640",

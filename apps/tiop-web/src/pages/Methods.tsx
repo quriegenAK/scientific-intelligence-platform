@@ -56,21 +56,21 @@ export function Methods() {
         </Callout>
       </Card>
 
-      <Card title="V: How proven the biology is">
+      <Card title="V: Biological validation">
         <Row k="Exact definition" v="The single highest target-to-disease association score for this target in Open Targets. Range 0 to 1." />
         <Row k="Source" v="Open Targets, the Overall Association Score on the target's Associated Diseases page." />
         <Row k="What is inside it" v="Open Targets already combines genetics, known drugs, pathways, RNA expression, text mining, and animal models by a harmonic sum. We use their number, we do not recompute it." />
         <Row k="Assumption" v="We take the single strongest disease link, not a blend across diseases." />
       </Card>
 
-      <Card title="T: Whether it can be drugged">
+      <Card title="T: Druggability">
         <Row k="Exact definition" v="The weight of the best tractability bucket that is true for the target, across all modalities. Range 0 to 1." />
         <Row k="Source" v="Open Targets tractability assessment." />
         <Row k="STING example" v="Its best bucket is 'Advanced Clinical' (weight 0.90), because STING agonists reached advanced trials." />
         <Row k="Weights (our heuristic)" v="Approved Drug 1.0, Advanced Clinical 0.9, Phase 1 0.7, Structure/Ligand 0.6, Pocket 0.55, Binder 0.5, hints 0.3, else 0.2. This mapping is our judgement and the input we most want reviewed." />
       </Card>
 
-      <Card title="S: How crowded the field is (Room = 1 − S)">
+      <Card title="S: Field crowding (Competitive whitespace = 1 − S)">
         <Row k="Exact definition" v="The average of four crowding signals, each scaled 0 to 1 relative to the current 13 targets." />
         <Row k="The four signals" v="Approved drugs (ChEMBL), clinical candidates (Open Targets), trials (ClinicalTrials.gov), and distinct industry sponsors (ClinicalTrials.gov)." />
         <Row k="STING" v="approved 0.00, candidates 0.21, trials 0.16, sponsors 0.29 → S = 0.164, Room = 0.836." />
